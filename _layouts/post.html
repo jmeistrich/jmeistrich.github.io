@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+
+{% include postheader.html title=page.title date=page.date url=page.url %}
 
 <div class="post">
 {{ content }}

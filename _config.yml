@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Jay Meistrich
 markdown: redcarpet
 pygments: true
-permalink: /:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
+excerpt_separator: "\n\n\n\n"

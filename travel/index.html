@@ -5,7 +5,7 @@ title: Jay Meistrich
 
 <div id="home">
     <ul class="posts">
-    {% for page in site.posts %}
+    {% for page in site.categories.travel %}
         <li class="post">
             {% include postheader.html title=page.title date=page.date url=page.url %}
             {{ page.excerpt }}
