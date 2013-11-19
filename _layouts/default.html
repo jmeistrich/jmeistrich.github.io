@@ -15,27 +15,31 @@
     </head>
     <body>
         <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Jay Meistrich<br />
-                J@mei.st
-              </p>
+            <div class="header">
+                <div class="title">Jay Meistrich</div>
+                <div class="headerButtons">
+                    <a href="/">Home</a>
+                    <a href="/travel">Travel</a>
+                    <a href="/code">Code</a>
+                    <a href="/about">About</a>
+                </div>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/jmeistrich">github.com/jmeistrich</a><br />
-                <a href="https://twitter.com/jmeistrich">twitter.com/jmeistrich</a><br />
-              </p>
+            {{ content }}
+            <div class="footer">
+                <div class="contact">
+                    <p>
+                        Jay Meistrich<br />
+                        J@mei.st
+                    </p>
+                </div>
+                <div class="contact">
+                    <p>
+                        <a href="https://github.com/jmeistrich">github.com/jmeistrich</a><br />
+                        <a href="https://twitter.com/jmeistrich">twitter.com/jmeistrich</a><br />
+                    </p>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>
 
     </body>
 </html>
