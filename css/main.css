@@ -48,8 +48,8 @@ a:hover {
   list-style-type: none;
   margin-bottom: 2em;
 }
-.posts li {
-  margin-bottom: 2em;
+.posts > li {
+  margin-bottom: 4em;
 }
 .postDate {
   color: #aaa;
@@ -138,6 +138,9 @@ a:hover {
   background-color: #eef;
   padding: 0 .4em;
 }
+.post ul {
+  list-style-type: disc;
+}
 .post ul,
 .post ol {
   margin-left: 1.35em;
@@ -166,6 +169,7 @@ a:hover {
 }
 .postHeader .postTitle {
   float: left;
+  font-size: 150%;
 }
 .postHeader .postDate {
   float: right;

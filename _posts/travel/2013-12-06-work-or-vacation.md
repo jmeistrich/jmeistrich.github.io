@@ -6,10 +6,12 @@ categories: travel
 
 You get used to repeatedly answering the same questions when you spend a lot of time in hostels. Most of the time these questions come before "What's your name?" The common ones are:
 
-- Where are you from?<br>
-- Where have you been?<br>
-- Where are you going?<br>
-- Are you traveling for work or holiday?
+<ul>
+<li>Where are you from?</li>
+<li>Where have you been?</li>
+<li>Where are you going?</li>
+<li>Are you traveling for work or holiday?</li>
+</ul>
 
  I have a little bit of trouble with the first one. I'm expected to answer with the city I live in, but I don't live anywhere. So am I from San Diego because I was born there? Or am I from San Francisco because I "lived" there the most recently? Or am I from Seattle because I most recently spent a a couple months there? After a year of traveling where will I be "from?" I'm currently just saying California and going into more detail if we keep talking.
 
