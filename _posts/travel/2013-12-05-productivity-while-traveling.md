@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Becoming Homeless"
+title:  "Productivity While Traveling"
 categories: travel
 ---
 
-Homeless
