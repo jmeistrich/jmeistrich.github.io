@@ -4,11 +4,11 @@ title:  "Living a Different Lifestyle Every Season"
 categories: travel
 ---
 
-The overall goal for the next few years of my life is to live a totally different lifestyle every three months. My life, which was until two years ago fairly typical, has involved a lot of very long phases. I was locked up in school until I was 22. Then I worked at a big software company until I was 26. During those times I didn't really do much else. For most of my 26th year I was a vagabond, traveling quickly for four months and bouncing around purposelessly for 8 months. In my 27th year I lived in San Francisco and worked busily on starting a company.
+My life, which was until two years ago fairly typical, has involved a lot of very long phases. I was locked up in school until I was 22. Then I worked at a big software company until I was 26. During those times I didn't really do much else. Then for most of my 26th year I was a vagabond, traveling [too quickly]({% post_url travel/2013-11-18-travel-speed %}) for four months and bouncing around purposelessly for 8 months. In my 27th year I lived in San Francisco and worked busily on starting a company.
 
-Now at 28 I want to make a drastic change and experience more. Every three months or so I will stop what I'm doing and go do something completely different. I will keep working on my company, but from different places while doing different things.
+Now at 28 I want to make a drastic change and experience more. Every three months or so I will stop what I'm doing and go do something completely different. I will keep working on my company, but from different places while doing different things. This might not be possible. I might get tired of it. I might want to stop and settle down. But I think it's a good goal.
 
-#Tentative Itinerary (subject to change):
+**Tentative Itinerary (subject to change):**<br>
 **Fall '13:** Singapore. Eat the  best food every day.<br>
 **Winter '14:** Beaches of New Zealand and Australia. Swim all the time. Play a lot of Frisbee. Study Japanese.<br>
 **Spring '14:** Japan. Become conversationally fluent in Japanese.<br>
