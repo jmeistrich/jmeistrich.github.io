@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How do You Afford Traveling All The Time?"
+title:  "How Can You Afford To Travel?"
 categories: travel
 ---
 

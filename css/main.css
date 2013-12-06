@@ -26,16 +26,6 @@ h5,
 h6 {
   font-size: 100%;
 }
-h1 {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  font-size: 200%;
-}
-h2 {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  font-size: 175%;
-}
 p {
   margin: 1em 0;
 }
@@ -71,9 +61,17 @@ a:hover {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
+  width: 54em;
   margin: 0 auto;
   line-height: 1.5em;
+}
+.content {
+  width: 66.7%;
+  float: left;
+}
+.sidebar {
+  width: 33.3%;
+  float: left;
 }
 .header a {
   font-weight: bold;
@@ -113,6 +111,7 @@ a:hover {
   color: #aaa;
 }
 .footer {
+  clear: both;
   font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
@@ -144,6 +143,16 @@ a:hover {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
+}
+.post h1 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 200%;
+}
+.post h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 175%;
 }
 .post ul {
   list-style-type: disc;
@@ -180,4 +189,45 @@ a:hover {
 }
 .postHeader .postDate {
   float: right;
+}
+.sidebar {
+  padding-left: 40px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.sidebar ul {
+  list-style-type: none;
+}
+.sidebar > div {
+  margin-bottom: 40px;
+}
+.sidebar h1 {
+  font-size: 140%;
+  color: #999;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.sidebar h2 {
+  font-weight: normal;
+  color: #999;
+}
+.sidebar h2:first-child {
+  margin: 0;
+}
+.sidebar h2:not(:first-child) {
+  margin: 20px 0 0 0;
+}
+.sidebar .categories li {
+  width: 105px;
+}
+.sidebar .categories span {
+  float: right;
+  font-weight: 100;
+  color: #999;
+}
+.sidebar .archive {
+  line-height: 18px;
+}
+.sidebar .archive li {
+  margin: 6px 0;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Living a Different Lifestyle Every Season"
+title:  "A Different Lifestyle Every Season"
 categories: travel
 ---
 

@@ -17,15 +17,49 @@
         <div class="site">
             <div class="header">
                 <div class="title">Jay Meistrich</div>
-                <div class="headerButtons">
-                    <a href="/">All</a>
-                    <a href="/travel">Travel</a>
-                    <a href="/productivity">Productivity</a>
-                    <a href="/code">Code</a>
-                    <a href="/about">About</a>
+            </div>
+            <div class="container">
+                <div class="content">
+                {{ content }}
+                </div>
+                <div class="sidebar">
+                    <div>
+                        <h1>Pages</h1>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/backpack">Backpack</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Categories</h1>
+                        <ul class="categories">
+                            <li>
+                                <a href="/">All</a>
+                                <span>{{ site.posts.size}}</span>
+                            </li>
+                        {% for category in site.categories %}
+                            <li>
+                            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                            <span>{{ category[1].size}}</span>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Archives</h1>
+                        <ul class="archive">
+                          {% for post in site.posts %}
+                              {% capture year %}{{ post.date | date: '%m' }}{% endcapture %}
+                              {% capture nyear %}{{ post.next.date | date: '%m' }}{% endcapture %}
+                              {% if year != nyear %}
+                                <h2>{{ post.date | date: '%B' }}</h2>
+                              {% endif %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                          {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
-            {{ content }}
             <div class="footer">
                 <div class="contact">
                     <p>
