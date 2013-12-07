@@ -246,7 +246,7 @@ a:hover {
   .site {
     width: 100%;
   }
-  #home,
+  .content > div,
   .header {
     padding: 0 10px;
   }
