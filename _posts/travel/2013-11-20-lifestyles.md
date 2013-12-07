@@ -14,5 +14,5 @@ Now at 28 I want to make a drastic change and experience more. Every three month
 **Spring '14:** Japan. Become conversationally fluent in Japanese.<br>
 **Summer '14:** Backpack around Europe. Improve my Spanish.<br>
 **Fall '14:** Live somewhere in South America. Maybe Chile or Argentina. Become fluent in Spanish.<br>
-**Winter '15**: Live on a ski mountain. Become an expert skiier.<br>
+**Winter '15**: Live on a ski mountain. Become an expert skier.<br>
 **Sprint '15**: Get a boating license and take a yacht around some beautiful area. Maybe the Mediterranean or southeast Asia.

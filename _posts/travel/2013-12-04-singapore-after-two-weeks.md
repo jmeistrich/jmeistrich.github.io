@@ -6,7 +6,7 @@ categories: travel
 
 I'm halfway through my 33 day trip to Singapore. Telling people how long I'm here has gotten extremely divergent reactions. Locals ask me why I'm here for such a short time or why I'd choose such a [boring]({% post_url travel/2013-12-03-boring-hometown %}) place as Singapore. Travelers ask me why I'm here for so long and suggest other cities in the area to visit. I just tell them I'm happy here.
 
-As for the experiment with [traveling speed]({% post_url travel/2013-11-18-travel-speed %}), I already feel very comfortable here. Choosing Singapore for this experiment was a little bit biased sinced I spent two weeks here in 2011, so the timeframes may be a bit off, but the results are still interesting.
+As for the experiment with [traveling speed]({% post_url travel/2013-11-18-travel-speed %}), I already feel very comfortable here. Choosing Singapore for this experiment was a little bit biased since I spent two weeks here in 2011, so the time-frames may be a bit off, but the results are still interesting.
 
 I don't feel a sense of urgency to see everything immediately like I did when I was in cities for just a few days. Being more relaxed feels much better. I feel very comfortable with the MRT (subway system). I'm navigating around the central areas by memory for the most part, so I only consult my phone to find specific restaurants or cafes. I've actually found myself helping local friends with directions on occasion. I've started taking buses when the MRT is not the most convenient. I was scolded for standing too close to the pay station the first time, but I think I've got it now.
 

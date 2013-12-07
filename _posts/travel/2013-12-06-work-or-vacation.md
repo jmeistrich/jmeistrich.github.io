@@ -26,4 +26,4 @@ But how do I define what I'm currently doing? I'm working, but I'm not working a
 <li>You should enjoy your trip more. Come out to the pubs with us tonight.</li>
 </ul>
 
-Now they think my life is ridiculous and I have to defend myself. I need tonight come up with a better answer.
+Now they think my life is ridiculous and I have to defend myself. I need to come up with a better answer.
