@@ -61,16 +61,16 @@ a:hover {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 54em;
+  width: 960px;
   margin: 0 auto;
   line-height: 1.5em;
 }
 .content {
-  width: 66.7%;
+  width: 75%;
   float: left;
 }
 .sidebar {
-  width: 33.3%;
+  width: 25%;
   float: left;
 }
 .header a {
@@ -230,4 +230,24 @@ a:hover {
 }
 .sidebar .archive li {
   margin: 6px 0;
+}
+@media screen and (max-width: 960px) {
+  .site {
+    width: 720px;
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .site {
+    width: 100%;
+  }
+  #home,
+  .header {
+    padding: 0 10px;
+  }
 }

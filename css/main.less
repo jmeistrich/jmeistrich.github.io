@@ -55,21 +55,24 @@ a:hover   { color: #000; }
 /*
 /*****************************************************************************/
 
+@siteWidth: 960px;
+@contentWidth: 720px + 20px; // @siteWidth * 0.75
+
 .site {
     font-size: 115%;
     text-align: justify;
-    width: 54em;
+    width: @siteWidth;
     margin: 0 auto;
     line-height: 1.5em;
 }
 
 .content {
-    width: 66.7%;
+    width: 75%;
     float: left;
 }
 
 .sidebar {
-    width: 33.3%;
+    width: 25%;
     float: left;
 }
 
@@ -263,8 +266,28 @@ a:hover   { color: #000; }
     }
 }
 
+@media screen and (max-width: @siteWidth)
+{
+    .site {
+        width: @siteWidth * 0.75;
+    }
+    .content {
+        width: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
 
-
+@media screen and (max-width: @contentWidth)
+{
+    .site {
+        width: 100%;
+    }
+    #home, .header {
+        padding: 0 10px;
+    }
+}
 
 
 
