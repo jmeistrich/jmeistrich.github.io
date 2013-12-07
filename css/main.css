@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #09d;
 }
 /*****************************************************************************/
 /*
@@ -80,6 +80,13 @@ a:hover {
 .title {
   display: inline-block;
   font-size: 150%;
+}
+.title a {
+  color: black;
+  font-weight: 100;
+}
+.title a:hover {
+  color: #09d;
 }
 .header {
   height: 40px;
