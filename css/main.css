@@ -26,8 +26,9 @@ h5,
 h6 {
   font-size: 100%;
 }
-p {
-  margin: 1em 0;
+p + p,
+ul + p {
+  margin-top: 1em;
 }
 a {
   color: #06a;
@@ -154,12 +155,12 @@ a:hover {
 .post h1 {
   margin-top: 1.5em;
   margin-bottom: 1em;
-  font-size: 200%;
+  font-size: 150%;
 }
 .post h2 {
   margin-top: 1.5em;
-  margin-bottom: 1em;
-  font-size: 175%;
+  margin-bottom: 0.25em;
+  font-size: 120%;
 }
 .post ul {
   list-style-type: disc;
@@ -187,7 +188,7 @@ a:hover {
 }
 .postHeader {
   position: relative;
-  margin-bottom: 2px;
+  margin-bottom: 1.5em;
   height: 20px;
 }
 .postHeader .postTitle {
