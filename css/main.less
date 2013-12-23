@@ -173,15 +173,28 @@ a:hover   { color: #09d; }
     padding: 0 .4em;
 }
 
-.post {
+.post, .page {
+    margin-bottom: 5em;
     h1 {
-        margin-top: 1.5em;
+        &:not(:first-child) {
+            margin-top: 2em;
+        }
+        margin-bottom: 1em;
+        font-size: 180%;
+    }
+
+    h2 {
+        &:not(:first-child) {
+            margin-top: 1.5em;
+        }
         margin-bottom: 1em;
         font-size: 150%;
     }
 
-    h2 {
-        margin-top: 1.5em;
+    h3 {
+        &:not(:first-child) {
+            margin-top: 1.5em;
+        }
         margin-bottom: 0.25em;
         font-size: 120%;
     }

@@ -23,10 +23,3 @@ Based on this discovery, I think I can actually be the most productive while tra
 So, my first experiment in being productive while traveling will be in Singapore. It's warm enough to be outside 24/7. It's interesting enough to always have new places to walk when I need a break. I've been there before so I won't be too distracted by touristy things. They speak English so I won't have extra stress from a language barrier. The food is amazing.
 
 I have high hopes for this.
-
-<br>
-Of course, I do need internet sometimes - to look something up or pull/push new code. I can tether to my phone for that, but as I don't want to go over my bandwidth limits, I quickly turn it off when I'm done. I have most of my documentation saved offline with either [Pocket](http://getpocket.com) or [SiteSucker](http://sitesucker.us).
-
-To summarize what is good for my productivity:
-
-
