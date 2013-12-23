@@ -5,7 +5,9 @@ title: Jay Meistrich
 
 #Past
 
-I studied at [Carnegie Mellon University](http://cmu.edu) and spent my time making games in the [Game Creation Society](http://gamecreation.org).
+I studied at [Carnegie Mellon University](http://cmu.edu).
+
+I spent most of my time making games in the [Game Creation Society](http://gamecreation.org).
 
 I interned on [Boom Blox](http://www.youtube.com/watch?v=TpMkCF3AdMY) at [EA Games](http://www.ea.com).
 
@@ -20,9 +22,9 @@ I'm building a product to make organization easy and awesome. It's in private be
 
 I travel the world with a [backpack](/backpack) and a [camera](http://picasaweb.google.com/jmeistrich).
 
-I'm living a [completely different lifestyle every three months]({% post_url travel/2013-11-20-lifestyles %}).
+I'm trying to be a very productive startup founder while traveling. It's [going well so far]({% post_url travel/2013-12-16-how-im-productive %}).
 
-I'm trying to be a very productive startup founder while leading an exciting life as a traveler. It's [going well so far]({% post_url travel/2013-12-16-how-im-productive %}).
+I'm living a [different lifestyle every three months]({% post_url travel/2013-11-20-lifestyles %}).
 
 
 #Travels
