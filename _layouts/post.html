@@ -2,8 +2,20 @@
 layout: default
 ---
 
-{% include postheader.html title=page.title date=page.date url=page.url %}
-
 <div class="post">
+{% include postheader.html title=page.title date=page.date url=page.url %}
+<div class="postContent">
 {{ content }}
+</div>
+<div class="postFooter">
+    <div><a href="">F</a></div>
+    <div><a href="">T</a></div>
+    <div><a href="">G</a></div>
+    <div class="postCategories">
+    {% for cat in page.categories %}
+        <div><a href="/{{ cat }}">{{ cat }}</a></div>
+    {% endfor %}
+    </div>
+    <div class="readMore"><a href="{{ post.url }}">Read More</a></div>
+</div>
 </div>
