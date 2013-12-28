@@ -16,7 +16,38 @@
     <body>
         <div class="site">
             <div class="header">
-                <div class="title"><a href="/">Jay Meistrich</a></div>
+                <div class="headerContent">
+                    <div class="title"><a href="/">Jay Meistrich</a></div>
+                    <div>Maui</div>
+                    <div>About</div>
+                    <ul class="social-links">
+                        <li class="facebook"><a href="http://www.facebook.com/jayzus">F</a></li>
+                        <li class="twitter"><a href="http://www.twitter.com/jmeistrich">T</a></li>
+                        <li class="linkedin"><a href="http://www.linkedin.com/in/jmeistrich">L</a></li>
+                        <li class="google"><a href="https://plus.google.com/113790725575874436353">G</a></li>
+                        <li class="github"><a href="http://github.com/jmeistrich">G</a></li>
+                        <li class="email"><a href="mailto:jay@mei.st">E</a></li>
+                    </ul>
+                </div>
+                <div class="headerFooter">
+                    <div class="headerFooterLeft">
+                        <div>
+                            <a href="/">All</a>
+                            <span>{{ site.posts.size}}</span>
+                        </div>
+                        {% for category in site.categories %}
+                        <div>
+                            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                            <span>{{ category[1].size}}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="headerFooterRight">
+                        <div><a href="">Archive</a></div>
+                        <div><a href="">Backpack</a></div>
+                        <div><a href="">Why</a></div>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="content">

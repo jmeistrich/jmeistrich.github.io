@@ -58,14 +58,18 @@ a:hover   { color: #09d; }
 /*****************************************************************************/
 
 @siteWidth: 960px;
-@contentWidth: 720px + 20px; // @siteWidth * 0.75
+@contentWidth: 720px; // @siteWidth * 0.75
 
 .site {
     font-size: 115%;
-    text-align: justify;
+    // width: @siteWidth;
+}
+
+.container {
     width: @siteWidth;
     margin: 0 auto;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 .content {
@@ -78,16 +82,72 @@ a:hover   { color: #09d; }
     float: left;
 }
 
+.header {
+    // height: 300px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    background: black;
+    color: white;
+}
+
+.headerContent {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
 .header a {
     font-weight: bold;
     text-decoration: none;
+    color: white;
+}
+
+.headerFooter {
+    width: @contentWidth;
+    margin: 0 auto;
+    height: 30px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+}
+
+.headerFooterLeft {
+    float: left;
+}
+
+.headerFooterRight {
+    float: right;
+}
+
+.headerFooter>div>div {
+    // margin: 0 15px;
+    float: left;
+    &:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+    &:last-child {
+        padding-right: 0;
+        border-right: none;
+    }
+    span {
+        margin-left: 3px;
+        font-weight: 100;
+        color: #999;
+    }
+    border-left: 1px solid #666;
+    padding: 0 20px;
 }
 
 .title {
-    display: inline-block;
+    // display: inline-block;
     font-size: 150%;
     a {
-        color: black;
+        color: white;
         font-weight: 100;
         &:hover {
             color: #09d;
@@ -95,15 +155,26 @@ a:hover   { color: #09d; }
     }
 }
 
-.header {
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 40px;
+.social-links {
+  // width: 100%;
+  // margin: 0 0 10 0;
+  // list-style:square;
+  height: 40px;
 }
 
-.title {
-    float: left;
+.social-links li {
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+  // text-indent: -9999px;
+  // margin: 0 0 0 8;
+  // padding: 0 0 0 0;
+  // border-radius: 3px;
 }
+
+// .title {
+//     float: left;
+// }
 
 .headerButtons {
     float: right;
@@ -290,7 +361,7 @@ a:hover   { color: #09d; }
 
 @media screen and (max-width: @siteWidth)
 {
-    .site {
+    .container {
         width: @siteWidth * 0.75;
     }
     .content {
@@ -303,7 +374,7 @@ a:hover   { color: #09d; }
 
 @media screen and (max-width: @contentWidth)
 {
-    .site {
+    .container {
         width: 100%;
     }
     .content>div, .header {

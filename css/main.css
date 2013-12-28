@@ -61,10 +61,12 @@ a:hover {
 /*****************************************************************************/
 .site {
   font-size: 115%;
-  text-align: justify;
+}
+.container {
   width: 960px;
   margin: 0 auto;
   line-height: 1.5em;
+  text-align: justify;
 }
 .content {
   width: 75%;
@@ -74,28 +76,71 @@ a:hover {
   width: 25%;
   float: left;
 }
+.header {
+  line-height: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  background: black;
+  color: white;
+}
+.headerContent {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
 .header a {
   font-weight: bold;
   text-decoration: none;
+  color: white;
+}
+.headerFooter {
+  width: 720px;
+  margin: 0 auto;
+  height: 30px;
+}
+.headerFooterLeft {
+  float: left;
+}
+.headerFooterRight {
+  float: right;
+}
+.headerFooter > div > div {
+  float: left;
+  border-left: 1px solid #666;
+  padding: 0 20px;
+}
+.headerFooter > div > div:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+.headerFooter > div > div:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+.headerFooter > div > div span {
+  margin-left: 3px;
+  font-weight: 100;
+  color: #999;
 }
 .title {
-  display: inline-block;
   font-size: 150%;
 }
 .title a {
-  color: black;
+  color: white;
   font-weight: 100;
 }
 .title a:hover {
   color: #09d;
 }
-.header {
+.social-links {
   height: 40px;
-  line-height: 40px;
-  margin-bottom: 40px;
 }
-.title {
+.social-links li {
   float: left;
+  list-style: none;
+  margin: 0 10px;
 }
 .headerButtons {
   float: right;
@@ -261,7 +306,7 @@ a:hover {
   margin: 6px 0;
 }
 @media screen and (max-width: 960px) {
-  .site {
+  .container {
     width: 720px;
   }
   .content {
@@ -271,8 +316,8 @@ a:hover {
     display: none;
   }
 }
-@media screen and (max-width: 740px) {
-  .site {
+@media screen and (max-width: 720px) {
+  .container {
     width: 100%;
   }
   .content > div,
