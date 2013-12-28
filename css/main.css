@@ -13,10 +13,10 @@ body {
   height: 100%;
 }
 body {
-  background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  background: #f6f6f6;
 }
 h1,
 h2,
@@ -47,10 +47,10 @@ a:hover {
   margin-bottom: 2em;
 }
 .posts > li {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 .postDate {
-  color: #aaa;
+  color: #ddd;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
@@ -59,22 +59,12 @@ a:hover {
 /* Site
 /*
 /*****************************************************************************/
-.site {
-  font-size: 115%;
-}
 .container {
-  width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1.5em;
-  text-align: justify;
-}
-.content {
-  width: 75%;
-  float: left;
-}
-.sidebar {
-  width: 25%;
-  float: left;
+  text-align: left;
+  font-size: 115%;
 }
 .header {
   line-height: 30px;
@@ -82,6 +72,7 @@ a:hover {
   position: relative;
   background: black;
   color: white;
+  font-size: 115%;
 }
 .headerContent {
   padding-top: 90px;
@@ -91,12 +82,11 @@ a:hover {
   text-align: center;
 }
 .header a {
-  font-weight: bold;
   text-decoration: none;
   color: white;
 }
 .headerFooter {
-  width: 720px;
+  max-width: 800px;
   margin: 0 auto;
   height: 30px;
 }
@@ -112,17 +102,17 @@ a:hover {
   padding: 0 20px;
 }
 .headerFooter > div > div:first-child {
-  padding-left: 0;
+  padding-left: 15px;
   border-left: none;
 }
 .headerFooter > div > div:last-child {
-  padding-right: 0;
+  padding-right: 15px;
   border-right: none;
 }
 .headerFooter > div > div span {
-  margin-left: 3px;
+  margin-left: 5px;
   font-weight: 100;
-  color: #999;
+  color: #bbb;
 }
 .title {
   font-size: 150%;
@@ -191,7 +181,10 @@ a:hover {
 /* Posts
 /*
 /*****************************************************************************/
-/* standard */
+.post {
+  border: 1px solid #ccc;
+  background: white;
+}
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
@@ -254,74 +247,61 @@ a:hover {
 }
 .postHeader {
   position: relative;
-  margin-bottom: 1.5em;
-  height: 20px;
+  margin-bottom: 0.5em;
+  height: 40px;
+  background: #000;
+}
+.postHeader a {
+  color: white;
 }
 .postHeader .postTitle {
   float: left;
-  font-size: 150%;
+  font-size: 120%;
+  line-height: 120%;
+  padding: 10px 15px;
+  height: 20px;
 }
 .postHeader .postDate {
   float: right;
+  padding: 10px 15px;
+  height: 20px;
 }
-.sidebar {
-  padding-left: 40px;
-  box-sizing: border-box;
-  text-align: left;
+.postContent {
+  padding: 15px;
 }
-.sidebar ul {
-  list-style-type: none;
+.postFooter {
+  height: 30px;
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
 }
-.sidebar > div {
-  margin-bottom: 40px;
+.postFooter > div {
+  float: left;
+  line-height: 30px;
+  border-left: 1px solid #ddd;
+  padding: 0 15px;
 }
-.sidebar h1 {
-  font-size: 140%;
-  color: #999;
-  font-weight: 100;
-  margin-bottom: 15px;
+.postFooter > div:first-child {
+  border-left: none;
 }
-.sidebar h2 {
-  font-weight: normal;
-  color: #999;
+.postFooter > div:last-child {
+  border-right: none;
 }
-.sidebar h2:first-child {
-  margin: 0;
+.postFooter > div > div {
+  float: left;
 }
-.sidebar h2:not(:first-child) {
-  margin: 20px 0 0 0;
+.postFooter > div > div:not(:first-child) {
+  padding: 0 10px;
 }
-.sidebar .categories li {
-  width: 105px;
-}
-.sidebar .categories span {
+.postFooter .readMore {
   float: right;
-  font-weight: 100;
-  color: #999;
 }
-.sidebar .archive {
-  line-height: 18px;
-}
-.sidebar .archive li {
-  margin: 6px 0;
-}
-@media screen and (max-width: 960px) {
-  .container {
-    width: 720px;
+@media screen and (max-width: 580px) {
+  .headerFooter {
+    height: 70px;
   }
-  .content {
-    width: 100%;
-  }
-  .sidebar {
-    display: none;
-  }
-}
-@media screen and (max-width: 720px) {
-  .container {
-    width: 100%;
-  }
-  .content > div,
-  .header {
-    padding: 0 10px;
+  .headerFooterRight {
+    clear: both;
+    margin-top: 5px;
+    float: left;
   }
 }

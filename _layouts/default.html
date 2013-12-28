@@ -14,98 +14,104 @@
 
     </head>
     <body>
-        <div class="site">
-            <div class="header">
-                <div class="headerContent">
-                    <div class="title"><a href="/">Jay Meistrich</a></div>
-                    <div>Maui</div>
-                    <div>About</div>
-                    <ul class="social-links">
-                        <li class="facebook"><a href="http://www.facebook.com/jayzus">F</a></li>
-                        <li class="twitter"><a href="http://www.twitter.com/jmeistrich">T</a></li>
-                        <li class="linkedin"><a href="http://www.linkedin.com/in/jmeistrich">L</a></li>
-                        <li class="google"><a href="https://plus.google.com/113790725575874436353">G</a></li>
-                        <li class="github"><a href="http://github.com/jmeistrich">G</a></li>
-                        <li class="email"><a href="mailto:jay@mei.st">E</a></li>
+        <div class="header">
+            <div class="headerContent">
+                <div class="title"><a href="/">Jay Meistrich</a></div>
+                <div>Maui</div>
+                <div>About</div>
+                <ul class="social-links">
+                    <li class="facebook"><a href="http://www.facebook.com/jayzus">F</a></li>
+                    <li class="twitter"><a href="http://www.twitter.com/jmeistrich">T</a></li>
+                    <li class="linkedin"><a href="http://www.linkedin.com/in/jmeistrich">L</a></li>
+                    <li class="google"><a href="https://plus.google.com/113790725575874436353">G</a></li>
+                    <li class="github"><a href="http://github.com/jmeistrich">G</a></li>
+                    <li class="email"><a href="mailto:jay@mei.st">E</a></li>
+                </ul>
+            </div>
+            <div class="headerFooter">
+                <div class="headerFooterLeft">
+                    <div>
+                        <a href="/">All</a>
+                        <span>{{ site.posts.size}}</span>
+                    </div>
+                    {% for category in site.categories %}
+                    <div>
+                        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                        <span>{{ category[1].size}}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="headerFooterRight">
+                    <div><a href="">Archive</a></div>
+                    <div><a href="">Backpack</a></div>
+                    <div><a href="">Why?</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+            {{ content }}
+            </div>
+            <!-- <div class="sidebar">
+                <div>
+                    <h1>Pages</h1>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/backpack">Backpack</a></li>
                     </ul>
                 </div>
-                <div class="headerFooter">
-                    <div class="headerFooterLeft">
-                        <div>
+                <div>
+                    <h1>Categories</h1>
+                    <ul class="categories">
+                        <li>
                             <a href="/">All</a>
                             <span>{{ site.posts.size}}</span>
-                        </div>
-                        {% for category in site.categories %}
-                        <div>
-                            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                            <span>{{ category[1].size}}</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="headerFooterRight">
-                        <div><a href="">Archive</a></div>
-                        <div><a href="">Backpack</a></div>
-                        <div><a href="">Why</a></div>
-                    </div>
+                        </li>
+                    {% for category in site.categories %}
+                        <li>
+                        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                        <span>{{ category[1].size}}</span>
+                        </li>
+                    {% endfor %}
+                    </ul>
                 </div>
+                <div>
+                    <h1>Archives</h1>
+                    <ul class="archive">
+                      {% for post in site.posts %}
+                          {% capture year %}{{ post.date | date: '%m' }}{% endcapture %}
+                          {% capture nyear %}{{ post.next.date | date: '%m' }}{% endcapture %}
+                          {% if year != nyear %}
+                            <h2>{{ post.date | date: '%B' }}</h2>
+                          {% endif %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <p>
+                    Jay Meistrich<br />
+                    J@mei.st
+                </p>
             </div>
-            <div class="container">
-                <div class="content">
-                {{ content }}
-                </div>
-                <div class="sidebar">
-                    <div>
-                        <h1>Pages</h1>
-                        <ul>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/backpack">Backpack</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h1>Categories</h1>
-                        <ul class="categories">
-                            <li>
-                                <a href="/">All</a>
-                                <span>{{ site.posts.size}}</span>
-                            </li>
-                        {% for category in site.categories %}
-                            <li>
-                            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                            <span>{{ category[1].size}}</span>
-                            </li>
-                        {% endfor %}
-                        </ul>
-                    </div>
-                    <div>
-                        <h1>Archives</h1>
-                        <ul class="archive">
-                          {% for post in site.posts %}
-                              {% capture year %}{{ post.date | date: '%m' }}{% endcapture %}
-                              {% capture nyear %}{{ post.next.date | date: '%m' }}{% endcapture %}
-                              {% if year != nyear %}
-                                <h2>{{ post.date | date: '%B' }}</h2>
-                              {% endif %}
-                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                          {% endfor %}
-                        </ul>
-                    </div>
-                </div>
+            <div class="contact">
+                <p>
+                    <a href="https://github.com/jmeistrich">github.com/jmeistrich</a><br />
+                    <a href="https://twitter.com/jmeistrich">twitter.com/jmeistrich</a><br />
+                </p>
             </div>
-            <div class="footer">
-                <div class="contact">
-                    <p>
-                        Jay Meistrich<br />
-                        J@mei.st
-                    </p>
-                </div>
-                <div class="contact">
-                    <p>
-                        <a href="https://github.com/jmeistrich">github.com/jmeistrich</a><br />
-                        <a href="https://twitter.com/jmeistrich">twitter.com/jmeistrich</a><br />
-                    </p>
-                </div>
-                </div>
             </div>
+        </div>
+        Images:
+        Profile
 
+        Icons:
+        Location
+        FB, Twitter, LinkedIn, Google+, GitHub, Email
+        Tag
+        Read More
     </body>
 </html>

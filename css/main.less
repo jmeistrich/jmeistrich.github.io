@@ -13,10 +13,11 @@
 html, body { height: 100%; }
 
 body {
-    background-color: #FFF;
+    // background-color: #FFF;
     font: 13.34px Helvetica, Arial, sans-serif;
     font-size: small;
     text-align: center;
+    background: #f6f6f6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,11 +43,11 @@ a:hover   { color: #09d; }
 }
 
 .posts>li {
-        margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .postDate {
-    color: #aaa;
+    color: #ddd;
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
 }
@@ -57,30 +58,31 @@ a:hover   { color: #09d; }
 /*
 /*****************************************************************************/
 
-@siteWidth: 960px;
-@contentWidth: 720px; // @siteWidth * 0.75
+// @siteWidth: 960px;
+@contentWidth: 800px; // @siteWidth * 0.75
 
-.site {
-    font-size: 115%;
+// .site {
+    // font-size: 115%;
     // width: @siteWidth;
-}
+// }
 
 .container {
-    width: @siteWidth;
+    max-width: @contentWidth;
     margin: 0 auto;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
+    font-size: 115%;
 }
 
-.content {
-    width: 75%;
-    float: left;
-}
+// .content {
+//     width: 75%;
+//     float: left;
+// }
 
-.sidebar {
-    width: 25%;
-    float: left;
-}
+// .sidebar {
+//     width: 25%;
+//     float: left;
+// }
 
 .header {
     // height: 300px;
@@ -89,6 +91,7 @@ a:hover   { color: #09d; }
     position: relative;
     background: black;
     color: white;
+    font-size: 115%;
 }
 
 .headerContent {
@@ -100,15 +103,16 @@ a:hover   { color: #09d; }
 }
 
 .header a {
-    font-weight: bold;
+    // font-weight: bold;
     text-decoration: none;
     color: white;
 }
 
 .headerFooter {
-    width: @contentWidth;
+    max-width: @contentWidth;
     margin: 0 auto;
     height: 30px;
+    // padding: 0 15px;
     // position: absolute;
     // bottom: 0;
     // left: 0;
@@ -127,17 +131,17 @@ a:hover   { color: #09d; }
     // margin: 0 15px;
     float: left;
     &:first-child {
-        padding-left: 0;
+        padding-left: 15px;
         border-left: none;
     }
     &:last-child {
-        padding-right: 0;
+        padding-right: 15px;
         border-right: none;
     }
     span {
-        margin-left: 3px;
+        margin-left: 5px;
         font-weight: 100;
-        color: #999;
+        color: #bbb;
     }
     border-left: 1px solid #666;
     padding: 0 20px;
@@ -237,7 +241,12 @@ a:hover   { color: #09d; }
 /*
 /*****************************************************************************/
 
-/* standard */
+.post {
+    border: 1px solid #ccc;
+    background: white;
+    // padding: 10px;
+}
+
 .post pre {
     border: 1px solid #ddd;
     background-color: #eef;
@@ -301,85 +310,136 @@ a:hover   { color: #09d; }
 
 .postHeader {
     position: relative;
-    margin-bottom: 1.5em;
-    height: 20px;
+    margin-bottom: 0.5em;
+    height: 40px;
+    background: #000;
+    a {
+        color: white;
+    }
 }
 
 .postHeader .postTitle {
     float: left;
-    font-size: 150%;
+    font-size: 120%;
+    line-height: 120%;
+    // font-weight: 100;
+    padding: 10px 15px;
+    height: 20px;
 }
 
 .postHeader .postDate {
     float: right;
+    // background: #06a;
+    padding: 10px 15px;
+    height: 20px;
+    // color: #;
 }
 
-.sidebar {
-    padding-left: 40px;
-    box-sizing: border-box;
-    text-align: left;
-    ul {
-        list-style-type: none;
-    }
+.postContent {
+    padding: 15px;
+}
+
+.postFooter {
+    height: 30px;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
     >div {
-        margin-bottom: 40px;
-    }
-    h1 {
-        font-size: 140%;
-        color: #999;
-        font-weight: 100;
-        margin-bottom: 15px;
-    }
-    h2 {
-        // font-size: 110%;
-        font-weight: normal;
-        color: #999;
-    }
-    h2:first-child {
-        margin: 0;
-    }
-    h2:not(:first-child) {
-        margin: 20px 0 0 0;
-    }
-    .categories {
-        li {
-            width: 105px;
+        float: left;
+        line-height: 30px;
+        border-left: 1px solid #ddd;
+        padding: 0 15px;
+        &:first-child {
+            border-left: none;
         }
-        span {
-            float: right;
-            font-weight: 100;
-            color: #999;
+        &:last-child {
+            border-right: none;
         }
     }
-    .archive {
-        line-height: 18px;
-        li {
-            margin: 6px 0;
+    >div>div {
+        float: left;
+        &:not(:first-child) {
+            padding: 0 10px;
         }
+    }
+    .readMore {
+        float: right;
     }
 }
 
-@media screen and (max-width: @siteWidth)
-{
-    .container {
-        width: @siteWidth * 0.75;
-    }
-    .content {
-        width: 100%;
-    }
-    .sidebar {
-        display: none;
-    }
-}
+// .sidebar {
+//     padding-left: 40px;
+//     box-sizing: border-box;
+//     text-align: left;
+//     ul {
+//         list-style-type: none;
+//     }
+//     >div {
+//         margin-bottom: 40px;
+//     }
+//     h1 {
+//         font-size: 140%;
+//         color: #999;
+//         font-weight: 100;
+//         margin-bottom: 15px;
+//     }
+//     h2 {
+//         // font-size: 110%;
+//         font-weight: normal;
+//         color: #999;
+//     }
+//     h2:first-child {
+//         margin: 0;
+//     }
+//     h2:not(:first-child) {
+//         margin: 20px 0 0 0;
+//     }
+//     .categories {
+//         li {
+//             width: 105px;
+//         }
+//         span {
+//             float: right;
+//             font-weight: 100;
+//             color: #999;
+//         }
+//     }
+//     .archive {
+//         line-height: 18px;
+//         li {
+//             margin: 6px 0;
+//         }
+//     }
+// }
 
-@media screen and (max-width: @contentWidth)
+// @media screen and (max-width: @siteWidth)
+// {
+    // .container {
+    //     width: @siteWidth * 0.75;
+    // }
+    // .content {
+    //     width: 100%;
+    // }
+    // .sidebar {
+    //     display: none;
+    // }
+// }
+
+@media screen and (max-width: 580px)
 {
-    .container {
-        width: 100%;
+    .headerFooter {
+        height: 70px;
     }
-    .content>div, .header {
-        padding: 0 10px;
+    .headerFooterRight {
+        clear: both;
+        margin-top: 5px;
+        float: left;
     }
+    // .container {
+    //     width: 100%;
+    // }
+    // .content>div, .header {
+    //     padding: 0 10px;
+    // }
 }
 
 

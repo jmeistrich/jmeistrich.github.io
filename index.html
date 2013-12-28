@@ -5,10 +5,23 @@ title: Jay Meistrich
 
 <div id="home">
     <ul class="posts">
-    {% for page in site.posts %}
+    {% for post in site.posts %}
         <li class="post">
-            {% include postheader.html title=page.title date=page.date url=page.url %}
-            {{ page.excerpt }}
+            {% include postheader.html title=post.title date=post.date url=post.url %}
+            <div class="postContent">
+            {{ post.excerpt }}
+            </div>
+            <div class="postFooter">
+                <div><a href="">F</a></div>
+                <div><a href="">T</a></div>
+                <div><a href="">G</a></div>
+                <div class="postCategories">
+                {% for cat in post.categories %}
+                    <div><a href="/{{ cat }}">{{ cat }}</a></div>
+                {% endfor %}
+                </div>
+                <div class="readMore"><a href="{{ post.url }}">Read More</a></div>
+            </div>
         </li>
     {% endfor %}
     </ul>
