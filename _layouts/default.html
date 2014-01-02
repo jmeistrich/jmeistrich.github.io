@@ -8,6 +8,7 @@
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/style.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
@@ -16,36 +17,17 @@
     <body>
         <div class="header">
             <div class="headerContent">
+                <div class="profile"></div>
                 <div class="title"><a href="/">Jay Meistrich</a></div>
-                <div>Maui</div>
-                <div>About</div>
+                <span class="location"><span class="icon-map-marker"></span>Maui, Hawaii</span>
                 <ul class="social-links">
-                    <li class="facebook"><a href="http://www.facebook.com/jayzus">F</a></li>
-                    <li class="twitter"><a href="http://www.twitter.com/jmeistrich">T</a></li>
-                    <li class="linkedin"><a href="http://www.linkedin.com/in/jmeistrich">L</a></li>
-                    <li class="google"><a href="https://plus.google.com/113790725575874436353">G</a></li>
-                    <li class="github"><a href="http://github.com/jmeistrich">G</a></li>
-                    <li class="email"><a href="mailto:jay@mei.st">E</a></li>
+                    <li><a href="http://www.facebook.com/jayzus"><div class="icon-facebook"></div></a></li>
+                    <li><a href="http://www.twitter.com/jmeistrich"><div class="icon-twitter"></div></a></li>
+                    <li><a href="http://www.linkedin.com/in/jmeistrich"><div class="icon-linkedin"></div></a></li>
+                    <li><a href="https://plus.google.com/113790725575874436353"><div class="icon-google-plus"></div></a></li>
+                    <li><a href="http://github.com/jmeistrich"><div class="icon-github"></div></a></li>
+                    <li><a href="mailto:jay@mei.st"><div class="icon-envelope-alt"></div></a></li>
                 </ul>
-            </div>
-            <div class="headerFooter">
-                <div class="headerFooterLeft">
-                    <div>
-                        <a href="/">All</a>
-                        <span>{{ site.posts.size}}</span>
-                    </div>
-                    {% for category in site.categories %}
-                    <div>
-                        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                        <span>{{ category[1].size}}</span>
-                    </div>
-                    {% endfor %}
-                </div>
-                <div class="headerFooterRight">
-                    <div><a href="">Archive</a></div>
-                    <div><a href="">Backpack</a></div>
-                    <div><a href="">Why?</a></div>
-                </div>
             </div>
         </div>
         <div class="container">

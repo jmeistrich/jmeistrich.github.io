@@ -15,8 +15,6 @@ body {
 body {
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
-  background: #f6f6f6;
 }
 h1,
 h2,
@@ -31,7 +29,7 @@ ul + p {
   margin-top: 1em;
 }
 a {
-  color: #06a;
+  color: #069;
   text-decoration: none;
 }
 a:hover {
@@ -49,11 +47,6 @@ a:hover {
 .posts > li {
   margin-bottom: 3em;
 }
-.postDate {
-  color: #ddd;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
 /*****************************************************************************/
 /*
 /* Site
@@ -67,28 +60,67 @@ a:hover {
   font-size: 115%;
 }
 .header {
-  line-height: 30px;
-  margin-bottom: 40px;
   position: relative;
-  background: black;
-  color: white;
   font-size: 115%;
 }
+.profile {
+  background: url('/img/profile.jpg');
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+}
 .headerContent {
-  padding-top: 90px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   margin: 0 auto;
-  width: 200px;
+  width: 204px;
+  line-height: 35px;
   text-align: center;
+}
+.location {
+  color: #999;
+  position: relative;
+  margin-left: 15px;
+}
+.location > span {
+  margin-right: 8px;
+  font-size: 13pt;
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 0;
 }
 .header a {
   text-decoration: none;
-  color: white;
 }
 .headerFooter {
-  max-width: 800px;
+  width: 800px;
   margin: 0 auto;
-  height: 30px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+.headerFooter .headerFooterInner {
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headerFooter .headerFooterInner > div {
+  padding: 10px 0;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 50px;
+}
+.navbarHeader {
+  font-weight: 100;
+  font-size: 16pt;
+  color: #999;
+  margin-bottom: 10px;
 }
 .headerFooterLeft {
   float: left;
@@ -97,8 +129,6 @@ a:hover {
   float: right;
 }
 .headerFooter > div > div {
-  float: left;
-  border-left: 1px solid #666;
   padding: 0 20px;
 }
 .headerFooter > div > div:first-child {
@@ -118,19 +148,28 @@ a:hover {
   font-size: 150%;
 }
 .title a {
-  color: white;
-  font-weight: 100;
-}
-.title a:hover {
-  color: #09d;
+  color: black;
+  font-weight: bold;
 }
 .social-links {
-  height: 40px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 .social-links li {
   float: left;
   list-style: none;
-  margin: 0 10px;
+  margin: 0 2px;
+  font-size: 14pt;
+}
+.social-links li div {
+  color: #999;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.social-links li div:hover {
+  color: black;
 }
 .headerButtons {
   float: right;
@@ -182,7 +221,6 @@ a:hover {
 /*
 /*****************************************************************************/
 .post {
-  border: 1px solid #ccc;
   background: white;
 }
 .post pre {
@@ -249,15 +287,13 @@ a:hover {
   position: relative;
   margin-bottom: 0.5em;
   height: 40px;
-  background: #000;
 }
 .postHeader a {
-  color: white;
+  color: black;
 }
 .postHeader .postTitle {
   float: left;
-  font-size: 120%;
-  line-height: 120%;
+  font-size: 200%;
   padding: 10px 15px;
   height: 20px;
 }
@@ -265,6 +301,7 @@ a:hover {
   float: right;
   padding: 10px 15px;
   height: 20px;
+  color: #333;
 }
 .postContent {
   padding: 15px;

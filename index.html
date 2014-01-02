@@ -4,6 +4,30 @@ title: Jay Meistrich
 ---
 
 <div id="home">
+        <div class="headerFooter">
+            <div class="headerFooterInner">
+                <div>
+                    <div class="navbarHeader">Categories</div>
+                    <div>
+                        <a href="/">All</a>
+                        <span>{{ site.posts.size}}</span>
+                    </div>
+                    {% for category in site.categories %}
+                    <div>
+                        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                        <span>{{ category[1].size}}</span>
+                    </div>
+                    {% endfor %}
+                    <div><a href="">Archive</a></div>
+                </div>
+                <div>
+                    <div class="navbarHeader">Pages</div>
+                    <div><a href="">About</a></div>
+                    <div><a href="">Backpack</a></div>
+                    <div><a href="">Why?</a></div>
+                </div>
+            </div>
+        </div>
     <ul class="posts">
     {% for post in site.posts %}
         <li class="post">
@@ -26,3 +50,6 @@ title: Jay Meistrich
     {% endfor %}
     </ul>
 </div>
+
+
+TODO: Put the categories stuff at the top of the post
