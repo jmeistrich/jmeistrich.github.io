@@ -315,13 +315,16 @@ a:hover {
   font-size: 250%;
   padding: 10px 15px;
   height: 20px;
+  font-family: 'Roboto Slab', serif;
 }
 .postMetadata {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .postMetadata,
 .postMetadata a {
   color: #999;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
 }
 .postCategories > span {
   padding: 0 10px;
@@ -332,6 +335,7 @@ a:hover {
 }
 .postContent {
   padding: 15px;
+  font-family: 'Merriweather', sans-serif;
 }
 .postFooter {
   height: 30px;
