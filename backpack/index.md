@@ -1,16 +1,16 @@
 ---
 layout: page
-title: What's in my Backpack
+title: What's In My Backpack
 ---
 
 I gave away and sold everything else I owned, so this is the full list of my possessions.
 
 #Backpack
 
-**Gregory ???? 58L**<br>
+**Gregory Savant 58L**<br>
 *This backpack compresses very well so I usually fill it with about 30L, but if I need to carry extra food, presents, or cold-weather clothing, I can expand it. It opens from both bottom and top which is an absolute must for me.*
 
-**Marmot ????**<br>
+**Marmot Kompressor Plus 20L**<br>
 *I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
 
 
@@ -47,9 +47,11 @@ I used to have a Canon 5D Mk II, but I now prefer something small and inconspicu
 **Panasonic 20mm f/1.7**<br>
 *This is amazing for night shots. It focuses slowly sometimes but it takes amazing photos. And it's a pancake lens so it's super small.*
 
-**Capture ????**
+**Capture Camera Clip**<br>
+*I can attach my camera to my belt or backpack strap with this. It makes it easy to carry around the camera without having to stuff it into a pocket or back into the camera bag.*
 
-**Aftermarket charger ????**
+**Watson Compact Charger**<br>
+*This charger doesn't have a long cord like the included charger.*
 
 
 #Electronics Accessories
@@ -57,10 +59,8 @@ I used to have a Canon 5D Mk II, but I now prefer something small and inconspicu
 **Lacie Rugged 1.5 TB**<br>
 *I take a lot of pictures and have a lot of movies and TV shows to watch if I get bored.*
 
-**Logitech ???? Mouse**<br>
-*I love this mouse, but I don't actually ever use it. I like a mouse when I game or do heavy photo editing, but haven't in a while. I may get a smaller mouse since I don't use it often.*
-
-**Stylus ????**
+**Adonit Jot Pro**<br>
+*This is my favorite stylus because it's very accurate. I use it for drawing UI sketches on my iPad.*
 
 
 #Clothes
@@ -83,7 +83,7 @@ They dry over night for easy washing.
 *Brightly colored socks that I got at Uniqlo in Japan. They dry overnight. I usually wear flip flops so don't wear these much.*
 
 **1 pair of flip flops**<br>
-*Sanok ???? bought in Phuket. I have a broken toe so I need really nice and soft flip flops. These are great. My old pair lasted 6 years but had no traction left.*
+*Sanuk Beer Cozy (interesting name huh?) bought in Phuket. I have a broken toe so I need really nice and soft flip flops. These are great. My old pair lasted 6 years but had no traction left.*
 
 **1 pair of shoes**<br>
 *Bright red New Balance sneakers commemorating the Chinese Year of the Dragon, covered in dragon scales and claws, bought in Tokyo. They've been going strong for two years now.*
@@ -94,7 +94,7 @@ They dry over night for easy washing.
 *Toothbrush, toothpaste, deodorant*
 
 **Shower bag**<br>
-*Electric razor (????), face soap, moisturizer*
+*Braun Series 7 razor, face soap, moisturizer*
 
 **Eye drops**<br>
 *I have to have them because of the LASIK. After three months I'm using them most days when I wake up, but sometimes don't need them. If I don't get much sleep my eyes are extra dry.*

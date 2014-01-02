@@ -13,8 +13,10 @@ body {
   height: 100%;
 }
 body {
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: small;
+  line-height: 26px;
+  font-size: 15px;
 }
 h1,
 h2,
@@ -56,12 +58,9 @@ a:hover {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  font-size: 15px;
-  line-height: 26px;
 }
 .header {
   position: relative;
-  font-size: 115%;
 }
 .profile > div {
   background: url('/img/profile.jpg');
@@ -100,7 +99,6 @@ a:hover {
 #headerFooter {
   width: 800px;
   margin: 0 auto;
-  line-height: 25px;
   margin-bottom: 40px;
 }
 .headerFooterInner {
@@ -318,7 +316,7 @@ a:hover {
   font-family: 'Roboto Slab', serif;
 }
 .postMetadata {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .postMetadata,
 .postMetadata a {
