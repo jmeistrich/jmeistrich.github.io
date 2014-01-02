@@ -63,7 +63,7 @@ a:hover {
   position: relative;
   font-size: 115%;
 }
-.profile {
+.profile > div {
   background: url('/img/profile.jpg');
   width: 100px;
   height: 100px;
@@ -81,6 +81,10 @@ a:hover {
   color: #999;
   position: relative;
   margin-left: 15px;
+  cursor: default !important;
+}
+.location:hover {
+  color: #999 !important;
 }
 .location > span {
   margin-right: 8px;
@@ -211,11 +215,11 @@ a:hover {
 }
 .footer {
   clear: both;
-  font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
+  border-top: 1px solid #eee;
+  padding: 1em 0;
   overflow: hidden;
+  text-align: center;
 }
 .footer .contact {
   float: left;
