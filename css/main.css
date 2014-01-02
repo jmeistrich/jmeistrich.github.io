@@ -98,23 +98,19 @@ a:hover {
   width: 800px;
   margin: 0 auto;
   line-height: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .headerFooter .headerFooterInner {
-  width: 500px;
+  width: 400px;
+  height: 200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 .headerFooter .headerFooterInner > div {
-  padding: 10px 0;
-  -webkit-flex: 1;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin: 0 50px;
+  padding: 10px 0 10px 100px;
+  float: left;
+}
+.headerFooter .headerFooterInner:after {
+  clear: both;
 }
 .navbarHeader {
   font-weight: 100;
