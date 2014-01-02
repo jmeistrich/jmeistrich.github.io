@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #09d;
+  color: #0099dd;
 }
 /*****************************************************************************/
 /*
@@ -70,28 +70,32 @@ a:hover {
   border-radius: 50%;
 }
 .headerContent {
-  padding-top: 60px;
+  padding: 60px 0;
   margin: 0 auto;
   width: 204px;
-  line-height: 35px;
+  line-height: 30px;
   text-align: center;
+}
+.headerContent a {
+  color: #999;
 }
 .location {
   color: #999;
   position: relative;
-  margin-left: 15px;
+  font-size: 14px;
   cursor: default !important;
 }
 .location:hover {
   color: #999 !important;
 }
+.about {
+  font-size: 14px;
+}
 .location > span {
   margin-right: 8px;
   font-size: 13pt;
-  display: block;
-  position: absolute;
-  left: -15px;
-  top: 0;
+  position: relative;
+  top: 2px;
 }
 .header a {
   text-decoration: none;
@@ -103,16 +107,11 @@ a:hover {
 }
 .headerFooterInner {
   width: 480px;
-  height: 0;
-  overflow: hidden;
+  height: 150px;
   margin: 0 auto;
   padding-top: 20px;
-  -webkit-transition: height 0.3s;
 }
 .headerFooterInner > div {
-  -webkit-transform: translate(0, -200px);
-  -webkit-transition: -webkit-transform 0.3s;
-  -webkit-transform-origin: 0 0;
   padding: 0 40px;
   float: left;
   text-align: center;
@@ -127,19 +126,6 @@ a:hover {
 }
 .headerFooterInner:after {
   clear: both;
-}
-#headerFooterExpand {
-  font-size: 16pt;
-  text-align: center;
-}
-#headerFooter.expanded #headerFooterExpand:before {
-  content: '\e60a';
-}
-#headerFooter.expanded .headerFooterInner {
-  height: 150px;
-}
-#headerFooter.expanded .headerFooterInner > div {
-  -webkit-transform: translate(0, 0);
 }
 .navbarHeader {
   font-weight: 100;
@@ -160,13 +146,18 @@ a:hover {
 }
 .title {
   font-size: 150%;
+  margin-bottom: 5px;
 }
 .title a {
   color: black;
   font-weight: bold;
 }
+.title a:hover {
+  color: #0099dd;
+}
 .social-links {
   height: 30px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 .social-links li {
@@ -308,6 +299,9 @@ a:hover {
 }
 .postHeader a {
   color: black;
+}
+.postHeader a:hover {
+  color: #0099dd;
 }
 .postHeader .postTitle {
   font-size: 250%;
