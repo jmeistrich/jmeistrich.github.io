@@ -1,4 +1,11 @@
 <div class="postHeader">
-    <span class="postTitle"><a href="{{ include.url }}">{{ include.title }}</a></span>
-    <span class="postDate">{{ include.date | date_to_string }}</span>
+    <div class="postTitle"><a href="{{ include.url }}">{{ include.title }}</a></div>
+    <div class="postMetadata">
+        <span class="postDate">{{ include.date | date_to_string }}</span>
+        <span class="postCategories">
+        {% for cat in include.categories %}
+            <span><a href="/{{ cat }}">{{ cat }}</a></span>
+        {% endfor %}
+        </span>
+    </div>
 </div>

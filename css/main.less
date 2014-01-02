@@ -43,7 +43,7 @@ a:hover   { color: #09d; }
 }
 
 .posts>li {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 
 // .postDate {
@@ -390,7 +390,7 @@ a:hover   { color: #09d; }
 .postHeader {
     position: relative;
     margin-bottom: 0.5em;
-    height: 40px;
+    // height: 40px;
     // background: #000;
     a {
         color: black;
@@ -398,20 +398,32 @@ a:hover   { color: #09d; }
 }
 
 .postHeader .postTitle {
-    float: left;
-    font-size: 200%;
+    // float: left;
+    font-size: 250%;
     // line-height: 200%;
     // font-weight: 100;
     padding: 10px 15px;
     height: 20px;
 }
 
+.postMetadata {
+    margin-top: 10px;
+}
+
+.postMetadata, .postMetadata a {
+    color: #999;
+}
+
+.postCategories>span {
+    padding: 0 10px;
+}
+
 .postHeader .postDate {
-    float: right;
+    // float: right;
     // background: #06a;
     padding: 10px 15px;
     height: 20px;
-    color: #333;
+    // color: #333;
 }
 
 .postContent {
@@ -420,29 +432,31 @@ a:hover   { color: #09d; }
 
 .postFooter {
     height: 30px;
-    border-top: 1px solid #ddd;
+    // border-top: 1px solid #ddd;
     margin-top: 15px;
-    >div {
-        float: left;
-        line-height: 30px;
-        border-left: 1px solid #ddd;
-        padding: 0 15px;
-        &:first-child {
-            border-left: none;
-        }
-        &:last-child {
-            border-right: none;
-        }
-    }
-    >div>div {
-        float: left;
-        &:not(:first-child) {
-            padding: 0 10px;
-        }
-    }
-    .readMore {
-        float: right;
-    }
+    margin-left: 15px;
+    // >div {
+    //     float: left;
+    //     line-height: 30px;
+    //     border-left: 1px solid #ddd;
+        // padding: 0 15px;
+    //     &:first-child {
+    //         border-left: none;
+    //     }
+    //     &:last-child {
+    //         border-right: none;
+    //     }
+    // }
+    // >div>div {
+    //     float: left;
+    //     &:not(:first-child) {
+    //         padding: 0 10px;
+    //     }
+    // }
+    // .readMore a {
+        // float: right;
+    //     color: #096;
+    // }
 }
 
 // .sidebar {

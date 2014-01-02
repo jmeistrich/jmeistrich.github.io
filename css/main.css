@@ -45,7 +45,7 @@ a:hover {
   margin-bottom: 2em;
 }
 .posts > li {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
 }
 /*****************************************************************************/
 /*
@@ -282,51 +282,36 @@ a:hover {
 .postHeader {
   position: relative;
   margin-bottom: 0.5em;
-  height: 40px;
 }
 .postHeader a {
   color: black;
 }
 .postHeader .postTitle {
-  float: left;
-  font-size: 200%;
+  font-size: 250%;
   padding: 10px 15px;
   height: 20px;
 }
+.postMetadata {
+  margin-top: 10px;
+}
+.postMetadata,
+.postMetadata a {
+  color: #999;
+}
+.postCategories > span {
+  padding: 0 10px;
+}
 .postHeader .postDate {
-  float: right;
   padding: 10px 15px;
   height: 20px;
-  color: #333;
 }
 .postContent {
   padding: 15px;
 }
 .postFooter {
   height: 30px;
-  border-top: 1px solid #ddd;
   margin-top: 15px;
-}
-.postFooter > div {
-  float: left;
-  line-height: 30px;
-  border-left: 1px solid #ddd;
-  padding: 0 15px;
-}
-.postFooter > div:first-child {
-  border-left: none;
-}
-.postFooter > div:last-child {
-  border-right: none;
-}
-.postFooter > div > div {
-  float: left;
-}
-.postFooter > div > div:not(:first-child) {
-  padding: 0 10px;
-}
-.postFooter .readMore {
-  float: right;
+  margin-left: 15px;
 }
 @media screen and (max-width: 580px) {
   .headerFooter {
