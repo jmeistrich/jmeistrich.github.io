@@ -76,7 +76,7 @@ a:hover {
   width: 800px;
   height: 60px;
   margin: 0 auto;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 .headerContent .headerLeft,
 .headerContent > div > div,
@@ -210,9 +210,11 @@ a:hover {
   color: #aaa;
 }
 .footer {
+  width: 800px;
+  margin: 0 auto;
   clear: both;
   color: #666;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   padding: 1em 0;
   overflow: hidden;
   text-align: center;
