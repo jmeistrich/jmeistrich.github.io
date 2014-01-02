@@ -61,6 +61,9 @@ a:hover {
 }
 .header {
   position: relative;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 60px;
 }
 .profile > div {
   background: url('/img/profile.jpg');
@@ -70,18 +73,23 @@ a:hover {
   border-radius: 50%;
 }
 .headerContent {
-  padding: 60px 0;
+  width: 800px;
+  height: 60px;
   margin: 0 auto;
-  width: 204px;
-  line-height: 30px;
-  text-align: center;
+  border-bottom: 1px solid #eee;
 }
-.headerContent a {
-  color: #999;
+.headerContent .headerLeft,
+.headerContent > div > div,
+.headerContent > div > ul {
+  float: left;
+}
+.headerContent .headerRight {
+  float: right;
 }
 .location {
   color: #999;
   position: relative;
+  margin-left: 20px;
   font-size: 14px;
   cursor: default !important;
 }
@@ -90,6 +98,7 @@ a:hover {
 }
 .about {
   font-size: 14px;
+  margin-right: 20px;
 }
 .location > span {
   margin-right: 8px;
@@ -156,9 +165,7 @@ a:hover {
   color: #0099dd;
 }
 .social-links {
-  height: 30px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  height: 60px;
 }
 .social-links li {
   float: left;
@@ -168,8 +175,8 @@ a:hover {
 }
 .social-links li div {
   width: 30px;
-  height: 30px;
-  line-height: 30px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
 }
 .hb,
@@ -305,7 +312,7 @@ a:hover {
 }
 .postHeader .postTitle {
   font-size: 250%;
-  padding: 10px 15px;
+  padding: 10px 0;
   height: 20px;
   font-family: 'Roboto Slab', serif;
 }
@@ -322,11 +329,11 @@ a:hover {
   padding: 0 10px;
 }
 .postHeader .postDate {
-  padding: 10px 15px;
+  padding: 10px 0;
   height: 20px;
 }
 .postContent {
-  padding: 15px;
+  padding: 15px 0;
   font-family: 'Merriweather', sans-serif;
 }
 .postFooter {

@@ -5,6 +5,7 @@
 /*****************************************************************************/
 
 @hoverColor: #09d;
+@headerHeight: 60px;
 
 /* Global Reset */
 * {
@@ -93,6 +94,10 @@ a:hover   { color: @hoverColor; }
     // background: black;
     // color: white;
     // font-size: 115%;
+    height: @headerHeight;
+    line-height: @headerHeight;
+    margin-bottom: 60px;
+    // padding-bottom: 10px;
 }
 
 .profile {
@@ -107,21 +112,31 @@ a:hover   { color: @hoverColor; }
 }
 
 .headerContent {
-    padding: 60px 0;
-    // padding-bottom: 10px;
+    width: @contentWidth;
+    height: @headerHeight;
     margin: 0 auto;
-    width: 204px;
-    line-height: 30px;
-    text-align: center;
-    a {
-        color: #999;
+    .headerLeft, >div>div, >div>ul {
+        float: left;
     }
+    .headerRight {
+        float: right;
+    }
+    // padding: 60px 0;
+    // // padding-bottom: 10px;
+    // margin: 0 auto;
+    // width: 204px;
+    // line-height: 30px;
+    // text-align: center;
+    // a {
+    //     color: #999;
+    // }
+    border-bottom: 1px solid #eee;
 }
 
 .location {
     color: #999;
     position: relative;
-    // margin-left: 15px;
+    margin-left: 20px;
     // display: inline;
     font-size: 14px;
     cursor: default !important;
@@ -132,6 +147,7 @@ a:hover   { color: @hoverColor; }
 
 .about {
     font-size: 14px;
+    margin-right: 20px;
 }
 
 .location>span {
@@ -254,9 +270,9 @@ a:hover   { color: @hoverColor; }
   // width: 100%;
   // margin: 0 0 10 0;
   // list-style:square;
-  height: 30px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  height: @headerHeight;
+  // margin-top: 5px;
+  // margin-bottom: 10px;
 }
 
 .social-links li {
@@ -266,8 +282,8 @@ a:hover   { color: @hoverColor; }
   font-size: 14pt;
   div {
     width: 30px;
-    height: 30px;
-    line-height: 30px;
+    height: @headerHeight;
+    line-height: @headerHeight;
     text-align: center;
   }
   // text-indent: -9999px;
@@ -436,7 +452,7 @@ a:hover   { color: @hoverColor; }
     // font-weight: 800;
     // line-height: 200%;
     // font-weight: 100;
-    padding: 10px 15px;
+    padding: 10px 0;
     height: 20px;
     font-family: 'Roboto Slab', serif;
 }
@@ -458,13 +474,13 @@ a:hover   { color: @hoverColor; }
 .postHeader .postDate {
     // float: right;
     // background: #06a;
-    padding: 10px 15px;
+    padding: 10px 0;
     height: 20px;
     // color: #333;
 }
 
 .postContent {
-    padding: 15px;
+    padding: 15px 0;
     font-family: 'Merriweather', sans-serif;
 }
 
