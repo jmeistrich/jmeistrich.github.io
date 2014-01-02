@@ -6,6 +6,8 @@ categories: travel productivity
 
 This is the **biggest question** that I'm trying to figure out.
 
+
+
 I used to think that a desk with the most monitors and pixels would make me the most productive. At work I had a 30" monitor, two 22" monitors, a 19" touchscreen, and up to three laptops on my desk at one time. At home I had two 30" monitors. But I was not as productive as I could be. I worked at an office in a collaboration space where people constantly walked in an out, and I had a lot of meetings and emails to respond to. I didn't get to work until noon, had lunch, and got started working at 2. There was a lot of sharing of ideas, but I often didn't get any real work done until everyone left at 6 and I could work quietly until 10. Sometimes I stayed until 1 AM when I was really in the zone.
 
 I thought I'd be more productive after I quit and was working from home with nobody distracting me, no meetings, and no emails asking anything of me. But after a period of increased productivity, it started to actually get worse. I'd sit quietly at my computer for 12 hours and get maybe 4 hours of real work done. I could not fight off the distractions of being comfortable at home. After every small milestone or food or bathroom break, I would check my email, Twitter, Facebook, TechCrunch, HackerNews, Reddit blogs, and webcomics to see if there was anything new. I'd notice a new episode of one of my favorite shows and put 22 minutes into that. Then I'd get back to work when I was bored of being bored, sometimes an hour later. And then I'd have to pee again.

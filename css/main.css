@@ -71,8 +71,7 @@ a:hover {
   border-radius: 50%;
 }
 .headerContent {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 60px;
   margin: 0 auto;
   width: 204px;
   line-height: 35px;
@@ -94,23 +93,51 @@ a:hover {
 .header a {
   text-decoration: none;
 }
-.headerFooter {
+#headerFooter {
   width: 800px;
   margin: 0 auto;
   line-height: 25px;
   margin-bottom: 40px;
 }
-.headerFooter .headerFooterInner {
-  width: 400px;
-  height: 200px;
+.headerFooterInner {
+  width: 480px;
+  height: 0;
+  overflow: hidden;
   margin: 0 auto;
+  padding-top: 20px;
+  -webkit-transition: height 0.3s;
 }
-.headerFooter .headerFooterInner > div {
-  padding: 10px 0 10px 100px;
+.headerFooterInner > div {
+  -webkit-transform: translate(0, -200px);
+  -webkit-transition: -webkit-transform 0.3s;
+  -webkit-transform-origin: 0 0;
+  padding: 0 40px;
   float: left;
+  text-align: center;
+  width: 240px;
+  box-sizing: border-box;
 }
-.headerFooter .headerFooterInner:after {
+.headerFooterInner > div:first-child {
+  text-align: right;
+}
+.headerFooterInner > div:last-child {
+  text-align: left;
+}
+.headerFooterInner:after {
   clear: both;
+}
+#headerFooterExpand {
+  font-size: 16pt;
+  text-align: center;
+}
+#headerFooter.expanded #headerFooterExpand:before {
+  content: '\e60a';
+}
+#headerFooter.expanded .headerFooterInner {
+  height: 150px;
+}
+#headerFooter.expanded .headerFooterInner > div {
+  -webkit-transform: translate(0, 0);
 }
 .navbarHeader {
   font-weight: 100;
@@ -124,18 +151,7 @@ a:hover {
 .headerFooterRight {
   float: right;
 }
-.headerFooter > div > div {
-  padding: 0 20px;
-}
-.headerFooter > div > div:first-child {
-  padding-left: 15px;
-  border-left: none;
-}
-.headerFooter > div > div:last-child {
-  padding-right: 15px;
-  border-right: none;
-}
-.headerFooter > div > div span {
+#headerFooter > div > div span {
   margin-left: 5px;
   font-weight: 100;
   color: #bbb;
@@ -158,13 +174,18 @@ a:hover {
   font-size: 14pt;
 }
 .social-links li div {
-  color: #999;
   width: 30px;
   height: 30px;
   line-height: 30px;
   text-align: center;
 }
-.social-links li div:hover {
+.hb,
+.social-links div {
+  cursor: pointer;
+  color: #999;
+}
+.hb:hover,
+.social-links div:hover {
   color: black;
 }
 .headerButtons {
@@ -314,7 +335,7 @@ a:hover {
   margin-left: 15px;
 }
 @media screen and (max-width: 580px) {
-  .headerFooter {
+  #headerFooter {
     height: 70px;
   }
   .headerFooterRight {

@@ -23,9 +23,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-location-arrow:before {
-	content: "\e600";
-}
 .icon-map-marker:before {
 	content: "\e601";
 }
@@ -46,4 +43,13 @@
 }
 .icon-envelope-alt:before {
 	content: "\e607";
+}
+.icon-ellipsis-horizontal:before {
+	content: "\e600";
+}
+.icon-caret-down:before {
+	content: "\e609";
+}
+.icon-caret-up:before {
+	content: "\e60a";
 }

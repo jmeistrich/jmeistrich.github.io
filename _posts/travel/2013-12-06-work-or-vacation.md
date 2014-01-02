@@ -13,6 +13,8 @@ You get used to repeatedly answering the same questions when you spend a lot of 
 <li>Are you traveling for work or holiday?</li>
 </ul>
 
+
+
 I have a little bit of trouble with the first one. I'm expected to answer with the city I live in, but I don't live anywhere. So am I from San Diego because I was born there? Or am I from San Francisco because that's where I last had an apartment? Or am I from Seattle because I most recently spent a a couple months there? After a year of traveling where will I be "from?" I'm currently just saying California and going into more detail if we keep talking.
 
 But the most vexing question for me is <b>"work or holiday?"</b> On my last trip, it was easy. I was on holiday. Sure, I was doing some work here and there, but I was primarily on holiday.
