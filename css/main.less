@@ -74,6 +74,7 @@ a:hover   { color: @hoverColor; }
 
 .container {
     max-width: @contentWidth;
+    padding: 0 10px;
     margin: 0 auto;
     text-align: left;
 }
@@ -113,10 +114,14 @@ a:hover   { color: @hoverColor; }
 }
 
 .headerContent {
-    width: @contentWidth;
+    max-width: @contentWidth;
     height: @headerHeight;
     margin: 0 auto;
-    .headerLeft, >div>div, >div>ul {
+    font-family: "Merriweather";
+    span {
+        vertical-align: middle;
+    }
+    .headerLeft {
         float: left;
     }
     .headerRight {
@@ -134,12 +139,22 @@ a:hover   { color: @hoverColor; }
     border-bottom: 1px solid @borderColor;
 }
 
+.headerRight>span {
+    margin-right: 40px;
+    span {
+        margin-left: 3px;
+        font-weight: 100;
+        color: #ddd;
+        display: none;
+    }
+}
+
 .location {
     color: #999;
     position: relative;
     margin-left: 20px;
     // display: inline;
-    font-size: 14px;
+    // font-size: 14px;
     cursor: default !important;
     &:hover {
         color: #999 !important;
@@ -160,7 +175,7 @@ a:hover   { color: @hoverColor; }
     // display: block;
     position: relative;
     // left: -15px;
-    top: 2px;
+    top: -1px;
 }
 
 .header a {
@@ -256,8 +271,10 @@ a:hover   { color: @hoverColor; }
 
 .title {
     // display: inline-block;
+    // float: left;
     font-size: 150%;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
+    font-family: "Roboto Sans";
     a {
         color: black;
         font-weight: bold;
@@ -267,11 +284,14 @@ a:hover   { color: @hoverColor; }
     }
 }
 
+@socialHeight: 30px;
+
 .social-links {
   // width: 100%;
   // margin: 0 0 10 0;
   // list-style:square;
-  height: @headerHeight;
+  // height: @headerHeight;
+  height: @socialHeight;
   // margin-top: 5px;
   // margin-bottom: 10px;
 }
@@ -283,8 +303,8 @@ a:hover   { color: @hoverColor; }
   font-size: 14pt;
   div {
     width: 30px;
-    height: @headerHeight;
-    line-height: @headerHeight;
+    height: @socialHeight;
+    line-height: @socialHeight;
     text-align: center;
   }
   // text-indent: -9999px;
@@ -293,11 +313,15 @@ a:hover   { color: @hoverColor; }
   // border-radius: 3px;
 }
 
+.hb {
+    cursor: pointer;
+}
+
 .hb, .social-links div {
     cursor: pointer;
-    color: #999;
+    color: #666;
     &:hover {
-        color: black;
+        // color: black;
     }
 }
 
@@ -449,19 +473,20 @@ a:hover   { color: @hoverColor; }
     }
 }
 
-.postHeader .postTitle {
+.postTitle {
     // float: left;
     font-size: 250%;
+    line-height: 45px;
     // font-weight: 800;
     // line-height: 200%;
     // font-weight: 100;
-    padding: 10px 0;
-    height: 20px;
+    // padding: 10px 0;
+    // height: 20px;
     font-family: 'Roboto Slab', serif;
 }
 
 .postMetadata {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .postMetadata, .postMetadata a {
@@ -574,16 +599,23 @@ a:hover   { color: @hoverColor; }
     // }
 // }
 
-@media screen and (max-width: 580px)
+@media screen and (max-width: 700px)
 {
-    #headerFooter {
-        height: 70px;
+    .headerRight {
+        display: none;
     }
-    .headerFooterRight {
-        clear: both;
-        margin-top: 5px;
-        float: left;
+    .headerLeft {
+        text-align: center;
+        float: none !important;
     }
+    // #headerFooter {
+    //     height: 70px;
+    // }
+    // .headerFooterRight {
+    //     clear: both;
+    //     margin-top: 5px;
+    //     float: left;
+    // }
     // .container {
     //     width: 100%;
     // }
@@ -592,8 +624,13 @@ a:hover   { color: @hoverColor; }
     // }
 }
 
-
-
+@media screen and (max-width: 500px)
+{
+    .postTitle {
+        font-size: 200%;
+        line-height: 40px;
+    }
+}
 
 
 

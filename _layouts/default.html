@@ -13,27 +13,29 @@
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <div class="header">
-            <div class="headerContent">
-                <div class="headerLeft">
-                <!-- <a class="profile" href="/"><div></div></a> -->
-                <div class="title"><a href="/">Jay Meistrich</a></div>
-                <div class="hb location"><span class="icon-map-marker"></span>Maui, Hawaii</div>
-                </div>
-                <div class="headerRight">
-                <div class="about"><a class="hb" href="/about">About Me</a></div>
-                <ul class="social-links">
-                    <li><a href="http://www.facebook.com/jayzus"><div class="icon-facebook"></div></a></li>
-                    <li><a href="http://www.twitter.com/jmeistrich"><div class="icon-twitter"></div></a></li>
-                    <li><a href="http://www.linkedin.com/in/jmeistrich"><div class="icon-linkedin"></div></a></li>
-                    <li><a href="https://plus.google.com/113790725575874436353"><div class="icon-google-plus"></div></a></li>
-                    <li><a href="http://github.com/jmeistrich"><div class="icon-github"></div></a></li>
-                    <li><a href="mailto:jay@mei.st"><div class="icon-envelope-alt"></div></a></li>
-                </ul>
+        <div class="container">
+            <div class="header">
+                <div class="headerContent">
+                    <div class="headerLeft">
+                        <!-- <a class="profile" href="/"><div></div></a> -->
+                        <span class="title"><a href="/">Jay Meistrich</a></span>
+                        <span class="hb location"><span class="icon-map-marker"></span>Maui, Hawaii</span>
+                    </div>
+                    <div class="headerRight">
+                        <span>
+                            <a class="hb" href="/">All</a>
+                            <span>{{ site.posts.size}}</span>
+                        </span>
+                        {% for category in site.categories %}
+                        <span>
+                            <a class="hb" href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                            <span>{{ category[1].size}}</span>
+                        </span>
+                        {% endfor %}
+                        <a class="hb" href="/about">About Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="content">
             {{ content }}
             </div>
@@ -74,32 +76,32 @@
                     </ul>
                 </div>
             </div> -->
-        </div>
-        <div class="footer">
-            <div id="headerFooter">
-                <div class="headerFooterInner">
-                    <div>
-                        <div class="navbarHeader">Categories</div>
+            <div class="footer">
+                <div id="headerFooter">
+                    <div class="headerFooterInner">
                         <div>
-                            <a href="/">All</a>
-                            <span>{{ site.posts.size}}</span>
+                            <div class="navbarHeader">Categories</div>
+                            <div>
+                                <a href="/">All</a>
+                                <span>{{ site.posts.size}}</span>
+                            </div>
+                            {% for category in site.categories %}
+                            <div>
+                                <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+                                <span>{{ category[1].size}}</span>
+                            </div>
+                            {% endfor %}
+                            <div><a href="">Archive</a></div>
                         </div>
-                        {% for category in site.categories %}
                         <div>
-                            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                            <span>{{ category[1].size}}</span>
+                            <div class="navbarHeader">Pages</div>
+                            <div><a href="/backpack">What's In My Backpack</a></div>
+                            <div><a href="">Why I'm Traveling</a></div>
                         </div>
-                        {% endfor %}
-                        <div><a href="">Archive</a></div>
-                    </div>
-                    <div>
-                        <div class="navbarHeader">Pages</div>
-                        <div><a href="/backpack">What's In My Backpack</a></div>
-                        <div><a href="">Why I'm Traveling</a></div>
                     </div>
                 </div>
+                <a href="/">Jay Meistrich</a> © 2014
             </div>
-            <a href="/">Jay Meistrich</a> © 2014
         </div>
     </body>
 </html>

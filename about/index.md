@@ -3,6 +3,16 @@ layout: page
 title: Jay Meistrich
 ---
 
+#Contact
+<ul class="social-links">
+<li><a href="http://www.facebook.com/jayzus"><div class="icon-facebook"></div></a></li>
+<li><a href="http://www.twitter.com/jmeistrich"><div class="icon-twitter"></div></a></li>
+<li><a href="http://www.linkedin.com/in/jmeistrich"><div class="icon-linkedin"></div></a></li>
+<li><a href="https://plus.google.com/113790725575874436353"><div class="icon-google-plus"></div></a></li>
+<li><a href="http://github.com/jmeistrich"><div class="icon-github"></div></a></li>
+<li><a href="mailto:jay@mei.st"><div class="icon-envelope-alt"></div></a></li>
+</ul>
+
 #Past
 
 I studied at [Carnegie Mellon University](http://cmu.edu).
