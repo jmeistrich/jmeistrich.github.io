@@ -18,7 +18,7 @@ html, body { height: 100%; }
 
 body {
     // background-color: #FFF;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Merriweather", Helvetica, Arial, sans-serif;
     font-size: small;
     line-height: 26px;
     font-size: 15px;
@@ -98,8 +98,23 @@ a:hover   { color: @hoverColor; }
     // font-size: 115%;
     height: @headerHeight;
     line-height: @headerHeight;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     // padding-bottom: 10px;
+}
+
+.headerCategories {
+    text-align: center;
+    margin-bottom: 50px;
+    >span {
+        margin: 0 20px;
+        font-size: 17px;
+        span {
+            margin-left: 3px;
+            font-weight: 100;
+            color: #ddd;
+            // display: none;
+        }
+    }
 }
 
 .profile {
@@ -139,16 +154,6 @@ a:hover   { color: @hoverColor; }
     border-bottom: 1px solid @borderColor;
 }
 
-.headerRight>span {
-    margin-right: 40px;
-    span {
-        margin-left: 3px;
-        font-weight: 100;
-        color: #ddd;
-        display: none;
-    }
-}
-
 .location {
     color: #999;
     position: relative;
@@ -185,7 +190,7 @@ a:hover   { color: @hoverColor; }
 }
 
 #headerFooter {
-    width: @contentWidth;
+    max-width: @contentWidth;
     margin: 0 auto;
     margin-bottom: 40px;
     // text-align: center;
@@ -193,7 +198,7 @@ a:hover   { color: @hoverColor; }
 }
 
 .headerFooterInner {
-    width: 480px;
+    max-width: 480px;
     height: 150px;
     margin: 0 auto;
     padding-top: 20px;
@@ -357,7 +362,7 @@ a:hover   { color: @hoverColor; }
 }
 
 .footer {
-    width: @contentWidth;
+    max-width: @contentWidth;
     margin: 0 auto;
     clear: both;
     // font-size: 80%;
@@ -601,13 +606,13 @@ a:hover   { color: @hoverColor; }
 
 @media screen and (max-width: 700px)
 {
-    .headerRight {
-        display: none;
-    }
-    .headerLeft {
-        text-align: center;
-        float: none !important;
-    }
+    // .headerRight {
+    //     display: none;
+    // }
+    // .headerLeft {
+    //     text-align: center;
+    //     float: none !important;
+    // }
     // #headerFooter {
     //     height: 70px;
     // }
@@ -629,9 +634,9 @@ a:hover   { color: @hoverColor; }
     .posts>li {
         margin-bottom: 4em;
     }
-    .header {
-        margin-bottom: 20px;
-    }
+    // .header {
+    //     margin-bottom: 20px;
+    // }
     .postTitle {
         font-size: 200%;
         line-height: 40px;

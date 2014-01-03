@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
   font-size: small;
   line-height: 26px;
   font-size: 15px;
@@ -64,7 +64,20 @@ a:hover {
   position: relative;
   height: 60px;
   line-height: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+}
+.headerCategories {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.headerCategories > span {
+  margin: 0 20px;
+  font-size: 17px;
+}
+.headerCategories > span span {
+  margin-left: 3px;
+  font-weight: 100;
+  color: #ddd;
 }
 .profile > div {
   background: url('/img/profile.jpg');
@@ -89,15 +102,6 @@ a:hover {
 .headerContent .headerRight {
   float: right;
 }
-.headerRight > span {
-  margin-right: 40px;
-}
-.headerRight > span span {
-  margin-left: 3px;
-  font-weight: 100;
-  color: #ddd;
-  display: none;
-}
 .location {
   color: #999;
   position: relative;
@@ -121,12 +125,12 @@ a:hover {
   text-decoration: none;
 }
 #headerFooter {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 .headerFooterInner {
-  width: 480px;
+  max-width: 480px;
   height: 150px;
   margin: 0 auto;
   padding-top: 20px;
@@ -220,7 +224,7 @@ a:hover {
   color: #aaa;
 }
 .footer {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   clear: both;
   color: #666;
@@ -352,21 +356,9 @@ a:hover {
   margin-top: 15px;
   margin-left: 15px;
 }
-@media screen and (max-width: 700px) {
-  .headerRight {
-    display: none;
-  }
-  .headerLeft {
-    text-align: center;
-    float: none !important;
-  }
-}
 @media screen and (max-width: 500px) {
   .posts > li {
     margin-bottom: 4em;
-  }
-  .header {
-    margin-bottom: 20px;
   }
   .postTitle {
     font-size: 200%;

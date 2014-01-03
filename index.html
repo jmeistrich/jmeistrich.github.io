@@ -4,6 +4,18 @@ title: Jay Meistrich
 ---
 
 <div id="home">
+    <div class="headerCategories">
+        <span>
+            <a class="hb" href="/">All</a>
+            <span>{{ site.posts.size}}</span>
+        </span>
+        {% for category in site.categories %}
+        <span>
+            <a class="hb" href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+            <span>{{ category[1].size}}</span>
+        </span>
+        {% endfor %}
+    </div>
     <ul class="posts">
     {% for post in site.posts %}
         <li class="post">

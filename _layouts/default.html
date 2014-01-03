@@ -22,16 +22,6 @@
                         <span class="hb location"><span class="icon-map-marker"></span>Maui, Hawaii</span>
                     </div>
                     <div class="headerRight">
-                        <span>
-                            <a class="hb" href="/">All</a>
-                            <span>{{ site.posts.size}}</span>
-                        </span>
-                        {% for category in site.categories %}
-                        <span>
-                            <a class="hb" href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                            <span>{{ category[1].size}}</span>
-                        </span>
-                        {% endfor %}
                         <a class="hb" href="/about">About Me</a>
                     </div>
                 </div>
