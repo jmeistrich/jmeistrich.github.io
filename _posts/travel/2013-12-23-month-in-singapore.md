@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "One Month in Singapore"
+title:  "A Month in Singapore"
 categories: travel
 ---
 
