@@ -22,7 +22,7 @@
                         <span class="hb location"><span class="icon-map-marker"></span>Maui, Hawaii</span>
                     </div>
                     <div class="headerRight">
-                        <a class="hb" href="/about">About Me</a>
+                        <a class="hb about" href="/about">About Me</a>
                     </div>
                 </div>
             </div>
@@ -67,29 +67,6 @@
                 </div>
             </div> -->
             <div class="footer">
-                <div id="headerFooter">
-                    <div class="headerFooterInner">
-                        <div>
-                            <div class="navbarHeader">Categories</div>
-                            <div>
-                                <a href="/">All</a>
-                                <span>{{ site.posts.size}}</span>
-                            </div>
-                            {% for category in site.categories %}
-                            <div>
-                                <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-                                <span>{{ category[1].size}}</span>
-                            </div>
-                            {% endfor %}
-                            <div><a href="">Archive</a></div>
-                        </div>
-                        <div>
-                            <div class="navbarHeader">Pages</div>
-                            <div><a href="/backpack">What's In My Backpack</a></div>
-                            <div><a href="">Why I'm Traveling</a></div>
-                        </div>
-                    </div>
-                </div>
                 <a href="/">Jay Meistrich</a> © 2014
             </div>
         </div>

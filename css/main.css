@@ -111,10 +111,6 @@ a:hover {
 .location:hover {
   color: #999 !important;
 }
-.about {
-  font-size: 14px;
-  margin-right: 20px;
-}
 .location > span {
   margin-right: 8px;
   font-size: 13pt;
@@ -268,7 +264,7 @@ a:hover {
 .post h1,
 .page h1 {
   margin-bottom: 1em;
-  font-size: 180%;
+  font-size: 150%;
 }
 .post h1:not(:first-child),
 .page h1:not(:first-child) {
@@ -277,7 +273,7 @@ a:hover {
 .post h2,
 .page h2 {
   margin-bottom: 1em;
-  font-size: 150%;
+  font-size: 135%;
 }
 .post h2:not(:first-child),
 .page h2:not(:first-child) {
@@ -356,12 +352,38 @@ a:hover {
   margin-top: 15px;
   margin-left: 15px;
 }
-@media screen and (max-width: 500px) {
+#smallAbout {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  .headerLeft {
+    text-align: center;
+    float: none !important;
+  }
+  .headerRight {
+    display: none;
+  }
+  #smallAbout {
+    display: block;
+  }
+  .headerCategories {
+    margin-bottom: 20px;
+  }
+  .headerCategories > span {
+    display: block;
+    line-height: 35px;
+  }
   .posts > li {
     margin-bottom: 4em;
   }
+  .about {
+    font-size: 17px;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
   .postTitle {
-    font-size: 200%;
+    font-size: 160%;
     line-height: 40px;
   }
 }
