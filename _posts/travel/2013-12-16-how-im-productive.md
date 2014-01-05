@@ -4,7 +4,7 @@ title:  "How I'm Productive"
 categories: productivity
 ---
 
-After experimenting with [productivity while traveling](({% post_url travel/2013-11-12-productivity %}) for the past month, I've come much closer to figuring out what works for me.
+After experimenting with [productivity while traveling]({% post_url travel/2013-11-12-productivity %}) for the past month, I've come much closer to figuring out what works for me.
 
 
 

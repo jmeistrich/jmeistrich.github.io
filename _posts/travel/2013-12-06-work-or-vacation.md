@@ -24,7 +24,7 @@ But how do I define what I'm currently doing? If I say I'm working they ask me h
 <ul>
 <li>Oh an IT guy! You must be rich. Why are you staying in a hostel?</li>
 <li>Why come all the way here if you're just going to sit on your computer?</li>
-<li>If you're trying to save money, which not live somewhere cheaper? Let me tell you about cheaper places...</li>
+<li>If you're trying to save money, why not live somewhere cheaper? Let me tell you about cheaper places...</li>
 <li>You should enjoy your vacation more. Come out to the pubs with us tonight.</li>
 </ul>
 
