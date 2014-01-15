@@ -343,9 +343,16 @@ a:hover {
   padding: 10px 0;
   height: 20px;
 }
-.postContent {
+.postContent,
+.postExcerpt {
   padding: 15px 0;
   font-family: 'Merriweather', sans-serif;
+}
+.postContent {
+  display: none;
+}
+.readMore {
+  cursor: pointer;
 }
 .postFooter {
   height: 30px;
