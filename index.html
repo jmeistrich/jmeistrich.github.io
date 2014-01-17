@@ -23,6 +23,9 @@ title: Jay Meistrich
             {% include postheader.html title=post.title date=post.date categories=post.categories url=post.url %}
             <div class="postExcerpt" id='excerpt{{ post.date | date: "%y%m%d"}}'>
             {{ post.excerpt }}
+            <div class="postFooter">
+                <div class="readMore" onclick="read{{ post.date | date: '%y%m%d' }}()"><a>Read More</a></div>
+            </div>
             </div>
             <div class="postContent" id='content{{ post.date | date: "%y%m%d"}}'>
             {{ post.content }}
@@ -31,9 +34,6 @@ title: Jay Meistrich
                 document.getElementById('excerpt{{ post.date | date: "%y%m%d"}}').style.display = 'none';
                 document.getElementById('content{{ post.date | date: "%y%m%d"}}').style.display = 'block';
             }</script>
-            <div class="postFooter">
-                <div class="readMore" onclick="read{{ post.date | date: '%y%m%d' }}()"><a>Read More</a></div>
-            </div>
         </li>
     {% endfor %}
     </ul>
