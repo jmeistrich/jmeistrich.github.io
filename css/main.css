@@ -60,6 +60,9 @@ a:hover {
   margin-top: 2em;
   margin-left: -25%;
 }
+.posts .postContent {
+  display: none;
+}
 /*****************************************************************************/
 /*
 /* Site
@@ -358,9 +361,6 @@ a:hover {
 .postExcerpt {
   padding: 15px 0;
   font-family: 'Merriweather', sans-serif;
-}
-.postContent {
-  display: none;
 }
 .readMore {
   cursor: pointer;
