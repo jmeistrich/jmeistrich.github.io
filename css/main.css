@@ -82,10 +82,6 @@ a:hover {
   line-height: 35px;
   text-align: center;
 }
-.location {
-  color: #999;
-  position: relative;
-}
 .header {
   margin-bottom: 40px;
 }
@@ -128,9 +124,6 @@ a:hover {
   color: #999;
   position: relative;
   cursor: default !important;
-}
-.location:hover {
-  color: #999 !important;
 }
 .location > span {
   margin-right: 8px;
@@ -218,7 +211,6 @@ a:hover {
 .hb,
 .social-links div {
   cursor: pointer;
-  color: #666;
 }
 .headerButtons {
   float: right;
