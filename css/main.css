@@ -74,11 +74,20 @@ a:hover {
   margin: 0 auto;
   text-align: left;
 }
-.header {
+.headerContent {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  width: 204px;
+  line-height: 35px;
+  text-align: center;
+}
+.location {
+  color: #999;
   position: relative;
-  height: 60px;
-  line-height: 60px;
-  margin-bottom: 50px;
+}
+.header {
+  margin-bottom: 40px;
 }
 .headerCategories {
   text-align: center;
@@ -105,7 +114,6 @@ a:hover {
   height: 60px;
   margin: 0 auto;
   font-family: "Merriweather";
-  border-bottom: 1px solid #eeeeee;
 }
 .headerContent span {
   vertical-align: middle;
@@ -119,7 +127,6 @@ a:hover {
 .location {
   color: #999;
   position: relative;
-  margin-left: 20px;
   cursor: default !important;
 }
 .location:hover {
@@ -203,6 +210,7 @@ a:hover {
   height: 30px;
   line-height: 30px;
   text-align: center;
+  color: #999;
 }
 .hb {
   cursor: pointer;
@@ -367,7 +375,7 @@ a:hover {
 }
 .postFooter {
   height: 30px;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 #smallAbout {
   display: none;
