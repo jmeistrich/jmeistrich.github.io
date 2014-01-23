@@ -5,5 +5,7 @@ var itinerary = [
     '1/14', 'Auckland, NZ',
     '1/20', 'Tauranga, NZ',
     '1/22', 'Waitomo, NZ',
-    '1/23', 'Rotorua, NZ'
+    '1/23', 'Rotorua, NZ',
+    '1/25', 'Napier, NZ',
+    '1/26', 'Wellington, NZ'
 ];
