@@ -30,6 +30,30 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
 }
 
+h1 {
+        &:not(:first-child) {
+            margin-top: 2em;
+        }
+        margin-bottom: 0.5em;
+        font-size: 150%;
+    }
+
+    h2 {
+        &:not(:first-child) {
+            margin-top: 1.5em;
+        }
+        margin-bottom: 0.5em;
+        font-size: 135%;
+    }
+
+    h3 {
+        &:not(:first-child) {
+            margin-top: 1.5em;
+        }
+        margin-bottom: 0.25em;
+        font-size: 120%;
+    }
+
 p + p, ul + p {
     margin-top: 1em;
 }
@@ -423,29 +447,6 @@ a:hover   { color: @hoverColor; }
 
 .post, .page {
     margin-bottom: 5em;
-    h1 {
-        &:not(:first-child) {
-            margin-top: 2em;
-        }
-        margin-bottom: 1em;
-        font-size: 150%;
-    }
-
-    h2 {
-        &:not(:first-child) {
-            margin-top: 1.5em;
-        }
-        margin-bottom: 1em;
-        font-size: 135%;
-    }
-
-    h3 {
-        &:not(:first-child) {
-            margin-top: 1.5em;
-        }
-        margin-bottom: 0.25em;
-        font-size: 120%;
-    }
 }
 .post ul {
     list-style-type: disc;
@@ -735,4 +736,16 @@ a:hover   { color: @hoverColor; }
 .workDesc {
   margin-top: 10px;
   line-height: 20px;
+}
+
+.flatlist {
+    list-style-type: none;
+}
+
+.gray {
+    color: #666;
+}
+
+.ml10 {
+    margin-left: 10px;
 }
