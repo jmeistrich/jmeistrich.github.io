@@ -14,4 +14,4 @@ This might not be possible. I might get tired of it. I might want to stop and se
 
 ##Tentative Itinerary (subject to change):
 
-{% include itinerary.md %}
+{% include itinerary.html %}

@@ -76,14 +76,13 @@ a:hover {
 }
 .headerContent {
   padding-top: 40px;
-  padding-bottom: 60px;
   margin: 0 auto;
   width: 204px;
   line-height: 35px;
   text-align: center;
 }
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .headerCategories {
   text-align: center;
@@ -406,4 +405,47 @@ a:hover {
     font-size: 180%;
     line-height: 40px;
   }
+}
+.flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.worklink {
+  margin-bottom: 30px;
+}
+.workLinks img {
+  margin: 0 10 0 0;
+  width: 225px;
+  height: 150px;
+}
+.workInfo {
+  margin-left: 20px;
+}
+.workHeader {
+  float: left;
+  font-size: 16pt;
+  color: #666;
+}
+.workType {
+  float: right;
+  font-size: 11pt;
+  color: #666;
+}
+.workSubtitle {
+  clear: both;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+.workDesc {
+  margin-top: 10px;
+  line-height: 20px;
 }
