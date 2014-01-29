@@ -38,7 +38,7 @@ I have to have both iOS and Android for testing apps on both platforms. I used t
 
 #Photography
 
-I used to have a Canon 5D Mk II, but I now prefer something small and inconspicuous, so it's light and trasportable and so people don't notice me taking pictures of them.
+I used to have a Canon 5D Mk II, but I now prefer something small and inconspicuous, something that's light and transportable and so people don't notice me taking pictures of them.
 
 **Olympus E-P5**<br>
 *I seriously love the stabilization on this camera.  It's amazing for night shots. And hand-held video looks like it's on a tripod or steadycam. Amazing.*
