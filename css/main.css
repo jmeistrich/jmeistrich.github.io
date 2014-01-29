@@ -449,3 +449,7 @@ a:hover {
 .ml10 {
   margin-left: 10px;
 }
+.ipdate {
+  width: 115px;
+  float: left;
+}
