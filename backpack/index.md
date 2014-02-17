@@ -9,8 +9,8 @@ I gave away and sold everything else I owned, so this is the full list of my pos
 
 #Backpack
 
-**Gregory Savant 58L**<br>
-*This backpack compresses very well so I usually fill it with about 30L, but if I need to carry extra food, presents, or cold-weather clothing, I can expand it. It opens from both bottom and top which is an absolute must for me.*
+**Mountain Designs Escape 40L**<br>
+*This backpack has a giant opening on the top/front so it's easy to pack and unpack and it has a zipper on the bottom to access my clothes. It has more small pockets than I'm used to from hiking packs which is quite nice. It expands and compresses well across the whole body of the pack so I can keep it small while I'm packing light. My old pack, the Gregory Savant 58L, was destroyed by motor oil in a luggage storage room in New Zealand so I replaced it with this and am happier with it.*
 
 **Marmot Kompressor Plus 20L**<br>
 *I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
@@ -99,4 +99,4 @@ They dry over night for easy washing.
 *Braun Series 7 razor, face soap, moisturizer*
 
 **Eye drops**<br>
-*I have to have them because of the LASIK. After three months I'm using them most days when I wake up, but sometimes don't need them. If I don't get much sleep my eyes are extra dry.*
+*I have to have them because of the LASIK. After five months I'm using them some days when I wake up tired, but most of the time I don't need them. If I don't get much sleep my eyes are extra dry.*
