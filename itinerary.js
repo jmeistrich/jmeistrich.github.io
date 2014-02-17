@@ -15,5 +15,6 @@ var itinerary = [
     '2/6',  'Christchurch, NZ',
     '2/7',  'Brisbane, AU',
     '2/8',  'Cruise in AU',
-    '2/15', 'Brisbane, AU'
+    '2/15', 'Brisbane, AU',
+    '2/17', 'Gold Coast, AU'
 ];
