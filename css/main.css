@@ -223,6 +223,9 @@ a:hover {
   text-align: center;
   color: #999;
 }
+.social-links li div:hover {
+  color: #0099dd;
+}
 .hb {
   cursor: pointer;
 }
