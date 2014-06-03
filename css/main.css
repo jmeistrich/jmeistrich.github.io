@@ -27,11 +27,12 @@ h6 {
   font-size: 100%;
 }
 h1 {
+  font-weight: 100;
   margin-bottom: 0.5em;
-  font-size: 150%;
+  font-size: 160%;
 }
 h1:not(:first-child) {
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 h2 {
   margin-bottom: 0.5em;
@@ -68,7 +69,7 @@ a:hover {
   margin-bottom: 2em;
 }
 .posts > li {
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   position: relative;
 }
 .posts > li:after {
@@ -78,7 +79,7 @@ a:hover {
   height: 1px;
   background: #eee;
   left: 50%;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: -25%;
 }
 .posts .postContent {
@@ -96,14 +97,14 @@ a:hover {
   text-align: left;
 }
 .headerContent {
-  padding-top: 40px;
+  padding-top: 20px;
   margin: 0 auto;
   width: 204px;
   line-height: 35px;
   text-align: center;
 }
 .header {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .headerCategories {
   text-align: center;
@@ -127,7 +128,6 @@ a:hover {
 }
 .headerContent {
   max-width: 800px;
-  height: 60px;
   margin: 0 auto;
   font-family: "Merriweather";
 }
@@ -330,12 +330,11 @@ a:hover {
   color: #0099dd;
 }
 .postTitle {
-  font-size: 250%;
-  line-height: 45px;
-  font-family: 'Roboto Slab', serif;
+  font-size: 150%;
+  font-weight: 100;
 }
 .postMetadata {
-  margin-top: 10px;
+  font-size: 90%;
 }
 .postMetadata,
 .postMetadata a {
@@ -352,7 +351,7 @@ a:hover {
 }
 .postContent,
 .postExcerpt {
-  padding: 15px 0;
+  padding: 12px 0;
   font-family: 'Merriweather', sans-serif;
 }
 .readMore {
@@ -364,38 +363,6 @@ a:hover {
 }
 #smallAbout {
   display: none;
-}
-@media screen and (max-width: 400px) {
-  .headerLeft {
-    text-align: center;
-    float: none !important;
-  }
-  .headerRight {
-    display: none;
-  }
-  #smallAbout {
-    display: block;
-  }
-  .headerCategories {
-    margin-bottom: 20px;
-  }
-  .headerCategories > span {
-    display: block;
-    line-height: 35px;
-  }
-  .posts > li {
-    margin-bottom: 4em;
-  }
-  .posts > li:after {
-    margin-top: 1.5em;
-  }
-  .about {
-    font-size: 17px;
-  }
-  .postTitle {
-    font-size: 180%;
-    line-height: 40px;
-  }
 }
 .flexbox {
   display: -webkit-box;

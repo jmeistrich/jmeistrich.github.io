@@ -10,7 +10,7 @@ I gave away and sold everything else I owned, so this is the full list of my pos
 #Backpack
 
 **Mountain Designs Escape 40L**<br>
-*This backpack has a giant opening on the top/front so it's easy to pack and unpack and it has a zipper on the bottom to access my clothes. It has more small pockets than I'm used to from hiking packs which is quite nice. It expands and compresses well across the whole body of the pack so I can keep it small while I'm packing light. My old pack, the Gregory Savant 58L, was destroyed by motor oil in a luggage storage room in New Zealand so I replaced it with this and am happier with it.*
+*This backpack has a giant opening on the top/front so it's easy to pack and unpack and it has a zipper on the bottom to access my clothes. It has more small pockets than I'm used to from hiking packs which is quite nice. It expands and compresses well across the whole body of the pack so I can keep it small while I'm packing light. It's balanced well to stand up straight, which turns out to be kind of a big deal. I've had five different backpacks over the past few years and done tons of research, and this bag is the best I've found.*
 
 **Marmot Kompressor Plus 20L**<br>
 *I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
