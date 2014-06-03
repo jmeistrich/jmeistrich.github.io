@@ -15,11 +15,11 @@ You get used to repeatedly answering the same questions when you spend a lot of 
 
 
 
-I have a little bit of trouble with the first one. I'm expected to answer with the city I live in, but I don't live anywhere. So am I from San Diego because I was born there? Or am I from San Francisco because that's where I last had an apartment? Or am I from Seattle because I most recently spent a a couple months there? After a year of traveling where will I be "from?" I'm currently just saying California and going into more detail if we keep talking.
+I have a little bit of trouble with the first one. I'm expected to answer with the city I live in, but I don't live anywhere. So am I from San Diego because I was born there? Or am I from San Francisco because that's where I last had an apartment? Or am I from Seattle because I most recently spent a a couple months there? After a year of traveling where will I be "from?" I'm just saying California and going into more detail if we keep talking.
 
 But the most vexing question for me is <b>"work or holiday?"</b> On my last trip, it was easy. I was on holiday. Sure, I was doing some work here and there, but I was primarily on holiday.
 
-But how do I define what I'm currently doing? If I say I'm working they ask me how I managed to get a job in Singapore, so that's the wrong answer. I'm not on vacation since I don't have a normal life to return to. So I'm not really sure how to answer the question. I'm currently saying "I'm traveling indefinitely while starting a software company." This then sparks even harder questions:
+But how do I define what I'm doing? If I say I'm working they ask me how I managed to get a job in Singapore, so that's the wrong answer. I'm not on vacation since I don't have a normal life to return to. So I'm not really sure how to answer the question. I'm currently saying "I'm traveling indefinitely while starting a software company." This then sparks even harder questions:
 
 <ul>
 <li>Oh an IT guy! You must be rich. Why are you staying in a hostel?</li>
