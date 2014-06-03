@@ -8,7 +8,7 @@ After experimenting with [productivity while traveling]({% post_url travel/2013-
 
 
 
-##Productive:
+#Productive:
 
 - Living an exciting life and not being bored
 - Make wasting time a conscious decision
@@ -17,7 +17,7 @@ After experimenting with [productivity while traveling]({% post_url travel/2013-
 - Fear of wasting battery life
 - Having something fun to do when I'm not working
 
-##Not Productive:
+#Not Productive:
 
 - Having internet access
 - Having too much fun
