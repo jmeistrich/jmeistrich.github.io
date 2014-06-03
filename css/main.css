@@ -71,7 +71,7 @@ a:hover {
   margin-bottom: 4em;
   position: relative;
 }
-.posts > li:after {
+.posts > li:not(:last-child):after {
   position: absolute;
   content: '';
   width: 50%;
@@ -330,10 +330,12 @@ a:hover {
   color: #0099dd;
 }
 .postTitle {
+  font-family: 'Roboto Slab', serif;
   font-size: 150%;
   font-weight: 100;
 }
 .postMetadata {
+  margin-top: 2px;
   font-size: 90%;
 }
 .postMetadata,
