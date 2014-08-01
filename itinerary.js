@@ -29,5 +29,7 @@ var itinerary = [
     '5/27', 'Frankfurt, DE',
     '6/3', 'Seattle, WA',
     '7/11', 'San Diego, CA',
-    '7/25', 'Stockholm, SE'
+    '7/25', 'Stockholm, SE',
+    '8/1', 'Brussels, BE',
+    '8/4', 'Amsterdam, NE'
 ];
