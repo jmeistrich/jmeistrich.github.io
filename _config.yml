@@ -1,5 +1,4 @@
 name: Jay Meistrich
 markdown: redcarpet
-pygments: true
-permalink: /:categories/:year/:month/:day/:title
+permalink: /blog/:title
 excerpt_separator: "\n\n\n\n"
