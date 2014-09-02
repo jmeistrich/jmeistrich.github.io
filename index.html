@@ -1,44 +1,46 @@
 ---
-layout: default
+layout: page
 title: Jay Meistrich
 ---
 
-<p>
-Hi, I'm Jay. I'm building <a href="http://moo.do">Moo.do</a> while traveling indefinitely and living out of a 40L backpack. Since this seems to be a fairly unusual thing to do, I'm writing down my thoughts and experiences. Since I also enjoy photography I'm posting my photos too.
-</p>
-<br>
-<a href="http://moo.do">Moo.do</a><br>
-<a href="/about">About me</a><br>
-<a href="http://picasaweb.google.com/jmeistrich">Photos</a><br>
-<a href="/backpack">What's in my backpack</a>
-<h1>Read first</h1>
-<ul class="flatlist">
-    <li><a href="{% post_url travel/2013-11-10-it-begins %}">Why I started traveling</a></li>
-    <li><a href="{% post_url travel/2013-11-20-lifestyles %}">Living a different lifestyle every season</a></li>
-    <li><a href="{% post_url travel/2013-12-16-how-im-productive %}">Being productive while traveling</a></li>
-    <li><a href="{% post_url travel/2013-12-01-cost %}">Travel is cheap</a></li>
-</ul>
+<div class="padded">
+    <p>
+    Hi, I'm Jay. I'm building <a href="http://moo.do">Moo.do</a> while traveling indefinitely and living out of a 40L backpack. Since this seems to be a fairly unusual thing to do, I'm writing down my thoughts and experiences. Since I also enjoy photography I'm posting my photos too.
+    </p>
+    <br>
+    <a href="http://moo.do">Moo.do</a><br>
+    <a href="/about">About me</a><br>
+    <a href="http://picasaweb.google.com/jmeistrich">Photos</a><br>
+    <a href="/backpack">What's in my backpack</a>
+    <h1>Read first</h1>
+    <ul class="flatlist">
+        <li><a href="{% post_url travel/2013-11-10-it-begins %}">Why I started traveling</a></li>
+        <li><a href="{% post_url travel/2013-11-20-lifestyles %}">Living a different lifestyle every season</a></li>
+        <li><a href="{% post_url travel/2013-12-16-how-im-productive %}">Being productive while traveling</a></li>
+        <li><a href="{% post_url travel/2013-12-01-cost %}">Travel is cheap</a></li>
+    </ul>
 
-<h1>Categories</h1>
-<ul class="flatlist">
-    <li>
-        <a href="/blog">All</a>
-        <span class="gray ml10">{{ site.posts.size}}</span>
-    </li>
-{% for category in site.categories %}
-    <li>
-        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-        <span class="gray ml10">{{ category[1].size}}</span>
-    </li>
-{% endfor %}
-</ul>
-
-<h1>Posts</h1>
-<ul class="flatlist">
-    {% for post in site.posts %}
-    <li>
-        <div class="ipdate">{{ post.date | date: "%b %d, %Y" }}</div>
-        <span class="iptitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
-    </li>
+    <h1>Categories</h1>
+    <ul class="flatlist">
+        <li>
+            <a href="/blog">All</a>
+            <span class="gray ml10">{{ site.posts.size}}</span>
+        </li>
+    {% for category in site.categories %}
+        <li>
+            <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
+            <span class="gray ml10">{{ category[1].size}}</span>
+        </li>
     {% endfor %}
-</ul>
+    </ul>
+
+    <h1>Posts</h1>
+    <ul class="flatlist">
+        {% for post in site.posts %}
+        <li>
+            <div class="ipdate">{{ post.date | date: "%b %d, %Y" }}</div>
+            <span class="iptitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
