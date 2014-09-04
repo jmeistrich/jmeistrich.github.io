@@ -63,6 +63,7 @@ body {
     font-size: 17px;
     line-height: 1.6;
     background: #f6f6f6;
+    color: #444;
 }
 
 a {
@@ -91,6 +92,11 @@ iframe[seamless]{
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
+    color: black;
+}
+
+strong, b {
+    color: black;
 }
 
 h1 {
@@ -99,6 +105,14 @@ h1 {
     }
     margin-bottom: 0.5em;
     font-size: 130%;
+    &:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        width: 7px;
+        height: 35px;
+        background: @colorBlue;
+    }
 }
 
 h2 {
