@@ -179,7 +179,6 @@ a:hover {
 .posts > li,
 .indexPost {
   margin-bottom: 4em;
-  position: relative;
 }
 .posts > li:not(:last-child):after,
 .indexPost:not(:last-child):after {
@@ -427,9 +426,6 @@ a:hover {
 }
 .post pre.terminal code {
   background-color: #333;
-}
-.postHeader {
-  position: relative;
 }
 .postHeader:before {
   content: ' ';
