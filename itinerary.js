@@ -36,5 +36,6 @@ var itinerary = [
     '8/11', 'Paris, FR',
     '8/17', 'Prague, CZ',
     '8/28', 'Krakow, PL',
-    '9/2', 'Vienna, AT'
+    '9/3', 'Budapest, HU',
+    '9/7', 'Vienna, AT'
 ];
