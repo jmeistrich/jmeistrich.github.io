@@ -42,5 +42,6 @@ var itinerary = [
     '9/19', 'Rome, IT',
     '9/23', 'Santorini, GR',
     '10/1', 'Athens, GR',
-    '10/3', 'Hong Kong, HK'
+    '10/3', 'Hong Kong, HK',
+    '10/25', 'Bali, ID'
 ];
