@@ -14,17 +14,14 @@
 
         <script>
         var itinerary = [
-            '10/25', 'Bali, ID',
-            '12/16', 'Bangkok, TH',
-            '12/20', 'Koh Phangan, TH',
-            '12/27', 'Bangkok, TH'
+            '1/2', 'Chiang Mai, TH'
         ];
         window.onload = function(){
             var today = new Date();
             var location;
             for(var i = 0; i < itinerary.length; i += 2)
             {
-                itinerary[i] += '/14';
+                itinerary[i] += '/15';
                 var date = new Date(itinerary[i]);
                 if(today < date)
                     break;
