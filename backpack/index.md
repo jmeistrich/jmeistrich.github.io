@@ -9,8 +9,8 @@ I gave away and sold everything else I owned, so this is the full list of my pos
 
 #Backpack
 
-**Mountain Designs Escape 40L**<br>
-*This backpack has a giant opening on the top/front so it's easy to pack and unpack and it has a zipper on the bottom to access my clothes. It has more small pockets than I'm used to from hiking packs which is quite nice. It expands and compresses well across the whole body of the pack so I can keep it small while I'm packing light. It's balanced well to stand up straight, which turns out to be kind of a big deal. I've had five different backpacks over the past few years and done tons of research, and this bag is the best I've found.*
+**Dakine Terminal 31L**<br>
+*This is basically just a regular school bag. It has a laptop pocket in the back which is very helpful for airport security. Big hiking bags are too big and heavy. This gets me under 10kg.*
 
 **Marmot Kompressor Plus 20L**<br>
 *I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
