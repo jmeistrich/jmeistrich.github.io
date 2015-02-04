@@ -5,12 +5,12 @@ title: What's In My Backpack
 
 I gave away and sold everything else I owned, so this is the full list of my possessions.
 
-
+![What's in my bag](/img/stuff.jpg)
 
 #Backpack
 
 **Dakine Terminal 31L**<br>
-*This is basically just a regular school bag. It has a laptop pocket in the back which is very helpful for airport security. Big hiking bags are too big and heavy. This gets me under 10kg.*
+*This is basically a regular school bag. It has a laptop pocket in the back which is very helpful for airport security. Big hiking bags are too big and heavy. This gets me under 10kg.*
 
 **Marmot Kompressor Plus 20L**<br>
 *I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
@@ -19,21 +19,19 @@ I gave away and sold everything else I owned, so this is the full list of my pos
 #Electronics
 
 **MacBook Pro Retina 15"**<br>
-*I can't do without retina. I run OS X and Windows 8 because I need both for development, but I mostly live in OS X unless I'm gaming or testing IE.*
+*I can't live without retina. I run Windows 8 in Parallels for when I need to test [Moo.do](http://moo.do) on Windows.*
 
 **iPad Air**<br>
-*I upgraded my iPad 3 to the Air because of the size and weight difference. It's a huge difference. I could get a Mini to save even more weight, but it's too close to phone sized for me.*
+*I use this is a sketch pad for UI ideas with [Adobe Draw](http://www.adobe.com/products/draw.html) and an [Adonit Jot Script](http://www.adonit.net/jot/script/). I also use it as a second monitor with [Duet Display](http://www.duetdisplay.com/).*
 
 **Kindle Paperwhite**<br>
-*It's impossible to carry physical books, and the Kindle is great.*
+*Books are heavy.*
 
 **iPhone 5**<br>
-*This has been my phone for two years, but 4G doesn't work outside of the US.*
+*I've had this for 3 years now and use it as my primary phone.*
 
 **Nexus 5**<br>
-*I got this imported from Hong Kong while in Singapore. I use this for 4G outside of the US.*
-
-I have to have both iOS and Android for testing apps on both platforms. I used to be a staunchly iOS guy but Android is growing on me.
+*I mainly use this for testing [Moo.do's](http://moo.do) Android app.*
 
 
 #Photography
@@ -58,10 +56,10 @@ I used to have a Canon 5D Mk II, but I now prefer something small and inconspicu
 
 #Electronics Accessories
 
-**Lacie Rugged 1.5 TB**<br>
+**Seagate 2 TB**<br>
 *I take a lot of pictures and have a lot of movies and TV shows to watch if I get bored.*
 
-**Adonit Jot Pro**<br>
+**Adonit Jot Stylus**<br>
 *This is my favorite stylus because it's very accurate. I use it for drawing UI sketches on my iPad.*
 
 
@@ -69,26 +67,26 @@ I used to have a Canon 5D Mk II, but I now prefer something small and inconspicu
 
 I usually get about a week's usage out of my wardrobe. Sometimes I wear the same thing twice if it didn't get too dirty.
 
-**4 polyester t-shirts**<br>
-They're very light for comfort in hot weather. They dry over night if I need to wash them in the sink or shower. They're very brightly colored so I look awesome.
+**4 light t-shirts**<br>
+Purchased in Bangkok for $3 each.
 
-**2 pairs of hybrid shorts**<br>
+**2 pairs of O'Neill hybrid shorts**<br>
 I can wear them for normal life and for swimming. They look like regular shorts so I don't look ridiculous.
 
-**1 pair of pants**<br>
-REI Adventure pants. They look nice and have great pockets.
+**1 pair of jeans**<br>
+It's always warm enough for shorts, but sometimes I want to look nice.
 
-**4 pairs of Ex-Officio underwear**<br>
-They dry over night for easy washing.
+**4 pairs of Uniqlo Airism underwear**<br>
+Thin and light.
 
-**3 pairs of socks**<br>
-*Brightly colored socks that I got at Uniqlo in Japan. They dry overnight. I usually wear flip flops so don't wear these much.*
+**5 pairs of socks**<br>
+*Brightly colored socks that I got at Uniqlo in Bangkok. I often wear flip flops so don't wear these much.*
 
 **1 pair of flip flops**<br>
-*Sanuk Beer Cozy (interesting name huh?) bought in Phuket. I have a broken toe so I need really nice and soft flip flops. These are great. My old pair lasted 6 years but had no traction left.*
+*Sanuk Beer Cozy (interesting name huh?) bought in Phuket. I have a broken toe so I need really nice and soft flip flops.*
 
 **1 pair of shoes**<br>
-*Bright red New Balance sneakers commemorating the Chinese Year of the Dragon, covered in dragon scales and claws, bought in Tokyo. They've been going strong for two years now.*
+*Bright yellow Puma Ferrari.*
 
 #Miscellaneous
 
@@ -98,5 +96,5 @@ They dry over night for easy washing.
 **Shower bag**<br>
 *Braun Series 7 razor, face soap, moisturizer*
 
-**Eye drops**<br>
-*I have to have them because of the LASIK. After five months I'm using them some days when I wake up tired, but most of the time I don't need them. If I don't get much sleep my eyes are extra dry.*
+**ebai USB battery charger**<br>
+*My iPhone's battery can die mid-day if I'm using it a lot, so I need this to go a full day. It can charge an iPhone twice.*
