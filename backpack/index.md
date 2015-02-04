@@ -13,7 +13,7 @@ I gave away and sold everything else I owned, so this is the full list of my pos
 *This is basically a regular school bag. It has a laptop pocket in the back which is very helpful for airport security. Big hiking bags are too big and heavy. This gets me under 10kg.*
 
 **Marmot Kompressor Plus 20L**<br>
-*I carry this every day, usually bringing my laptop, chargers, camera, an extra shirt, an umbrella, and a bottle of water.*
+*I carry this every day with my laptop, chargers, camera, an extra shirt, and a bottle of water.*
 
 
 #Electronics
@@ -68,16 +68,16 @@ I used to have a Canon 5D Mk II, but I now prefer something small and inconspicu
 I usually get about a week's usage out of my wardrobe. Sometimes I wear the same thing twice if it didn't get too dirty.
 
 **4 light t-shirts**<br>
-Purchased in Bangkok for $3 each.
+*Purchased in Bangkok for $3 each.*
 
 **2 pairs of O'Neill hybrid shorts**<br>
-I can wear them for normal life and for swimming. They look like regular shorts so I don't look ridiculous.
+*I can wear them for normal life and for swimming. They look like regular shorts so I don't look ridiculous.*
 
 **1 pair of jeans**<br>
-It's always warm enough for shorts, but sometimes I want to look nice.
+*It's always warm enough for shorts, but sometimes I want to look nice.*
 
 **4 pairs of Uniqlo Airism underwear**<br>
-Thin and light.
+*Thin and light.*
 
 **5 pairs of socks**<br>
 *Brightly colored socks that I got at Uniqlo in Bangkok. I often wear flip flops so don't wear these much.*
