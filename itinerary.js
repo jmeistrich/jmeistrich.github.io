@@ -53,5 +53,10 @@ var itinerary = [
     '3/12', 'Singapore',
     '3/18', 'Phuket, TH',
     '3/21', 'Tokyo, JP',
-    '4/8', 'Chiang Mai, TH'
+    '4/8', 'Chiang Mai, TH',
+    '5/9', 'Kuala Lumpur, MY',
+    '5/12', 'Krabi, TH',
+    '5/13', 'Ko Lanta, TH',
+    '5/22', 'Frankfurt, DE',
+    '5/31', 'Tallinn, EE'
 ];
