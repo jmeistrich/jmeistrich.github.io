@@ -58,5 +58,10 @@ var itinerary = [
     '5/12', 'Krabi, TH',
     '5/13', 'Ko Lanta, TH',
     '5/22', 'Frankfurt, DE',
-    '5/31', 'Tallinn, EE'
+    '5/31', 'Tallinn, EE',
+    '6/19', 'Norwich, UK',
+    '6/22', 'London, UK',
+    '6/27', 'Milan, IT',
+    '6/29', 'Ljublana, SI',
+    '7/4', 'Barcelona, ES'
 ];
