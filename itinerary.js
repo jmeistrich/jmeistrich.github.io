@@ -63,5 +63,15 @@ var itinerary = [
     '6/22', 'London, UK',
     '6/27', 'Milan, IT',
     '6/29', 'Ljublana, SI',
-    '7/4', 'Barcelona, ES'
+    '7/4', 'Barcelona, ES',
+    '7/28', 'Berlin, DE',
+    '8/4', 'Brussels, BE',
+    '8/9', 'Berlin, DE',
+    '8/28', 'Split, HR',
+    '8/31', 'Pula, HR',
+    '9/7', 'Pag, HR',
+    '9/10', 'Zadar, HR',
+    '9/17', 'Split, HR',
+    '9/19', 'Zagreb, HR',
+    '9/22', 'Bangkok, TH'
 ];
