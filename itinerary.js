@@ -73,5 +73,9 @@ var itinerary = [
     '9/10', 'Zadar, HR',
     '9/17', 'Split, HR',
     '9/19', 'Zagreb, HR',
-    '9/22', 'Bangkok, TH'
+    '9/22', 'Bangkok, TH',
+    '10/1', 'San Diego, US',
+    '10/10', 'Seattle, US',
+    '10/16', 'Cebu City, PH',
+    '10/21', 'Moalboal, PH'
 ];
