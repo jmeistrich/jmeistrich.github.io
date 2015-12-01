@@ -77,5 +77,9 @@ var itinerary = [
     '10/1', 'San Diego, US',
     '10/10', 'Seattle, US',
     '10/16', 'Cebu City, PH',
-    '10/21', 'Moalboal, PH'
+    '10/21', 'Moalboal, PH',
+    '10/26', 'Cebu City, PH',
+    '10/28', 'Boracay, PH',
+    '11/22', 'Cebu City, PH',
+    '11/28', 'Chiang Mai, TH'
 ];
