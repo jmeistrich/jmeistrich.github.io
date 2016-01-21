@@ -81,5 +81,14 @@ var itinerary = [
     '10/26', 'Cebu City, PH',
     '10/28', 'Boracay, PH',
     '11/22', 'Cebu City, PH',
-    '11/28', 'Chiang Mai, TH'
+    '11/28', 'Chiang Mai, TH',
+    '12/24', 'Köln, DE',
+    '12/27', 'Gießen, DE',
+    '12/31', 'Freiburg, DE',
+    '1/5', 'Lyon, FR',
+    '1/9', 'Les Deux Alpes, FR',
+    '2/6', 'Berlin, DE',
+    '2/12', 'Oslo, NO',
+    '2/18', 'Tromsø, NO',
+    '2/26', 'Oslo, NO'
 ];
