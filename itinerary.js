@@ -1,5 +1,5 @@
 var itinerary = [
-    '1/1',  'Maui, HI',
+    '1/1',  'Maui, HI', // 2014
     '1/4',  'Honolulu, HI',
     '1/8',  'Seattle, WA',
     '1/14', 'Auckland, NZ',
@@ -47,7 +47,7 @@ var itinerary = [
     '12/16', 'Bangkok, TH',
     '12/20', 'Koh Phangan, TH',
     '12/27', 'Bangkok, TH',
-    '1/2', 'Chiang Mai, TH',
+    '1/2', 'Chiang Mai, TH', // 2015
     '2/13', 'Bali, ID',
     '2/28', 'Da Nang, VN',
     '3/12', 'Singapore',
@@ -85,10 +85,11 @@ var itinerary = [
     '12/24', 'Köln, DE',
     '12/27', 'Gießen, DE',
     '12/31', 'Freiburg, DE',
-    '1/5', 'Lyon, FR',
+    '1/5', 'Lyon, FR', // 2016
     '1/9', 'Les Deux Alpes, FR',
-    '2/6', 'Berlin, DE',
-    '2/12', 'Oslo, NO',
+    '2/6', 'Ljubljana, SI',
+    '2/9', 'Kotlje, SI',
+    '2/13', 'Oslo, NO',
     '2/18', 'Tromsø, NO',
     '2/26', 'Oslo, NO'
 ];
