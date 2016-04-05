@@ -90,6 +90,12 @@ var itinerary = [
     '2/6', 'Ljubljana, SI',
     '2/9', 'Kotlje, SI',
     '2/13', 'Oslo, NO',
-    '2/18', 'Tromsø, NO',
-    '2/26', 'Oslo, NO'
+    '2/14', 'Tromsø, NO',
+    '2/19', 'Oslo, NO',
+    '2/21', 'Bergen, NO',
+    '2/23', 'Amsterdam, NE',
+    '2/25', 'Dusseldorf, DE',
+    '2/29', 'Heidelberg, DE',
+    '3/5', 'Munich, DE',
+    '3/9', 'Singapore'
 ];
