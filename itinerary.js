@@ -1,7 +1,7 @@
 var itinerary = [
-    '1/1',  'Maui, HI', // 2014
-    '1/4',  'Honolulu, HI',
-    '1/8',  'Seattle, WA',
+    '1/1',  'Maui, HI, USA', // 2014
+    '1/4',  'Honolulu, HI, USA',
+    '1/8',  'Seattle, WA, USA',
     '1/14', 'Auckland, NZ',
     '1/20', 'Tauranga, NZ',
     '1/22', 'Waitomo, NZ',
@@ -27,8 +27,8 @@ var itinerary = [
     '4/24', 'Kyoto, JP',
     '4/29', 'Tokyo, JP',
     '5/27', 'Frankfurt, DE',
-    '6/3', 'Seattle, WA',
-    '7/11', 'San Diego, CA',
+    '6/3', 'Seattle, WA, USA',
+    '7/11', 'San Diego, CA, USA',
     '7/25', 'Stockholm, SE',
     '8/1', 'Brussels, BE',
     '8/4', 'Amsterdam, NE',
@@ -74,9 +74,9 @@ var itinerary = [
     '9/17', 'Split, HR',
     '9/19', 'Zagreb, HR',
     '9/22', 'Bangkok, TH',
-    '10/1', 'San Diego, US',
-    '10/10', 'Seattle, US',
-    '10/16', 'Cebu City, PH',
+    '9/29', 'San Diego, USA',
+    '10/10', 'Seattle, USA',
+    '10/14', 'Cebu City, PH',
     '10/21', 'Moalboal, PH',
     '10/26', 'Cebu City, PH',
     '10/28', 'Boracay, PH',
@@ -97,5 +97,10 @@ var itinerary = [
     '2/25', 'Dusseldorf, DE',
     '2/29', 'Heidelberg, DE',
     '3/5', 'Munich, DE',
-    '3/9', 'Singapore'
+    '3/9', 'Singapore',
+    '4/13', 'Kuala Lumpur, MY',
+    '4/17', 'Chiang Mai, TH',
+    '5/14', 'Bangkok, TH',
+    '5/16', 'Taipei, TW',
+    '6/5', 'Porto, PT'
 ];
