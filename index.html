@@ -3,42 +3,50 @@ layout: page
 title: Jay Meistrich
 ---
 
-<p>
-Hi, I'm Jay. I'm building <a href="http://moo.do">Moo.do</a> while traveling indefinitely and living out of a 40L backpack. Since this seems to be a fairly unusual thing to do, I'm writing down my thoughts and experiences. Since I also enjoy photography I'm posting my photos too.
-</p>
-<br>
-<a href="http://moo.do">Moo.do</a><br>
-<a href="/about">About me</a><br>
-<a href="http://picasaweb.google.com/jmeistrich">Photos</a><br>
-<a href="/backpack">What's in my backpack</a>
-<h1>Read first</h1>
-<ul class="flatlist">
-    <li><a href="{% post_url travel/2013-11-10-it-begins %}">Why I started traveling</a></li>
-    <li><a href="{% post_url travel/2013-11-20-lifestyles %}">Living a different lifestyle every season</a></li>
-    <li><a href="{% post_url travel/2013-12-16-how-im-productive %}">Being productive while traveling</a></li>
-    <li><a href="{% post_url travel/2013-12-01-cost %}">Travel is cheap</a></li>
-</ul>
+<div class="hero">
+    <img src="img/sintra.jpg" />
+    <div>
+        <div class="title"><a href="/">Jay Meistrich</a></div>
+        <div class="hb location"><span class="icon-map-marker"></span><span id="locationText"></span></div>
+        <ul class="social-links">
+            <li><a href="http://www.facebook.com/jayzus"><div class="icon-facebook"></div></a></li>
+            <li><a href="http://www.twitter.com/jmeistrich"><div class="icon-twitter"></div></a></li>
+            <li><a href="http://www.linkedin.com/in/jmeistrich"><div class="icon-linkedin"></div></a></li>
+            <li><a href="https://plus.google.com/113790725575874436353"><div class="icon-google-plus"></div></a></li>
+            <li><a href="http://github.com/jmeistrich"><div class="icon-github"></div></a></li>
+            <li><a href="mailto:jay@mei.st"><div class="icon-envelope-alt"></div></a></li>
+        </ul>
+    </div>
+</div>
 
-<h1>Categories</h1>
-<ul class="flatlist">
-    <li>
-        <a href="/blog">All</a>
-        <span class="gray ml10">{{ site.posts.size}}</span>
-    </li>
-{% for category in site.categories %}
-    <li>
-        <a href="/{{ category | first }}">{{ category | first | capitalize }}</a>
-        <span class="gray ml10">{{ category[1].size}}</span>
-    </li>
-{% endfor %}
-</ul>
 
-<h1>Posts</h1>
-<ul class="flatlist">
-    {% for post in site.posts %}
-    <li>
-        <div class="ipdate">{{ post.date | date: "%b %d, %Y" }}</div>
-        <span class="iptitle"><a href="{{ post.url }}">{{ post.title }}</a></span>
-    </li>
-    {% endfor %}
-</ul>
+<h1>Work</h1>
+    Moo.do
+    Microsoft Surface
+    Boom Blox
+
+Writing
+    Entrepreneur / Medium
+
+Interviews
+
+Travels
+    Map
+
+Photos
+    Instagram
+
+
+
+<div id="instafeed"></div>
+
+<script type="text/javascript" src="instafeed.min.js"></script>
+<script>
+var feed = new Instafeed({
+        get: 'user',
+        userId: 'self',
+        clientId: '03b9454f396e46dbb77866e416ebb806',
+        accessToken: '83128.03b9454.df7d40180bc44feaa6b139cb80d1d537'
+    });
+    feed.run();
+</script>

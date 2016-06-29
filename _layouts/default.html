@@ -13,25 +13,6 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
         <script>
-        var itinerary = [
-            '5/16', 'Taipei, TW',
-            '6/5', 'Porto, PT'
-        ];
-        window.onload = function(){
-            var today = new Date();
-            var location;
-            for(var i = 0; i < itinerary.length; i += 2)
-            {
-                itinerary[i] += '/16';
-                var date = new Date(itinerary[i]);
-                if(today < date)
-                    break;
-                location = itinerary[i + 1];
-            }
-            document.getElementById('locationText').innerText = location;
-        };
-        </script>
-        <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -44,26 +25,123 @@
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <div class="headerContent">
-                    <div class="title"><a href="/">Jay Meistrich</a></div>
-                    <div class="hb location"><span class="icon-map-marker"></span><span id="locationText"></span></div>
+            <div id="hero">
+                <div id="cover-dark"></div>
+                <div id="header">
+                    <div id="name">Jay Meistrich</div>
+                    <div id="location"><span class="icon-map-marker"></span><span id="locationText"></span></div>
                     <ul class="social-links">
                         <li><a href="http://www.facebook.com/jayzus"><div class="icon-facebook"></div></a></li>
                         <li><a href="http://www.twitter.com/jmeistrich"><div class="icon-twitter"></div></a></li>
                         <li><a href="http://www.linkedin.com/in/jmeistrich"><div class="icon-linkedin"></div></a></li>
                         <li><a href="https://plus.google.com/113790725575874436353"><div class="icon-google-plus"></div></a></li>
+                        <li><a href="http://instagram.com/jayzus"><div class="icon-instagram"></div></a></li>
                         <li><a href="http://github.com/jmeistrich"><div class="icon-github"></div></a></li>
-                        <li><a href="mailto:jay@mei.st"><div class="icon-envelope-alt"></div></a></li>
+                        <li><a href="mailto:jay@mei.st"><div class="icon-envelope"></div></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="content">
-            {{ content }}
+            <div id="content">
+                <h1>Work</h1>
+                <div class="boxes work">
+                    <div class="box">
+                        <img id="moodoLogo" src="/img/MoodoWhiteIcon.png" />
+                        <div class="title">Moo.do</div>
+                    </div>
+                    <div class="box">
+                        <img src="/img/surface.png" />
+                        <div class="title">Microsoft Surface</div>
+                    </div>
+                    <div class="box">
+                        <img src="/img/Surface_table.jpg" />
+                        <div class="title">Microsoft Surface</div>
+                    </div>
+                    <div class="box">
+                        <img src="/img/Xbox-360-Console-497106.jpg" />
+                        <div class="title">Xbox</div>
+                    </div>
+                    <div class="box">
+                        <img src="/img/windows-7-logo.jpg" />
+                        <div class="title">Windows 7</div>
+                    </div>
+                    <div class="box">
+                        <img src="/img/boomblox.png" />
+                        <div class="title">Boom Blox</div>
+                    </div>
+                </div>
+
+                <h1>Writing</h1>
+                <div class="boxes one">
+                    <div class="box">
+                        <img src="/img/20countries.jpg" />
+                        <div class="title">How I Built a Startup While Traveling to 20 Countries</div>
+                    </div>
+                </div>
+
+                <h1>Interviews</h1>
+                <div class="boxes interviews">
+                    <a class="box" href="http://www.wired.com/2015/12/digital-nomads-telecommuting">
+                        <img src="/img/wired.jpg" />
+                    </a>
+                    <a class="box" href="http://uk.businessinsider.com/best-way-to-build-startup-is-travel-the-world-2015-1?r=US&IR=T">
+                        <img src="/img/bi.png" />
+                    </a>
+                    <a class="box" href="http://www.huffingtonpost.com/2015/02/08/what-is-a-digital-nomad_n_6580870.html">
+                        <img src="/img/huffpost.png" />
+                    </a>
+                    <a class="box" href="https://www.washingtonpost.com/news/on-leadership/wp/2015/06/03/how-to-convince-your-company-to-let-you-keep-your-job-and-travel-the-world/">
+                        <img src="/img/washington-post-logo-vertical.jpg" />
+                    </a>
+                    <a class="box" href="https://www.virgin.com/virgin-unite/entrepreneurship/staffreads-a-new-way-of-working">
+                        <img src="/img/virgin.png" />
+                    </a>
+                    <a class="box" href="http://besuccess.com/2015/01/digital-nomad/">
+                        <img src="/img/besuccess.png" />
+                    </a>
+                </div>
+
+                <!-- <h1>Travels</h1> -->
+                    <!-- Map -->
+
+                <h1>Photos</h1>
+                <div id="instafeed"></div>
             </div>
             <div class="footer">
-                <a href="/">Jay Meistrich</a> © 2015
+                <a href="/">Jay Meistrich</a> © 2016
             </div>
         </div>
+
+        <script>
+            (function() {
+                var itinerary = [
+                    '6/5', 'Porto, PT'
+                ];
+                var today = new Date();
+                var location;
+                for(var i = 0; i < itinerary.length; i += 2)
+                {
+                    itinerary[i] += '/16';
+                    var date = new Date(itinerary[i]);
+                    if(today < date)
+                        break;
+                    location = itinerary[i + 1];
+                }
+                document.getElementById('locationText').textContent = location;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="instafeed.min.js"></script>
+        <script>
+        var feed = new Instafeed({
+                get: 'user',
+                userId: 'self',
+                limit: 9,
+                resolution: 'low_resolution',
+                clientId: '03b9454f396e46dbb77866e416ebb806',
+                accessToken: '83128.03b9454.df7d40180bc44feaa6b139cb80d1d537'
+            });
+            feed.run();
+        </script>
     </body>
 </html>
