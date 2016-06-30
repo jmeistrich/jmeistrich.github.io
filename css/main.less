@@ -10,10 +10,11 @@
 // Landing
 @colorSectionBorder: #ddd;
 
-@boxWidth: 260px;
-@pageWidth: (@boxWidth + @boxMargin * 2) * 3 + 8;
-@boxMargin: 20px;
-@pageWidthInside: 820px;
+@pageWidth: 920px;
+@boxMargin: 30px;
+@picMargin: 15px;
+@boxWidth: (@pageWidth - 8) / 3 - @boxMargin * 2;
+@picWidth: (@pageWidth - 8) / 3 - @picMargin * 2;
 @hoverColor: @colorLightBlue;
 @headerHeight: 60px;
 
@@ -87,11 +88,6 @@ a {
     }
 }
 
-#location {
-        // margin: 24px 0;
-    // margin: 16px 0 8px 0;
-}
-
 #name {
     font-size: 60px;
     font-weight: bold;
@@ -99,7 +95,7 @@ a {
 
 #location {
     .icon-map-marker {
-        margin-right: 16px;
+        margin: 0 16px;
     }
 }
 
@@ -114,8 +110,8 @@ img.shadow {
 
 #instafeed {
     img {
-        width: @boxWidth;
-        margin: @boxMargin;
+        width: @picWidth;
+        margin: @picMargin;
     }
 }
 
@@ -161,8 +157,11 @@ h1 {
 
 .boxes {
     &.one {
-        width: @boxWidth + @boxMargin * 2;
+        width: @boxWidth * 2 + @boxMargin * 2;
         margin: 0 auto;
+        .box {
+            width: @boxWidth * 2;
+        }
     }
 }
 
@@ -213,15 +212,26 @@ a.box {
 
 .interviews {
     @width: @boxWidth;
-    @height: @width * 0.6;
+    @height: round(@width * 0.6);
     .box, img {
         width: @width;
         max-height: @height;
     }
 }
 
+.aboutme {
+    width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 
+#travelsWrapper {
+    overflow: hidden;
+}
 
-
+#travels {
+    display: block;
+    margin-top: -50px;
+}
 
 
