@@ -43,10 +43,10 @@
             </div>
             <div id="content">
                 <h1>About Me</h1>
-                <p class="aboutme">I'm building <a href="https://moo.do">Moo.do</a> while traveling indefinitely and living out of a 27L backpack. I worked at Microsoft until 2012, then lived in San Francisco for a year until I realized that <a href="http://entrepreneur.com/article/241761">it would be more fun and cheaper to build a startup while traveling</a>. So I'm making the most of my limited free time (startup life!) by exploring new places and seeing the world. I love photography, walking around strange new places, frisbee, hip hop, and Minions.</p>
+                <p class="aboutme">I'm building <a href="https://moo.do">Moo.do</a> while traveling indefinitely and living out of a 27L backpack. I worked at Microsoft until 2012, then lived in San Francisco for a year until I discovered that <a href="http://entrepreneur.com/article/241761">it's cheaper and more fun to build a startup while traveling</a>. So I'm making the most of my limited free time (startup life!) by exploring new places and seeing the world. I love photography, walking around strange new places, frisbee, hip hop, and Minions.</p>
 
                 <h1>Work</h1>
-                <div class="boxes work">
+                <div class="boxes flex work">
                     <div class="box">
                         <img id="moodoLogo" src="/img/MoodoWhiteIcon.png" />
                         <div class="title">Moo.do</div>
@@ -74,7 +74,7 @@
                 </div>
 
                 <h1>Writing</h1>
-                <div class="boxes one">
+                <div class="boxes flex one">
                     <a class="box" href="http://entrepreneur.com/article/241761">
                         <img src="/img/20countries.jpg" />
                         <div class="title">How I Built a Startup While Traveling to 20 Countries</div>
@@ -82,7 +82,7 @@
                 </div>
 
                 <h1>Interviews</h1>
-                <div class="boxes interviews">
+                <div class="boxes flex interviews">
                     <a class="box" href="http://www.wired.com/2015/12/digital-nomads-telecommuting">
                         <img src="/img/wired.jpg" />
                     </a>
@@ -109,7 +109,7 @@
                 </div>
 
                 <h1>Photos</h1>
-                <div id="instafeed"></div>
+                <div id="instafeed" class="flex"></div>
             </div>
             <div class="footer">
                 <a href="/">Jay Meistrich</a> © 2016
@@ -119,7 +119,9 @@
         <script>
             (function() {
                 var itinerary = [
-                    '6/5', 'Porto, PT'
+                    '6/5', 'Porto, PT',
+                    '7/3', 'Frankfurt, DE',
+                    '7/7', 'Edinburgh, UK'
                 ];
                 var today = new Date();
                 var location;

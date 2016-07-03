@@ -10,13 +10,16 @@
 // Landing
 @colorSectionBorder: #ddd;
 
-@pageWidth: 920px;
+@boxWidth: 200px;
 @boxMargin: 30px;
+@boxesWidth: @boxWidth * 3 + @boxMargin * 6;
+@picWidth: 292px;
 @picMargin: 15px;
-@boxWidth: (@pageWidth - 8) / 3 - @boxMargin * 2;
-@picWidth: (@pageWidth - 8) / 3 - @picMargin * 2;
+@instaWidth: @picWidth * 3 + @picMargin * 6;
 @hoverColor: @colorLightBlue;
 @headerHeight: 60px;
+
+@textWidth: 700px;
 
 @headerWidth: 440px;
 
@@ -99,17 +102,19 @@ a {
     }
 }
 
-#content {
-    max-width: @pageWidth;
-    margin: 0 auto;
-}
+// #content {
+//     max-width: @pageWidth;
+//     margin: 0 auto;
+// }
 
 img.shadow {
     // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 #instafeed {
+    max-width: @instaWidth;
     img {
+        display: block;
         width: @picWidth;
         margin: @picMargin;
     }
@@ -142,11 +147,11 @@ img.shadow {
 h1 {
     text-align: center;
     width: 400px;
-    border-top: 1px solid #bbb;
-    border-bottom: 1px solid #bbb;
-    margin: 60px auto 30px auto;
-    padding: 6px 0;
-    font-size: 24px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 120px auto 40px auto;
+    padding: 8px 0;
+    font-size: 32px;
 }
 
 .center {
@@ -157,12 +162,36 @@ h1 {
 
 .boxes {
     &.one {
-        width: @boxWidth * 2 + @boxMargin * 2;
-        margin: 0 auto;
         .box {
-            width: @boxWidth * 2;
+            width: @boxWidth * 2.2;
         }
     }
+    max-width: @boxesWidth;
+}
+
+.flex {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 a.box {
@@ -171,7 +200,7 @@ a.box {
 }
 
 .box {
-    display: inline-block;
+    // display: inline-block;
     width: @boxWidth;
     margin: @boxMargin;
     border-radius: 3px;
@@ -201,24 +230,6 @@ a.box {
     }
 }
 
-.work {
-    img {
-        // width: 300px;
-        // height: 188px;
-        // // border-radius: 3px;
-        // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.interviews {
-    @width: @boxWidth;
-    @height: round(@width * 0.6);
-    .box, img {
-        width: @width;
-        max-height: @height;
-    }
-}
-
 .aboutme {
     width: 700px;
     margin: 0 auto;
@@ -232,6 +243,7 @@ a.box {
 #travels {
     display: block;
     margin-top: -50px;
+    max-width: 100%;
 }
 
 
