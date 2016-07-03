@@ -4,7 +4,7 @@
 
 @colorComplete: #d6d6d6;
 
-@colorBlue: #09d;
+@colorBlue: #08c;
 @colorLightBlue: lighten(@colorBlue, 15%);
 
 // Landing
@@ -126,7 +126,6 @@ img.shadow {
   display: inline-block;
   list-style: none;
   margin: 0 2px;
-  // font-size: 14pt;
   a {
     color: inherit;
     cursor: pointer
@@ -136,22 +135,21 @@ img.shadow {
     height: @socialHeight;
     line-height: @socialHeight;
     text-align: center;
-    // color: #999;
   }
-  // text-indent: -9999px;
-  // margin: 0 0 0 8;
-  // padding: 0 0 0 0;
-  // border-radius: 3px;
 }
 
 h1 {
     text-align: center;
-    width: 400px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 120px auto 40px auto;
-    padding: 8px 0;
-    font-size: 32px;
+    width: 100%;
+    font-size: 42px;
+    padding: 60px 0 20px 0;
+    &:not(:first-child) {
+        border-top: 1px solid #e6e6e6;
+        margin: 120px auto 0 auto;
+    }
+    a {
+        color: inherit;
+    }
 }
 
 .center {
@@ -214,8 +212,7 @@ a.box {
     }
     .title {
         text-align: center;
-        // font-weight: bold;
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 8px;
         line-height: 1.4;
     }
@@ -244,6 +241,10 @@ a.box {
     display: block;
     margin-top: -50px;
     max-width: 100%;
+    pointer-events: none;
 }
 
-
+.footer {
+    margin-top: 40px;
+    line-height: 60px;
+}

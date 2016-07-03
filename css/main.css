@@ -17,11 +17,11 @@ body {
   color: #444;
 }
 a {
-  color: #09d;
+  color: #08c;
   text-decoration: none;
 }
 a:hover {
-  color: #2bbeff;
+  color: #1ab2ff;
 }
 #hero {
   position: relative;
@@ -93,12 +93,16 @@ a:hover {
 }
 h1 {
   text-align: center;
-  width: 400px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 120px auto 40px auto;
-  padding: 8px 0;
-  font-size: 32px;
+  width: 100%;
+  font-size: 42px;
+  padding: 60px 0 20px 0;
+}
+h1:not(:first-child) {
+  border-top: 1px solid #e6e6e6;
+  margin: 120px auto 0 auto;
+}
+h1 a {
+  color: inherit;
 }
 .center {
   text-align: center;
@@ -153,7 +157,7 @@ a.box {
 }
 .box .title {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 8px;
   line-height: 1.4;
 }
@@ -178,4 +182,9 @@ a.box {
   display: block;
   margin-top: -50px;
   max-width: 100%;
+  pointer-events: none;
+}
+.footer {
+  margin-top: 40px;
+  line-height: 60px;
 }
