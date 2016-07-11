@@ -72,20 +72,17 @@ a {
 
 #header {
     @color: white;
-    position: absolute;
-    left: 50%;
-    right: 0;
-    top: 50%;
     width: @headerWidth;
-    margin-left: -@headerWidth / 2;
-    margin-top: -232px/2;
+    max-width: 90%;
     text-align: center;
     padding: 8px 0;
     color: #eee;
-    border-top: 2px solid @color;
-    border-bottom: 2px solid @color;
+    border-top: 1px solid @color;
+    border-bottom: 1px solid @color;
     font-size: 24px;
     line-height: 1;
+    z-index: 1;
+    margin-top: -80px;
     >div, >ul {
         margin: 24px 0;
     }
@@ -102,21 +99,27 @@ a {
     }
 }
 
-// #content {
-//     max-width: @pageWidth;
-//     margin: 0 auto;
-// }
-
-img.shadow {
-    // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+#content {
+    >p {
+        max-width: 90%;
+    }
 }
 
 #instafeed {
-    max-width: @instaWidth;
-    img {
+    width: @instaWidth;
+    max-width: 98%;
+    margin: 0 auto;
+    a {
         display: block;
-        width: @picWidth;
-        margin: @picMargin;
+        max-width: 32%;
+        -webkit-flex: 1 0 32%;
+        -webkit-box-flex: 1 0 32%;
+        -ms-flex: 1 0 32%;
+        flex: 1 0 32%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -162,9 +165,11 @@ h1 {
     &.one {
         .box {
             width: @boxWidth * 2.2;
+            max-width: 90%;
         }
     }
-    max-width: @boxesWidth;
+    width: @boxesWidth;
+    max-width: 90%;
 }
 
 .flex {
@@ -183,8 +188,8 @@ h1 {
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
     -moz-box-align: center;
     -ms-flex-align: center;
@@ -198,16 +203,20 @@ a.box {
 }
 
 .box {
-    // display: inline-block;
     width: @boxWidth;
     margin: @boxMargin;
     border-radius: 3px;
     vertical-align: middle;
+    // min-width: 30%;
+    // max-width: 30%;
+    // -webkit-flex: 1 0 30%;
+    // -webkit-box-flex: 1 0 30%;
+    // -ms-flex: 1 0 30%;
+    // flex: 1 0 30%;
     &.center {
         width: 600px;
     }
     img {
-        // border: 1px solid #eee;
         width: 100%;
     }
     .title {
@@ -247,4 +256,30 @@ a.box {
 .footer {
     margin-top: 40px;
     line-height: 60px;
+}
+
+@media (max-width: 600px) {
+    h1:not(:first-child) {
+        margin-top: 60px;
+    }
+
+    #header {
+        font-size: 20px;
+        border: 0;
+    }
+
+    #name {
+        font-size: 44px;
+    }
+
+    .box {
+        width: auto;
+        margin: 20px 0;
+        min-width: 40%;
+        max-width: 40%;
+        -webkit-flex: 1 0 40%;
+        -webkit-box-flex: 1 0 40%;
+        -ms-flex: 1 0 40%;
+        flex: 1 0 40%;
+    }
 }
