@@ -105,5 +105,11 @@ var itinerary = [
     '6/1', 'Taichung, TW',
     '6/5', 'Porto, PT',
     '7/3', 'Frankfurt, DE',
-    '7/8', 'San Diego, USA'
+    '7/8', 'San Diego, USA',
+    '7/21', 'Dusseldorf, DE',
+    '7/24', 'Edinburgh, UK',
+    '8/1', 'Pitlochry, UK',
+    '8/4', 'York, UK',
+    '8/7', 'Cambridge, UK',
+
 ];
