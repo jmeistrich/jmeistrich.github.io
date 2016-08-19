@@ -111,5 +111,7 @@ var itinerary = [
     '8/1', 'Pitlochry, UK',
     '8/4', 'York, UK',
     '8/7', 'Cambridge, UK',
-
+    '8/13', 'London, UK',
+    '8/16', 'Budapest, HU',
+    '9/16', 'Jeju, KR'
 ];
