@@ -14,7 +14,8 @@ var itinerary = [
     '2/2',  'Queenstown, NZ',
     '2/6',  'Christchurch, NZ',
     '2/7',  'Brisbane, AU',
-    '2/8',  'Cruise in AU',
+    '2/10',  'Noumea, New Caledonia', // On a cruise
+    '2/12', 'Port Vila, Vanuatu', // On a cruise
     '2/15', 'Brisbane, AU',
     '2/17', 'Gold Coast, AU',
     '2/23', 'Byron Bay, AU',
@@ -90,7 +91,7 @@ var itinerary = [
     '2/6', 'Ljubljana, SI',
     '2/9', 'Kotlje, SI',
     '2/13', 'Oslo, NO',
-    '2/14', 'Tromsø, NO',
+    '2/14', 'Tromsø, NO', // Also was in Finland
     '2/19', 'Oslo, NO',
     '2/21', 'Bergen, NO',
     '2/23', 'Amsterdam, NE',
@@ -116,5 +117,8 @@ var itinerary = [
     '8/29', 'Frankfurt, DE',
     '9/1', 'Amsterdam, NE',
     '9/4', 'Bonn, DE',
-    '9/16', 'Jeju, KR'
+    '9/10', 'Bangkok, TH',
+    '9/16', 'Jeju, KR',
+    '10/15', 'Seoul, KR',
+    '10/22', 'Bangkok, TH'
 ];
