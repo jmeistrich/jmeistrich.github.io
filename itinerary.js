@@ -122,5 +122,5 @@ var itinerary = [
     '10/15', 'Seoul, KR',
     '10/22', 'Bangkok, TH',
     '10/31', 'Koh Phangan, TH',
-    '11/20', 'Siem Reap, KH'
+    '11/21', 'Singapore'
 ];
