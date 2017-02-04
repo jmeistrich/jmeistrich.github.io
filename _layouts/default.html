@@ -6,9 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/style.css">
-
         <link rel="stylesheet" href="/css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
@@ -105,8 +103,9 @@
                     <iframe id="travels" class="center" src="https://www.google.com/maps/d/u/0/embed?mid=1WdA_o2qIB2098qlkZxRPFuKFaBg&z=2&ll=35,12&maptype=roadmap" frameborder="0" style="border:0" width="1000" height="520"></iframe>
                 </div>
 
-                <h1><a href="http://instagram.com/jayzus">Photos</a></h1>
+                <h1><a href="http://instagram.com/jayzus">Instagram</a></h1>
                 <div id="instafeed" class="flex flexwrap"></div>
+                <div id="instagramLink">See more at <a href="https://www.instagram.com/jayzus">https://www.instagram.com/jayzus</a>
             </div>
             <div class="footer center">
                 <a href="/">Jay Meistrich</a> © 2017
@@ -139,10 +138,19 @@
                 var feed = new Instafeed({
                     get: 'user',
                     userId: 'self',
-                    limit: 9,
+                    limit: 18,
                     resolution: 'low_resolution',
                     clientId: '03b9454f396e46dbb77866e416ebb806',
-                    accessToken: '83128.03b9454.df7d40180bc44feaa6b139cb80d1d537'
+                    accessToken: '83128.ba4c844.8ac663addd184a07b55ad7e0b7baaf41',
+                    after: function ()
+                    {
+                        var feedDiv = document.getElementById('instafeed');
+
+                        for (var i = 0; i < feedDiv.childNodes.length; i ++)
+                        {
+                            feedDiv.children[i].target = '_blank';
+                        }
+                    }
                 });
                 feed.run();
 
