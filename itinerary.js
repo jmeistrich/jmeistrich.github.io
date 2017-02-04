@@ -125,5 +125,11 @@ var itinerary = [
     '11/21', 'Singapore',
     '11/29', 'Siem Reap, KH',
     '12/1', 'Chiang Mai, TH',
-    '12/10', 'Bali, ID'
+    '12/10', 'Bali, ID',
+    '1/11', 'San Diego, USA', // 2017
+    '1/22', 'Seattle, USA',
+    '1/26', 'Frankfurt, DE',
+    '1/28', 'Innsbruck, AT',
+    '1/29', 'Feldkirch, AT',
+    '2/4', 'Zell am See, AT'
 ];

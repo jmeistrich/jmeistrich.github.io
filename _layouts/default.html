@@ -40,7 +40,7 @@
             </div>
             <div id="content">
                 <h1>About Me</h1>
-                <p class="aboutme">I'm building <a href="https://moo.do">Moo.do</a> while traveling indefinitely and living out of a 27L backpack. I worked at <a href="https://www.microsoft.com/appliedsciences/">Microsoft</a> until 2012, then lived in San Francisco for a year until I discovered that <a href="http://entrepreneur.com/article/241761">it's cheaper and more fun to build a startup while traveling</a>. So I'm making the most of my limited free time (startup life!) by exploring new places and seeing the world. I love <a href="http://instagram.com/jayzus">photography</a>, walking around strange new places, frisbee, hip hop, and Minions.</p>
+                <p class="aboutme">I'm building <a href="https://moo.do">Moo.do</a> while traveling indefinitely and living out of a 27L backpack. I worked at <a href="https://www.microsoft.com/appliedsciences/">Microsoft</a> until 2012, then lived in San Francisco for a year until I discovered that <a href="http://entrepreneur.com/article/241761">it's cheaper and more fun to build a startup while traveling</a>. So I'm making the most of my limited free time (startup life!) by exploring new places and seeing the world. I love <a href="http://instagram.com/jayzus">photography</a>, walking around strange new places, hiking, skiing, frisbee, hip hop, and Minions.</p>
 
                 <h1>Work</h1>
                 <div class="boxes flex flexwrap work">
@@ -109,20 +109,20 @@
                 <div id="instafeed" class="flex flexwrap"></div>
             </div>
             <div class="footer center">
-                <a href="/">Jay Meistrich</a> © 2016
+                <a href="/">Jay Meistrich</a> © 2017
             </div>
         </div>
 
         <script>
             (function() {
                 var itinerary = [
-                    '12/10', 'Bali, ID'
+                    '2/4', 'Zell am See, AT'
                 ];
                 var today = new Date();
                 var location;
                 for(var i = 0; i < itinerary.length; i += 2)
                 {
-                    itinerary[i] += '/16';
+                    itinerary[i] += '/17';
                     var date = new Date(itinerary[i]);
                     if(today < date)
                         break;
@@ -135,7 +135,8 @@
 
         <script type="text/javascript" src="instafeed.min.js"></script>
         <script>
-            var feed = new Instafeed({
+            (function () {
+                var feed = new Instafeed({
                     get: 'user',
                     userId: 'self',
                     limit: 9,
@@ -143,12 +144,16 @@
                     clientId: '03b9454f396e46dbb77866e416ebb806',
                     accessToken: '83128.03b9454.df7d40180bc44feaa6b139cb80d1d537'
                 });
-            feed.run();
+                feed.run();
 
-            document.getElementById('travelsWrapper').onmousedown = function ()
-            {
-                document.getElementById('travels').style['pointer-events'] = 'auto';
-            }
+                var t = document.getElementById('travelsWrapper');
+
+                t.onmousedown = function ()
+                {
+                    t.onmousedown = undefined;
+                    document.getElementById('travels').style['pointer-events'] = 'auto';
+                }
+            })();
         </script>
     </body>
 </html>
