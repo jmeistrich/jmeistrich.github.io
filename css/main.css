@@ -70,7 +70,7 @@ a:hover {
 }
 #insta {
   width: 100%;
-  max-width: 924px;
+  max-width: 1128px;
   margin: 0 auto;
 }
 .instarow {
@@ -87,8 +87,8 @@ a:hover {
   width: calc(33.33333333vw);
   height: -webkit-calc(33.33333333vw);
   height: calc(33.33333333vw);
-  max-width: 292px;
-  max-height: 292px;
+  max-width: 360px;
+  max-height: 360px;
   margin: 8px 2px;
 }
 .instarow div {
