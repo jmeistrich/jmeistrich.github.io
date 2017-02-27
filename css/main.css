@@ -120,7 +120,7 @@ h1 {
 }
 h1:not(:first-child) {
   border-top: 1px solid #e6e6e6;
-  margin: 120px auto 0 auto;
+  margin: 60px auto 0 auto;
 }
 h1 a {
   color: inherit;
