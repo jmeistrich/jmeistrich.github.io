@@ -131,5 +131,11 @@ var itinerary = [
     '1/26', 'Frankfurt, DE',
     '1/28', 'Innsbruck, AT',
     '1/29', 'Feldkirch, AT',
-    '2/4', 'Zell am See, AT'
+    '2/4', 'Zell am See, AT',
+    '2/9', 'Innsbruck, AT',
+    '2/12', 'Bled, SI',
+    '2/15', 'Kotlje, SI',
+    '2/19', 'Zell am See, AT',
+    '2/24', 'Kotlje, SI',
+    '3/4', 'Montgenevre, FR'
 ];
