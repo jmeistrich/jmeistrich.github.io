@@ -137,5 +137,16 @@ var itinerary = [
     '2/15', 'Kotlje, SI',
     '2/19', 'Zell am See, AT',
     '2/24', 'Kotlje, SI',
-    '3/4', 'Montgenevre, FR'
+    '3/4', 'Montgenevre, FR',
+    '4/2', 'Copenhagen, DK',
+    '4/8', 'Paris, FR',
+    '4/21', 'Bangkok, TH',
+    '5/21', 'Singapore',
+    '5/23', 'Bangkok, TH',
+    '6/4', 'Taipei, TW',
+    '6/22', 'Manila, PH',
+    '6/28', 'Wanaka, NZ',
+    '9/25', 'Bangkok, TH',
+    '10/7', 'Boracay, PH',
+    '10/13', 'Cebu, PH'
 ];
