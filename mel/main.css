@@ -712,6 +712,24 @@ body {
     color: #d6d7dd;
 }
 
+.section6ImageSubtitle {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: #dde3e6;
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.section6ImageSubtitle .fontTitle {
+    font-size: 22px;
+}
+
 /* Common */
 .fill {
     position: absolute;
