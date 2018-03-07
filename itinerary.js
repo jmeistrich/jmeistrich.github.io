@@ -148,5 +148,18 @@ var itinerary = [
     '6/28', 'Wanaka, NZ',
     '9/25', 'Bangkok, TH',
     '10/7', 'Boracay, PH',
-    '10/13', 'Cebu, PH'
+    '10/13', 'Cebu, PH',
+    '11/15', 'Bantayan Island, PH',
+    '11/19', 'Kuala Lumpur, MY',
+    '11/20', 'Krabi, TH',
+    '11/21', 'Koh Jum, TH',
+    '11/25', 'Ko Lanta, TH',
+    '11/28', 'Phuket, TH',
+    '12/1', 'Singapore',
+    '12/5', 'Phuket, TH',
+    '12/6', 'Koh Phi Phi, TH',
+    '12/9', 'Koh Jum, TH',
+    '12/14', 'Phuket, TH',
+    '12/19', 'Bangkok, TH',
+    '12/20', 'San Diego, CA'
 ];
