@@ -44,7 +44,7 @@
 .mw {
     position: relative;
     width: 100%;
-    max-width: 1080px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,6 +112,10 @@
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-size: 16px;
     margin: 0;
@@ -146,13 +150,14 @@ body {
     font-weight: bold;
     line-height: 40px;
     padding-top: 36px;
-    color: #273e56;
 }
 
-.topBar>span:not(.headerLogo) {
+.topBar>a:not(.headerLogo) {
     margin: 0 12px;
     display: inline-block;
     font-size: 16px;
+    text-decoration: none;
+    color: #273e56;
 }
 
 @media (min-width: 641px) {
@@ -161,7 +166,7 @@ body {
     }
     .headerButton {
         display: inline-block;
-        color: white;
+        color: white !important;
         padding: 2px 20px;
         border-radius: 3px;
         background: #1c2434;
@@ -177,7 +182,6 @@ body {
         position: absolute;
         left: 40px;
         top: 0;
-        color: #273e56;
     }
 }
 
@@ -215,9 +219,12 @@ body {
     font-weight: bold;
 }
 
-.headerContact div {
+.headerContact a {
+    display: block;
     line-height: 32px;
     font-size: 22px;
+    text-decoration: none;
+    color: #273e56;
 }
 
 .headerImage {
@@ -236,6 +243,7 @@ body {
 /* Section 1 */
 .section1 {
     margin-top: -64px;
+    padding-bottom: 48px;
 }
 .section1Left {
     padding-top: 96px;
@@ -306,6 +314,7 @@ body {
     margin: 16px 0;
     color: #1b2658;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .followButton i {
@@ -351,6 +360,11 @@ body {
     bottom: 0;
     background: url(img/3Background.png);
     background-size: cover;
+    background-position: 60% center;
+    background-repeat:no-repeat;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-size:cover;
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
@@ -403,7 +417,7 @@ body {
     z-index: 1;
 }
 .section3Top {
-    margin: 48px auto;
+    margin: 96px auto 48px auto;
 }
 
 .section3Title {
@@ -476,14 +490,14 @@ body {
     padding: 0 16px;
 }
 
-.section4Grid div {
+.section4Grid a {
     padding: 0 48px;
     height: 100px;
     background: #192131;
     margin: 8px;
 }
 
-.section4Grid div:last-child {
+.section4Grid a:last-child {
     padding: 0 36px;
 }
 
@@ -679,7 +693,7 @@ body {
 }
 
 
-@media (min-width: 641px) {
+@media (min-width: 1081px) {
     .section5_2 .section5WhiteBox {
         width: 400px;
         margin: 32px 0 0 150px;
@@ -795,6 +809,7 @@ body {
 .section6BG {
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .section6BG img {
@@ -840,7 +855,8 @@ body {
     }
 }
 
-.footerContact div {
+.footerContact a {
+    display: block;
     line-height: 36px;
     font-size: 22px;
     color: #d6d7dd;
@@ -894,11 +910,11 @@ body {
     }
     .headerContact {
         text-align: center;
-        color: #d6d7dd;
         line-height: 48px;
         padding-bottom: 64px;
     }
-    .headerContact div {
+    .headerContact a {
+        color: #d6d7dd;
         line-height: 32px;
         font-size: 22px;
     }
@@ -972,12 +988,61 @@ body {
     .section3Desc {
         font-size: 16px;
     }
-    .section4Grid>div {
+    .section4Grid > a {
         height: 70px;
         padding: 0 24px;
     }
-    .section4Grid div:last-child {
+    .section4Grid a:last-child {
         padding: 0 16px;
+    }
+    .section6Title {
+        font-size: 20vw;
+        margin-top: -28.0vw;
+        line-height: 17vw;
+    }
+    .section6BG img {
+        min-width: 800px;
+    }
+    .section6Hi {
+        margin-top: 160px;
+        font-size: 4.0vw;
+        color: #1b2658;
+    }
+    .section6Email {
+        font-size: 6.0vw;
+        color: white;
+    }
+    .footerContact {
+        margin-bottom: 32px;
+    }
+    .footerContact > div {
+        display: inline-block;
+        width: 36px;
+    }
+}
+@media (max-width: 1080px) {
+    .flexMo {
+        display: flex;
+    }
+    .section5 {
+        padding: 120px 0;
+    }
+    .section5 > .flexbox {
+        display: block;
+        margin-left: auto;
+        right: auto;
+    }
+    .section5 > .flexbox > div {
+        width: 100%;
+        margin-top: 48px;
+    }
+    .section5_0 {
+        text-align: center;
+    }
+    .section5Desc {
+        max-width: 440px;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .section5Number {
         font-size: 220px;
@@ -1043,8 +1108,8 @@ body {
     }
     .section5YellowSubtitle {
         font-size: 4.5vw;
-        width: 60%;
-        margin: -76px -40px 0 -10px;
+        width: 55%;
+        margin: -78px -40px 0 -10px;
     }
     .section5_4Input {
         margin-right: 32px;
@@ -1057,50 +1122,7 @@ body {
         line-height: 42px;
         border-radius: 2px;
     }
-    .section6Title {
-        font-size: 20vw;
-        margin-top: -28.0vw;
-        line-height: 17vw;
-    }
-    .section6BG img {
-        min-width: 800px;
-    }
-    .section6Hi {
-        margin-top: 160px;
-        font-size: 4.0vw;
-        color: #1b2658;
-    }
-    .section6Email {
-        font-size: 6.0vw;
-        color: white;
-    }
-    .footerContact {
-        margin-bottom: 32px;
-    }
-    .footerContact > div {
-        display: inline-block;
-        width: 36px;
-    }
-}
-@media (max-width: 1080px) {
-    .section5 {
-        padding: 120px 0;
-    }
-    .section5 > .flexbox {
-        display: block;
-        margin-left: auto;
-        right: auto;
-    }
-    .section5 > .flexbox > div {
-        width: 100%;
-        margin-top: 48px;
-    }
-    .section5_0 {
-        text-align: center;
-    }
-    .section5Desc {
-        max-width: 440px;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    .section6ImageSubtitle {
+        display: none;
     }
 }
