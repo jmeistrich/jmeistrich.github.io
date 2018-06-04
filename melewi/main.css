@@ -3,6 +3,11 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+.flex-reverse {
+  -webkit-flex-direction: row-reverse;
+  /* Safari 6.1+ */
+  flex-direction: row-reverse;
+}
 .mw {
   position: relative;
   width: 100%;
@@ -26,9 +31,6 @@
 }
 .w100 {
   width: 100%;
-}
-.headerInside {
-  overflow: visible;
 }
 .topClipper {
   position: absolute;
@@ -71,15 +73,20 @@
 .topClipper .headerInside .headerInsideRight .giantText4 {
   margin-right: 36px;
 }
-@media (max-width: 900px) {
-  .topClipper .headerInside .headerInsideRight {
-    font-size: 80px;
-    line-height: 1.3;
-  }
-}
 @media (min-width: 901px) {
   .topClipper .headerInside .headerInsideRight {
     font-size: 100px;
+  }
+}
+@media (max-width: 631px) {
+  .topClipper {
+    width: 1200px;
+    margin-left: -600px;
+  }
+  .topClipper .gradientTop {
+    width: 1200px;
+    margin-top: -150px;
+    margin-left: 0;
   }
 }
 .gradientTop {
@@ -112,6 +119,30 @@
     transform: translate3d(0, 0, 0);
   }
 }
+#about {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#about .imgHelicopter {
+  margin-top: -200px;
+  margin-right: -106px;
+}
+#about > div {
+  min-width: 300px;
+}
+@media (max-width: 526px) {
+  #about .imgHelicopter {
+    margin-top: -160px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 527px) {
+  #about {
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    flex-direction: row-reverse;
+  }
+}
 .center {
   text-align: center;
 }
@@ -123,6 +154,10 @@
   color: white;
   font-weight: bold;
   white-space: nowrap;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
 }
 .sectionTitle {
   font-size: 24px;
@@ -148,20 +183,12 @@
 }
 .clientImages {
   text-align: right;
-  margin: -80px 0 160px 40px;
+  margin: -5vw 0 15vw 0;
   height: 200px;
 }
 .clientImages img {
-  height: 260px;
-}
-.imgHelicopter {
-  margin-top: -200px;
-  margin-right: -106px;
-}
-.airplaneWindow svg {
-  height: 700px;
-  width: 1001.95906066px;
-  margin: -300px -400px 0 0;
+  width: 700px;
+  max-width: 100%;
 }
 .stat {
   font-size: 14px;
@@ -272,6 +299,50 @@
   -ms-flex: 5;
   flex: 5;
 }
+.sectionTeamImgs .teamStatsMo {
+  padding: 8px 24px;
+}
+.sectionTeamImgs .teamStatsMo > div {
+  margin-top: 0;
+}
+.sectionTeamImgs .teamStatsMo > div:nth-child(2) {
+  margin-top: -8px;
+}
+.sectionTeamImgs .teamStatsMo > div:nth-child(3) {
+  margin-top: 8px;
+}
+.sectionTeamImgs .teamStatsMo > div:nth-child(4) {
+  margin-top: -12px;
+}
+.sectionTeamImgs .teamStatsMo > div:nth-child(5) {
+  margin-top: 12px;
+}
+.sectionTeamImgs .teamStatsMo .stat > div:last-child {
+  font-size: 8px;
+}
+@media (max-width: 500px) {
+  .sectionTeamImgs {
+    margin-top: 48px;
+  }
+  .sectionTeamImgs .teamStats1,
+  .sectionTeamImgs .teamStats2 {
+    display: none;
+  }
+  .sectionTeamImgs .team2 {
+    margin-bottom: 12px;
+  }
+  .sectionTeamImgs .team3 {
+    margin-bottom: -12px;
+  }
+  .sectionTeamImgs .team5 {
+    margin-top: 12px;
+  }
+}
+@media (min-width: 501px) {
+  .sectionTeamImgs .teamStatsMo {
+    display: none;
+  }
+}
 @media (max-width: 1280px) {
   .sectionTeamImgs .stat > div:first-child {
     font-size: 20px;
@@ -313,7 +384,12 @@
   }
 }
 .sectionWork {
-  padding-top: 180px;
+  padding-top: 160px;
+}
+@media (max-width: 600px) {
+  .sectionWork {
+    padding-top: 80px;
+  }
 }
 .sectionClients > div {
   margin: 100px 0;
@@ -647,6 +723,9 @@ input::placeholder {
   max-width: 500px;
   margin: 0 auto;
 }
+.sectionContact fieldset {
+  border: 0;
+}
 .sectionContact .text {
   font-weight: bold;
   font-size: 16px;
@@ -669,7 +748,7 @@ input::placeholder {
   font-weight: normal;
   resize: none;
 }
-.sectionContact button {
+.sectionContact input[type="submit"] {
   position: absolute;
   bottom: -48px;
   right: 16px;
@@ -782,7 +861,7 @@ input::placeholder {
   -webkit-box-align: center;
   -webkit-box-orient: vertical;
 }
-.flexgrid {
+.flex-wrap {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -894,10 +973,22 @@ body {
   .topBar {
     display: block !important;
     text-align: center;
+    margin-top: 16px;
+    line-height: 36px;
+    padding-left: 32px;
   }
 }
-@media (max-width: 730px) {
-  .topBar .circleButton {
+@media (max-width: 631px) {
+  .topBar {
+    text-align: left;
+  }
+  .topBar .headerLogo {
+    height: 40px;
+  }
+  .topBar .headerLogoName {
+    height: 32px;
+  }
+  .topBar .headerRight {
     display: none;
   }
 }
@@ -934,6 +1025,43 @@ body {
 .headerInside {
   padding-top: 96px;
   height: 700px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.headerInside > div {
+  min-width: 300px;
+}
+@media (max-width: 631px) {
+  .headerInside {
+    text-align: center;
+  }
+  .headerInside .fontGiant {
+    font-size: 60px !important;
+    margin-top: 120px !important;
+    text-align: left !important;
+    float: none !important;
+    line-height: 1.05 !important;
+  }
+  .headerInside .imgDevice {
+    margin-top: -250px;
+    margin-bottom: -120px;
+    width: 110%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 632px) {
+  .headerInside {
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 631px) {
+  .gradientTop .headerInside {
+    margin-left: -50vw;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
 }
 .headerInsideLeft {
   justify-content: center;
@@ -953,42 +1081,4 @@ body {
 }
 .headerInsideLeft > :not(.fontTitle) {
   padding-right: 32px;
-}
-.headerMiddle {
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 64px;
-}
-.headerMiddle i {
-  font-size: 24px;
-}
-.headerBig {
-  font-size: 64px;
-  font-weight: bold;
-  margin-top: 16px;
-}
-.headerText {
-  margin-top: 16px;
-  font-size: 22px;
-  font-weight: bold;
-}
-.headerContact a {
-  display: block;
-  line-height: 32px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #273e56;
-}
-.headerImage {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  background: url(img/1Header.png);
-  background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
