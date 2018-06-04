@@ -372,7 +372,7 @@
   display: inline-block;
   width: 300px;
   padding-bottom: 48px;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 .testimonials .scroller > div + div {
   margin-left: 32px;
@@ -386,11 +386,9 @@
 }
 .testimonials .whiteBox {
   padding: 32px;
-  height: 380px;
   background: white;
   border-radius: 16px;
   box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.3);
-  justify-content: space-between;
 }
 .testimonials .person {
   margin-top: 16px;
