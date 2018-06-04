@@ -164,6 +164,7 @@
     font-size: 15px;
     color: white;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .sectionTitle {
@@ -211,9 +212,9 @@
     // }
 }
 
-.imgAirplane {
-    margin-top: -220px;
-    margin-right: -@paddingPage;
+.imgHelicopter {
+    margin-top: -200px;
+    margin-right: -@paddingPage - 90;
 }
 
 .airplaneWindow {
@@ -411,15 +412,26 @@
     .imgNeedsPad:last-child {
         padding-left: 100px;
     }
+    @imgExtra: 20%;
     .clientLeft {
         margin-left: -@paddingPage;
+        // .imgWrap {
+        //     max-width: 50%;
+        // }
         .imgWrap img {
-            margin-left: -100px;
-            width: ~'calc(100% + 100px)';
+            margin-left: -@imgExtra;
+            width: 100% + @imgExtra * 2;
         }
     }
     .clientRight {
-        margin-left: -@paddingPage;
+        margin-right: -@paddingPage;
+        .imgWrap img {
+            margin-right: -@imgExtra;
+            width: 100% + @imgExtra * 2;
+        }
+    }
+    .imgGuavapass img, .imgWeInvest img {
+        margin-top: -15%;
     }
     @minWidth: 960px;
     .companyStats {
@@ -483,12 +495,16 @@
     >div {
         @time: 500ms;
         margin: 0 8px;
-        -webkit-transition : -webkit-filter 0.2s linear;
-        -moz-transition : filter 0.2s linear;
-        transition : filter 0.2s linear;
-        &:not(:hover) {
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
+        // -webkit-transition : -webkit-filter 0.2s linear;
+        // -moz-transition : filter 0.2s linear;
+        // transition : filter 0.2s linear;
+        .flex(1);
+        // &:not(:hover) {
+        //     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        //     filter: grayscale(100%);
+        // }
+        &.imgSmaller>div {
+            margin: 0 6px;
         }
     }
     img {
@@ -497,7 +513,7 @@
 }
 
 .teamFlags {
-    @size: 32px;
+    @size: 26px;
     margin-top: -@size / 2;
     div {
         text-align: center;
@@ -530,10 +546,11 @@
         color: rgba(0, 0, 0, 0.03) !important;
     }
     .logoBig {
+        @size: 700px;
         position: absolute;
-        left: -100px;
-        top: -200px;
-        width: 440px;
+        left: -@size / 2;
+        top: -140px;
+        width: @size;
         // z-index: -1;
     }
 }
@@ -934,7 +951,7 @@ body {
     left: 0;
     right: 0;
     top: -54px;
-    color: rgba(12,33,88, 0.1);
+    color: rgba(12,33,88, 0.08);
     font-size: 64px;
     text-align: center;
     font-weight: bold;
@@ -956,12 +973,6 @@ body {
     }
 }
 
-.sectionImg {
-    &:last-child {
-        padding-left: 100px;
-    }
-}
-
 /* Header */
 .header {
     position: relative;
@@ -974,7 +985,6 @@ body {
     left: 0;
     right: 0;
     text-align: right;
-    display: block;
     font-weight: bold;
     line-height: @topBarHeight;
     height: @topBarHeight;
@@ -985,6 +995,35 @@ body {
     }
     .circleButton {
         margin-top: -(@circleButtonSize - @topBarHeight) / 2;
+        margin-left: 16px !important;
+    }
+    * {
+        // vertical-align: middle;
+        white-space: nowrap;
+    }
+    @imgHeight: 40px;
+    .headerLogo {
+        @height: @imgHeight + 8;
+        height: @height;
+        // margin-top: @topBarHeight - @height / 2;
+        // margin-top: @topBarPadding;
+    }
+    .headerLogoName {
+        @height: @imgHeight;
+        display: inline-block;
+        height: @height;
+        margin-left: 16px;
+        vertical-align: top;
+        margin-top: 4px;
+    }
+    @media (max-width: 730px) {
+        display: block !important;
+        text-align: center;
+    }
+    @media (max-width: 730px) {
+        .circleButton {
+            display: none;
+        }
     }
 }
 
@@ -1016,38 +1055,11 @@ body {
         padding-left: 16px;
         padding-right: 16px;
     }
-    .headerLogo {
-        float: left;
-    }
-    .headerLogoName {
-        float: left;
-    }
     .headerContact {
         position: absolute;
         left: 40px;
         top: 0;
     }
-}
-
-.headerLogo {
-    @height: @topBarHeight;
-    @width: round(@height * 119 / 134);
-    background: url(img/1Logo.png);
-    background-size: @width;
-    width: @width;
-    height: @height;
-    // margin-top: @topBarHeight - @height / 2;
-    // margin-top: @topBarPadding;
-}
-.headerLogoName {
-    @height: 40px;
-    @width: round(@height * 288 / 72);
-    background: url(img/1LogoName.png);
-    background-size: @width;
-    width: @width;
-    height: @height;
-    margin-left: 16px;
-    margin-top: (@topBarHeight - @height) / 2;
 }
 
 .headerInside {

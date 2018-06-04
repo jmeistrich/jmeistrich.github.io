@@ -122,6 +122,7 @@
   font-size: 15px;
   color: white;
   font-weight: bold;
+  white-space: nowrap;
 }
 .sectionTitle {
   font-size: 24px;
@@ -153,9 +154,9 @@
 .clientImages img {
   height: 260px;
 }
-.imgAirplane {
-  margin-top: -220px;
-  margin-right: -16px;
+.imgHelicopter {
+  margin-top: -200px;
+  margin-right: -106px;
 }
 .airplaneWindow svg {
   height: 700px;
@@ -356,11 +357,19 @@
   margin-left: -16px;
 }
 .sectionClients .clientLeft .imgWrap img {
-  margin-left: -100px;
-  width: calc(100% + 100px);
+  margin-left: -20%;
+  width: 140%;
 }
 .sectionClients .clientRight {
-  margin-left: -16px;
+  margin-right: -16px;
+}
+.sectionClients .clientRight .imgWrap img {
+  margin-right: -20%;
+  width: 140%;
+}
+.sectionClients .imgGuavapass img,
+.sectionClients .imgWeInvest img {
+  margin-top: -15%;
 }
 @media (min-width: 961px) {
   .sectionClients .companyStats {
@@ -421,26 +430,25 @@
 }
 .teamPortraits > div {
   margin: 0 8px;
-  -webkit-transition: -webkit-filter 0.2s linear;
-  -moz-transition: filter 0.2s linear;
-  transition: filter 0.2s linear;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
-.teamPortraits > div:not(:hover) {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+.teamPortraits > div.imgSmaller > div {
+  margin: 0 6px;
 }
 .teamPortraits img {
   width: 100%;
 }
 .teamFlags {
-  margin-top: -16px;
+  margin-top: -13px;
 }
 .teamFlags div {
   text-align: center;
 }
 .teamFlags img {
-  width: 32px;
+  width: 26px;
 }
 .teamTimes {
   font-size: 24px;
@@ -466,9 +474,9 @@
 }
 .sectionTestimonials .logoBig {
   position: absolute;
-  left: -100px;
-  top: -200px;
-  width: 440px;
+  left: -350px;
+  top: -140px;
+  width: 700px;
 }
 .testimonials {
   position: absolute;
@@ -827,7 +835,7 @@ body {
   left: 0;
   right: 0;
   top: -54px;
-  color: rgba(12, 33, 88, 0.1);
+  color: rgba(12, 33, 88, 0.08);
   font-size: 64px;
   text-align: center;
   font-weight: bold;
@@ -845,9 +853,6 @@ body {
 .sectionText .button {
   margin-left: -16px;
 }
-.sectionImg:last-child {
-  padding-left: 100px;
-}
 /* Header */
 .header {
   position: relative;
@@ -859,7 +864,6 @@ body {
   left: 0;
   right: 0;
   text-align: right;
-  display: block;
   font-weight: bold;
   line-height: 50px;
   height: 50px;
@@ -871,6 +875,31 @@ body {
 }
 .topBar .circleButton {
   margin-top: -17px;
+  margin-left: 16px !important;
+}
+.topBar * {
+  white-space: nowrap;
+}
+.topBar .headerLogo {
+  height: 48px;
+}
+.topBar .headerLogoName {
+  display: inline-block;
+  height: 40px;
+  margin-left: 16px;
+  vertical-align: top;
+  margin-top: 4px;
+}
+@media (max-width: 730px) {
+  .topBar {
+    display: block !important;
+    text-align: center;
+  }
+}
+@media (max-width: 730px) {
+  .topBar .circleButton {
+    display: none;
+  }
 }
 .headerFooter a:not(.headerLogo) {
   margin-left: 8px;
@@ -896,31 +925,11 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .headerLogo {
-    float: left;
-  }
-  .headerLogoName {
-    float: left;
-  }
   .headerContact {
     position: absolute;
     left: 40px;
     top: 0;
   }
-}
-.headerLogo {
-  background: url(img/1Logo.png);
-  background-size: 44px;
-  width: 44px;
-  height: 50px;
-}
-.headerLogoName {
-  background: url(img/1LogoName.png);
-  background-size: 160px;
-  width: 160px;
-  height: 40px;
-  margin-left: 16px;
-  margin-top: 5px;
 }
 .headerInside {
   padding-top: 96px;
