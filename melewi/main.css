@@ -505,72 +505,114 @@ button {
   max-width: 500px;
   margin: 0 auto 100px auto;
 }
-.teamRow {
+.teamPeople {
+  text-align: center;
   max-width: 900px;
+  margin: -40px auto 0 auto;
 }
-.teamRow > div {
-  -webkit-flex: 1;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.teamPeople .teamPerson {
+  width: 14.28571429%;
 }
-.teamNames {
+.teamPeople .teamName {
   color: #d4b166;
   font-size: 22px;
   white-space: nowrap;
-}
-.teamNames > div {
   overflow: hidden;
   text-align: left;
-  margin-top: -40px;
-  height: 180px;
+  margin-bottom: -20px;
+  height: 200px;
+  font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 }
-.teamNames > div > div {
+@media (max-width: 800px) {
+  .teamPeople .teamName {
+    margin-bottom: -60px;
+  }
+}
+@media (max-width: 650px) {
+  .teamPeople .teamName {
+    margin-bottom: -80px;
+  }
+}
+.teamPeople .teamName > div {
   margin-top: 80px;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.teamPortraits {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  margin-top: 0px !important;
-}
-.teamPortraits > div {
+.teamPeople .teamPortrait {
+  position: relative;
   margin: 0 8px;
-  -webkit-flex: 1;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  height: 108px;
 }
-.teamPortraits > div.imgSmaller > div {
-  margin: 0 6px;
+.teamPeople .teamPortrait > div {
+  position: relative;
+  height: 100%;
 }
-.teamPortraits img {
+.teamPeople .teamPortrait img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
 }
-.teamFlags {
-  margin-top: -13px;
+.teamPeople .teamPortrait.imgSmaller > div {
+  margin: 0 6px;
 }
-.teamFlags div {
+.teamPeople .teamFlag {
+  position: relative;
+  margin-top: -13px;
+  text-align: center;
+  z-index: 1;
+}
+.teamPeople .teamFlag div {
   text-align: center;
 }
-.teamFlags img {
+.teamPeople .teamFlag img {
   width: 26px;
 }
-.teamTimes {
+.teamPeople .teamTime {
+  font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
   font-size: 24px;
 }
-.teamTimes sup {
+.teamPeople .teamTime sup {
   font-size: 16px;
   font-weight: 600;
   margin-left: 8px;
 }
-.teamCountries {
+.teamPeople .teamCountry {
   margin-top: 8px;
   font-weight: bold;
   font-size: 13px;
+}
+@media (max-width: 600px) {
+  .teamPeople {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .teamPeople .teamPerson {
+    width: 25%;
+  }
+  .teamPeople .teamName {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 520px) {
+  .teamPeople {
+    margin-top: -60px;
+  }
+  .teamPeople .teamName {
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 440px) {
+  .teamPeople {
+    margin-top: -60px;
+  }
+  .teamPeople .teamName {
+    margin-top: 30px;
+    margin-bottom: -60px;
+  }
 }
 .sectionTestimonials {
   padding-top: 140px;

@@ -544,79 +544,106 @@ button {
     margin: 0 auto 100px auto;
 }
 
-.teamRow {
+.teamPeople {
+    text-align: center;
     max-width: 900px;
-    >div {
-        .flex(1);
+    margin: -40px auto 0 auto;
+    .teamPerson {
+        width: 100% / 7;
     }
-}
-
-.teamNames {
-    color: @colorYellow;
-    font-size: 22px;
-    white-space: nowrap;
-    // padding: 20px;
-    // height: 400px;
-    >div {
+    .teamName {
+        color: @colorYellow;
+        font-size: 22px;
+        white-space: nowrap;
         overflow: hidden;
         text-align: left;
-        margin-top: -40px;
-        height: 180px;
+        // margin-top: -60px;
+        margin-bottom: -20px;
+        height: 200px;
+        font-family: @fontGiant;
+        // min-width: 120px;
+        @media (max-width: (800px)) {
+            margin-bottom: -60px;
+        }
+        @media (max-width: (650px)) {
+            margin-bottom: -80px;
+        }
         >div {
             margin-top: 80px;
             // transform-origin: 50% 100%;
             .rotate(-90deg);
         }
     }
-}
-
-.teamPortraits {
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-    margin-top: 0px !important;
-    >div {
-        @time: 500ms;
+    .teamPortrait {
+        position: relative;
         margin: 0 8px;
-        // -webkit-transition : -webkit-filter 0.2s linear;
-        // -moz-transition : filter 0.2s linear;
-        // transition : filter 0.2s linear;
-        .flex(1);
-        // &:not(:hover) {
-        //     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        //     filter: grayscale(100%);
-        // }
+        height: 108px;
+        >div {
+            position: relative;
+            height: 100%;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            // height: 100px;
+        }
         &.imgSmaller>div {
             margin: 0 6px;
         }
     }
-    img {
-        width: 100%;
-    }
-}
-
-.teamFlags {
-    @size: 26px;
-    margin-top: -@size / 2;
-    div {
+    .teamFlag {
+        @size: 26px;
+        position: relative;
+        margin-top: -@size / 2;
         text-align: center;
+        z-index: 1;
+        div {
+            text-align: center;
+        }
+        img {
+            width: @size;
+        }
     }
-    img {
-        width: @size;
+    .teamTime {
+        font-family: @fontGiant;
+        font-size: 24px;
+        sup {
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
     }
-}
-.teamTimes {
-    font-size: 24px;
-    sup {
-        font-size: 16px;
-        font-weight: 600;
-        margin-left: 8px;
+    .teamCountry {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 13px;
     }
-}
+    @media (max-width: (@maxWidthWide)) {
+        .flex-wrap;
+        .teamPerson {
+            width: 100% / 4;
+        }
+        .teamName {
+            margin-bottom: 0px;
+        }
+    }
 
-.teamCountries {
-    margin-top: 8px;
-    font-weight: bold;
-    font-size: 13px;
+    @media (max-width: (520px)) {
+        margin-top: -60px;
+        .teamName {
+            margin-top: 20px;
+            margin-bottom: -40px;
+        }
+    }
+    @media (max-width: (440px)) {
+        margin-top: -60px;
+        .teamName {
+            margin-top: 30px;
+            margin-bottom: -60px;
+        }
+    }
 }
 
 .sectionTestimonials {
