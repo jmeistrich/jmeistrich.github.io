@@ -393,6 +393,11 @@ button {
 }
 .sectionClients > div {
   margin: 100px 0;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sectionClients > div > div {
+  min-width: 293px;
 }
 .sectionClients .clientText > div {
   max-width: 460px;
@@ -443,6 +448,13 @@ button {
   margin-right: -20%;
   width: 140%;
 }
+@media (min-width: 601px) {
+  .sectionClients .clientRight {
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    flex-direction: row-reverse;
+  }
+}
 .sectionClients .imgGuavapass img,
 .sectionClients .imgWeInvest img {
   margin-top: -15%;
@@ -466,6 +478,27 @@ button {
 @media (min-width: 961px) {
   .sectionClients .stat > div:first-child {
     font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .sectionClients .stat > div:first-child {
+    font-size: 22px;
+  }
+  .sectionClients .stat > div:last-child {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .sectionClients > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .sectionClients .imgWrap {
+    text-align: center;
+  }
+  .sectionClients .imgWrap img {
+    max-width: 100%;
+    margin: 0 !important;
   }
 }
 .smallTeamText {
@@ -541,9 +574,18 @@ button {
 }
 .sectionTestimonials {
   padding-top: 140px;
-  padding-bottom: 180px;
   background: #f8fafb;
   border-radius: 0 0 50% 50%;
+}
+@media (max-width: 600px) {
+  .sectionTestimonials {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 601px) {
+  .sectionTestimonials {
+    padding-bottom: 180px;
+  }
 }
 .sectionTestimonials .sneakyTitle {
   color: rgba(0, 0, 0, 0.03) !important;
@@ -617,6 +659,11 @@ button {
 }
 .sectionFeaturedWrite {
   margin-top: 620px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sectionFeaturedWrite > div {
+  min-width: 284px;
 }
 .sectionFeaturedWrite .rowFeatured {
   padding: 0 24px;
@@ -660,6 +707,21 @@ button {
 .sectionFeaturedWrite input {
   line-height: 48px;
 }
+@media (max-width: 600px) {
+  .sectionFeaturedWrite {
+    text-align: center;
+  }
+  .sectionFeaturedWrite .sectionFeatured {
+    margin-bottom: 48px;
+  }
+  .sectionFeaturedWrite .sectionSignup > div {
+    margin-left: 0 !important;
+  }
+  .sectionFeaturedWrite .sectionSignup .inputWrapper {
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+  }
+}
 input,
 textarea {
   border: 0;
@@ -678,6 +740,9 @@ input::placeholder {
 .sectionSignup > div {
   max-width: 500px;
   margin: 0 auto;
+}
+.sectionFeatured {
+  z-index: 1;
 }
 .sectionFeatured .sneakyTitle {
   text-align: left;
@@ -706,9 +771,21 @@ input::placeholder {
 .sectionReady {
   padding-top: 80px;
   padding-bottom: 120px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.sectionReady .sectionText {
-  padding-top: 120px;
+.sectionReady > div {
+  min-width: 284px;
+}
+@media (max-width: 600px) {
+  .sectionReady .sectionText {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 601px) {
+  .sectionReady .sectionText {
+    padding-top: 120px;
+  }
 }
 .sectionReady .sneakyTitle {
   text-align: left;
@@ -771,6 +848,21 @@ input::placeholder {
   padding-top: 24px;
   padding-bottom: 24px;
   white-space: nowrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .footerRow2 {
+    text-align: center;
+  }
+  .footerRow2 > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footerRow2 .footerRight,
+  .footerRow2 .f1 {
+    display: none;
+  }
 }
 .footerRow2 .footerLogo {
   height: 34px;

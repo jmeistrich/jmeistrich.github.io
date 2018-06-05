@@ -2,6 +2,7 @@
 @topBarPadding: 46px;
 @pageWidth: 1280px;
 @paddingPage: 16px;
+@maxWidthWide: 600px;
 @colorGreen: #44d08c;
 @colorYellow: #d4b166;
 @colorLightBlue: #b3c7e6;
@@ -426,6 +427,10 @@ button {
 .sectionClients {
     >div {
         margin: 100px 0;
+        .flex-wrap;
+        >div {
+            min-width: @maxWidthWide / 2 - 7;
+        }
     }
     .clientText {
         >div {
@@ -482,6 +487,9 @@ button {
             margin-right: -@imgExtra;
             width: 100% + @imgExtra * 2;
         }
+        @media (min-width: (@maxWidthWide + 1)) {
+            .flex-reverse;
+        }
     }
     .imgGuavapass img, .imgWeInvest img {
         margin-top: -15%;
@@ -506,6 +514,27 @@ button {
             >div:first-child {
                 font-size: 28px;
             }
+        }
+        @media (max-width: (@maxWidthWide)) {
+            >div:first-child {
+                font-size: 22px;
+            }
+            >div:last-child {
+                font-size: 10px;
+            }
+        }
+    }
+    @media (max-width: (@maxWidthWide)) {
+        >div {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .imgWrap {
+            text-align: center;
+        }
+        .imgWrap img {
+            max-width: 100%;
+            margin: 0 !important;
         }
     }
 }
@@ -592,7 +621,12 @@ button {
 
 .sectionTestimonials {
     padding-top: 140px;
-    padding-bottom: 180px;
+    @media (max-width: (@maxWidthWide)) {
+        padding-bottom: 60px;
+    }
+    @media (min-width: (@maxWidthWide + 1)) {
+        padding-bottom: 180px;
+    }
     background: #f8fafb;
     border-radius: 0 0 50% 50%;
     .sneakyTitle {
@@ -676,6 +710,10 @@ button {
 
 .sectionFeaturedWrite {
     margin-top: 620px;
+    .flex-wrap;
+    >div {
+        min-width: @maxWidthWide / 2 - 16;
+    }
     .rowFeatured {
         padding: 0 24px;
         img {
@@ -723,6 +761,21 @@ button {
     input {
         line-height: 48px;
     }
+    @media (max-width: (@maxWidthWide)) {
+        text-align: center;
+        .sectionFeatured {
+            margin-bottom: 48px;
+        }
+        .sectionSignup {
+            >div {
+                margin-left: 0 !important;
+            }
+            .inputWrapper {
+                margin-left: 24px !important;
+                margin-right: 24px !important;
+            }
+        }
+    }
 }
 
 input, textarea {
@@ -748,6 +801,7 @@ input::placeholder {
 }
 
 .sectionFeatured {
+    z-index: 1;
     .sneakyTitle {
         text-align: left;
         left: -24px;
@@ -779,8 +833,17 @@ input::placeholder {
 .sectionReady {
     padding-top: 80px;
     padding-bottom: 120px;
+    .flex-wrap;
+    >div {
+        min-width: @maxWidthWide / 2 - 16;
+    }
     .sectionText {
-        padding-top: 120px;
+        @media (max-width: (@maxWidthWide)) {
+            padding-top: 60px;
+        }
+        @media (min-width: (@maxWidthWide + 1)) {
+            padding-top: 120px;
+        }
     }
     .sneakyTitle {
         text-align: left;
@@ -854,6 +917,17 @@ input::placeholder {
     padding-top: @padding;
     padding-bottom: @padding;
     white-space: nowrap;
+    .flex-wrap;
+    @media (max-width: (@maxWidthWide)) {
+        text-align: center;
+        >div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footerRight, .f1 {
+            display: none;
+        }
+    }
     .footerLogo {
         height: @height;
     }
