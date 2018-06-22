@@ -1327,6 +1327,11 @@ body {
   font-size: 17px;
   color: #b3c7e6;
 }
+@media (max-width: 732px) {
+  .headerInsideLeft {
+    margin: 0 auto;
+  }
+}
 .headerInsideLeft .fontTitle {
   font-size: 34px;
   margin-bottom: 24px;
