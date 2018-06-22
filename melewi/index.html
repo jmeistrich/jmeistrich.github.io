@@ -45,8 +45,8 @@
         <div class="header flexbox">
             <svg height="0" width="0">
                 <defs>
-                    <clipPath id="svgPath" transform="translate(60,-50) scale(0.48 0.48)">
-                        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M3023.442,538.967 C3007.857,624.270 2953.306,905.984 2891.165,1117.263 C2823.242,1269.959 2745.630,1305.403 2627.234,1354.612 C2508.837,1403.814 1220.274,1842.125 975.666,1924.574 C731.057,2007.022 637.017,1884.458 543.616,1722.473 C470.670,1595.960 454.118,1555.730 427.128,1495.202 C293.883,1224.560 46.768,711.077 19.674,644.789 C-20.416,546.713 -37.397,145.295 363.474,61.563 C582.368,22.648 915.279,15.172 1217.035,18.837 C1552.947,5.875 2330.571,-17.843 2713.011,22.350 C3147.269,64.966 3039.026,453.672 3023.442,538.967 Z" />
+                    <clipPath id="svgPath" clipPathUnits="objectBoundingBox">
+                        <path d="M0.9611177435875536,0.18308379517210652 C0.9562239807879382,0.2111321365804257 0.9390947119729354,0.3037620611024616 0.9195821477040294,0.3732323672395057 C0.8982540084266295,0.4234400919348237 0.8738834778906172,0.4350943762258388 0.8367065808470967,0.45127470789485374 C0.7995293697989052,0.46745273790519476 0.3949145687491247,0.6115730686206653 0.31810651415250457,0.6386829909068042 C0.24129814555121326,0.6657925843845611 0.2117691462778201,0.6254925138551632 0.18244079598928117,0.5722304880996026 C0.15953541124877776,0.5306319532697528 0.15433800593217625,0.5174039920625657 0.14586301985828343,0.4975018783178821 C0.10402346745310183,0.408512520201165 0.02642820314595,0.23967500579524773 0.017920560586259283,0.2178789557703405 C0.005332113320517756,0.18563074489894896 0,0.05364114181998727 0.1258753665219524,0.02610935837976382 C0.1946091050050461,0.013313780194884729 0.2991447140767666,0.010855608731177776 0.3938975076193234,0.012060691451146473 C0.4993754447091155,0.007798677203879282 0.7435530130946228,0 0.8636409595229139,0.013215795297053712 C1,0.0272282933036529 0.9660111923824979,0.15503808423084323 0.9611177435875536,0.18308379517210652 Z" />
                     </clipPath>
                 </defs>
             </svg>
@@ -93,8 +93,10 @@
                             </div>
                             <div>
                                 <a class="button buttonGetInTouch" href="#contact">
-                                    GET IN TOUCH
-                                    <span class="rightArrow">&rarr;</span>
+                                    <div class="buttonInside">
+                                        GET IN TOUCH
+                                        <span class="rightArrow">&rarr;</span>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -182,7 +184,7 @@
                 <div class="team5"><img src="img/Team5.jpg" /></div>
             </div>
         </div>
-        <div id="ourwork" class="sectionWork smallTeamText center">
+        <div id="ourwork" class="sectionWork smallTeamText mw center">
             <div class="sectionTitle fontTitle">
                 <div class="sneakyTitle fontGiant">Our Work</div>
                 Making big ideas big successes,<br>grounded in the real world, for real people
@@ -216,7 +218,7 @@
                         <p class="companyWriteup text">McDonald's is the world's most famous fast-food brand with market presence in over 100+ countries. We worked with them to redesign McDelivery apps for markets across Asia Pacific, Middle East, and Africa. Over the years, we've iteratively localised and improved the McDelivery experience for millions of their customers around the globe.</p>
                         <p class="companyLocation"><b>- Asia Pacific, Middle East & Africa</b><br>- Product Strategy, UX, UI, Web, Mobile</p>
                     </div>
-                    <div class="companyStats">
+                    <div class="companyStats unpad">
                         <div class="stat ib">
                             <div>21</div>
                             <div>COUNTRIES</div>
@@ -301,7 +303,7 @@
         <div id="team" class="sectionTeamBG sectionCurveClip">
             <div class="sectionCurveInside">
                 <div class="sectionTeam mw nopad">
-                    <div class="center smallTeamText">
+                    <div class="center smallTeamText mw">
                         <div class="sectionTitle fontTitle">
                             <div class="sneakyTitle fontGiant">Our Team</div>
                             <div>Small team, big presence</div>
@@ -416,6 +418,21 @@
                             </div>
                         </div>
                         <div>
+                            <div class="testimonialLogo"><img src="img/mediacorp_logo.png" /></div>
+                            <div class="whiteBox">
+                                <div class="text">
+                                    "Melewi gave us a unique opportunity to experience their well organised and effective workflow that defies geography and timezones. It’s a great feeling to work with talented professionals that are genuinely interested in delivering the best solution to meet our business goals."
+                                </div>
+                                <div class="person flexbox">
+                                    <img src="img/gideonsimons.png" />
+                                    <div class="f1">
+                                        <div class="fontGiant">Gideon Simons</div>
+                                        <div>UX Lead</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
                             <div class="testimonialLogo"><img src="img/LogoGuavapass.png" /></div>
                             <div class="whiteBox">
                                 <div class="text">
@@ -476,7 +493,7 @@
                             <img height="32" src="img/LesEchos.png" />
                             <img height="36" src="img/RTB.png" />
                             <img height="24" src="img/CNA.png" />
-                            <img height="16" src="img/TheBusinessTimes.png" />
+                            <img id="imgBusiness" height="16" src="img/TheBusinessTimes.png" />
                         </div>
                     </div>
                     <div class="sectionSignup f1">
@@ -498,7 +515,11 @@
                                     <div style="position: absolute; left: -5000px;">
                                         <input type="text" name="b_0eb5ae69af2554a26269e26d9_a783a9c00f" tabindex="-1" value="">
                                     </div>
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe<span class="rightArrow">&rarr;</span></button>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                        <div class="buttonInside">
+                                            Subscribe<span class="rightArrow">&rarr;</span>
+                                        </div>
+                                    </button>
                                 </form>
                                 <!-- <input class="fontGiant" placeholder="email@address.com" />
                                 <button class="button">Subscribe<span class="rightArrow">&rarr;</span></button> -->
@@ -535,6 +556,23 @@
                         </div>
                     </fieldset>
                 </form>
+                <div id="success">
+                    <div class="flexbox flexvert">
+                        <div class="doh">
+                            <h1>Thank you!</h1>
+                            <p>We'll get back to you in a day or two.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="error">
+                    <div class="flexbox flexvert">
+                        <div class="doh">
+                            <h1>Oooooops!</h1>
+                            <p>Something went wrong, try refreshing and submitting the form again.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footerRow1 flexbox mw">
