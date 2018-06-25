@@ -26,6 +26,9 @@
 .w100 {
   width: 100%;
 }
+.mosafari .topClipper {
+  overflow: auto;
+}
 .topClipper {
   position: absolute;
   top: -80px;
@@ -33,7 +36,6 @@
   width: 1520px;
   height: 1520px;
   margin-left: -955px;
-  overflow: auto;
 }
 .topClipper .gradientTop {
   position: relative;
@@ -610,7 +612,7 @@ button {
   }
 }
 .smallTeamText {
-  max-width: 540px;
+  max-width: 560px;
   margin: 0 auto 100px auto;
 }
 .teamPeople {

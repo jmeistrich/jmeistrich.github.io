@@ -1,5 +1,10 @@
 
 $(function() {
+    var ua = navigator.userAgent;
+    if (ua.match(/iPhone/i) || ua.match(/iPod/i) || ua.match(/iPad/i))
+    {
+        document.body.classList.add('mosafari');
+    }
     $('#contact').validate({
         rules: {
             name: {
