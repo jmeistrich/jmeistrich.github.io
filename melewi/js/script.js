@@ -5,6 +5,68 @@ $(function() {
     {
         document.body.classList.add('mosafari');
     }
+
+    function isMobileDevice()
+    {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
+    if (!isMobileDevice())
+    {
+        var testimonials = document.getElementById('testimonials').getElementsByClassName('scroller')[0],
+            prevX,
+            prevTime,
+            prevDiff,
+            prevTimeDiff,
+            transform = 0;
+
+        var updateTransform = function () {
+            testimonials.scrollLeft = transform;
+        };
+        testimonials.onmousedown = function (e) {
+            testimonials.style['scroll-behavior'] = '';
+            testimonials.classList.add('dragging');
+            prevX = e.clientX;
+        };
+        testimonials.onmousemove = function (e) {
+            if (!isNaN(prevX))
+            {
+                e.preventDefault();
+
+                var diff = prevX - e.clientX;
+                transform += diff;
+
+                var time = (performance && performance.now()) || Date.now();
+                prevTimeDiff = prevTime ? (time - prevTime) : time;
+                prevTime = time;
+                prevX = e.clientX;
+                prevDiff = diff;
+
+                updateTransform();
+            }
+        };
+        testimonials.onmouseup = function () {
+            testimonials.style['scroll-behavior'] = 'smooth';
+            testimonials.classList.remove('dragging');
+            if (prevTime)
+            {
+                var speed = Math.max(Math.min(prevDiff / prevTimeDiff * 100, 300), -300);
+                transform += speed;
+                updateTransform();
+            }
+
+            prevTime = undefined;
+            prevX = undefined;
+        };
+        document.onmouseout = function (e) {
+            if ((!e.target || e.target.nodeName === 'HTML') && !isNaN(prevX))
+            {
+                prevTime = undefined;
+                testimonials.onmouseup();
+            }
+        };
+    }
+
     $('#contact').validate({
         rules: {
             name: {
