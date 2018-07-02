@@ -26,7 +26,7 @@
 .w100 {
   width: 100%;
 }
-.mosafari .topClipper {
+.safari .topClipper {
   overflow: auto;
 }
 .topClipper {
@@ -761,32 +761,12 @@ button {
   right: 0;
   z-index: 1;
   margin-top: 60px;
-  height: 520px;
-  overflow: hidden;
 }
 .testimonials .scroller {
   overflow-x: auto;
-  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   z-index: 1;
-  height: 100%;
-  padding-bottom: 20px;
-  box-sizing: content-box;
-  /* So the width will be 100% + 17px */
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-.testimonials .scroller.dragging {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
 }
 .testimonials .scroller > div {
   white-space: normal;

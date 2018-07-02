@@ -71,7 +71,7 @@
 //     overflow: visible;
 // }
 
-.mosafari {
+.safari {
     .topClipper {
         overflow: auto;
     }
@@ -793,32 +793,14 @@ button {
     position: absolute;
     left: 0;
     right: 0;
+    // height: 400px;
     z-index: 1;
     margin-top: 60px;
-    height: 520px;
-    overflow: hidden;
     .scroller {
         overflow-x: auto;
-        overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         white-space: nowrap;
         z-index: 1;
-        height: 100%;
-        padding-bottom: 20px;
-        box-sizing: content-box; /* So the width will be 100% + 17px */
-        cursor: -webkit-grab;
-        cursor: -moz-grab;
-        cursor: -o-grab;
-        cursor: -ms-grab;
-        cursor: grab;
-        &.dragging {
-            cursor: move;
-            cursor: -webkit-grabbing;
-            cursor: -moz-grabbing;
-            cursor: -o-grabbing;
-            cursor: -ms-grabbing;
-            cursor: grabbing;
-        }
         >div {
             white-space: normal;
             display: inline-block;
