@@ -29,6 +29,9 @@
 .safari .topClipper {
   overflow: auto;
 }
+.safari .topClipper::-webkit-scrollbar {
+  display: none;
+}
 .topClipper {
   position: absolute;
   top: -80px;

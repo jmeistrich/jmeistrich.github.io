@@ -1,7 +1,7 @@
 
 $(function() {
     var ua = navigator.userAgent;
-    if (ua.match(/Safari/))
+    if (ua.match(/^((?!chrome|android).)*safari/i))
     {
         document.body.classList.add('safari');
     }
