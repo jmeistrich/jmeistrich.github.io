@@ -45,7 +45,10 @@
 }
 .twoCol {
     >div {
-        flex: 50%;
+        -webkit-flex: 1 1 15em;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1 1 15em;
         width: 50%;
     }
 }
@@ -1194,10 +1197,7 @@ input::placeholder {
 }
 
 .f1 {
-    -webkit-flex: 1;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    .flex(1);
 }
 
 .abs {
