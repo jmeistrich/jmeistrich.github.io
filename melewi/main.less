@@ -40,6 +40,10 @@
     margin-right: auto;
     padding: 0 @paddingPage;
 }
+.ios10 .mw {
+    -webkit-transform: translate3d(0,0,0);
+
+}
 .nopad {
     padding: 0;
 }
@@ -97,7 +101,6 @@
         position: relative;
         width: @width;
         height: @width;
-        padding-top: @padTop;
         margin-left: 50px;
     }
     .headerInside {
@@ -106,6 +109,7 @@
         margin-left: @marginRight;
         width: 500px;
         max-width: 50vw;
+        margin-top: @padTop;
         .headerInsideRight {
             @maxSize: 900px;
             font-size: 100px;
@@ -329,6 +333,10 @@ button {
     .sectionTitle {
         color: white;
     }
+}
+
+.ios10 .sectionTeamBG {
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .sectionTeamImgs {

@@ -4,6 +4,10 @@ $(function() {
     if (ua.match(/^((?!chrome|android).)*safari/i))
     {
         document.body.classList.add('safari');
+        if (ua.indexOf('CPU OS 10') > 0)
+        {
+            document.body.classList.add('ios10');
+        }
     }
 
     function isMobileDevice()
