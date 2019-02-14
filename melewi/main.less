@@ -338,6 +338,7 @@ button {
         padding: 0 32px 40px 0;
         >img {
             width: 100%;
+            height: 328px;
             border-radius: 3px;
             overflow: hidden;
         }
@@ -379,7 +380,7 @@ button {
         }
     }
     .teamBattle {
-        padding-top: 200px;
+        padding-top: 160px;
         >div:last-child {
             color: white;
             margin-top: 40px;
@@ -661,111 +662,6 @@ button {
     margin: 0 auto 100px auto;
 }
 
-.teamPeople {
-    text-align: center;
-    max-width: 900px;
-    margin: -40px auto 0 auto;
-    .teamPerson {
-        width: 100% / 7;
-    }
-    .teamName {
-        color: @colorYellow;
-        font-size: 22px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-align: left;
-        // margin-top: -60px;
-        margin-bottom: -20px;
-        height: 200px;
-        font-family: @fontGiant;
-        // min-width: 120px;
-        @media (max-width: (800px)) {
-            margin-bottom: -60px;
-        }
-        @media (max-width: (650px)) {
-            margin-bottom: -80px;
-        }
-        >div {
-            margin-top: 80px;
-            // transform-origin: 50% 100%;
-            .rotate(-90deg);
-        }
-    }
-    .teamPortrait {
-        position: relative;
-        margin: 0 8px;
-        height: 108px;
-        >div {
-            position: relative;
-            height: 100%;
-        }
-        img {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            // height: 100px;
-        }
-        &.imgSmaller>div {
-            margin: 0 6px;
-        }
-    }
-    .teamFlag {
-        @size: 26px;
-        position: relative;
-        margin-top: -@size / 2;
-        text-align: center;
-        z-index: 1;
-        div {
-            text-align: center;
-        }
-        img {
-            width: @size;
-        }
-    }
-    .teamTime {
-        font-family: @fontGiant;
-        font-size: 24px;
-        sup {
-            font-size: 16px;
-            font-weight: 600;
-            margin-left: 8px;
-        }
-    }
-    .teamCountry {
-        margin-top: 8px;
-        font-weight: bold;
-        font-size: 13px;
-    }
-    @media (max-width: (@maxWidthWide)) {
-        .flex-wrap;
-        text-align: center;
-        .teamPerson {
-            width: 100% / 4;
-            &:nth-child(5) {
-                margin-left: 100% / 8;
-            }
-        }
-        .teamName {
-            margin-bottom: 0px;
-        }
-    }
-
-    @media (max-width: (520px)) {
-        margin-top: -60px;
-        .teamName {
-            margin-top: 20px;
-            margin-bottom: -40px;
-        }
-    }
-    @media (max-width: (440px)) {
-        margin-top: -60px;
-        .teamName {
-            margin-top: 30px;
-            margin-bottom: -60px;
-        }
-    }
-}
 
 .sectionTestimonials {
     position: relative;
