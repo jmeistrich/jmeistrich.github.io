@@ -10,9 +10,33 @@
 @colorText: #2D344F;
 @colorTextLight: #63687C;
 @circleButtonSize: 84px;
-@fontGiant: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 @maxSizeClip: 631px;
 @maxWidthAbout: 528px;
+
+@font-face {
+    font-family: 'Aktiv';
+    src: url('fonts/aktivgrotesk_rg-webfont.woff2') format('woff2'),
+         url('fonts/aktivgrotesk_rg-webfont.woff') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Aktiv';
+    src: url('fonts/aktivgrotesk_bd-webfont.woff2') format('woff2'),
+         url('fonts/aktivgrotesk_bd-webfont.woff') format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Aktiv';
+    src: url('fonts/AktivGrotesk-Medium.woff2') format('woff2'),
+         url('fonts/AktivGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Aktiv';
+    src: url('fonts/AktivGrotesk-XBold.woff2') format('woff2'),
+         url('fonts/AktivGrotesk-XBold.woff') format('woff');
+    font-weight: 900;
+}
 
 * {
     box-sizing: border-box;
@@ -124,15 +148,22 @@
 }
 
 .sectionAbout {
-    padding-top: 100px;
+    margin-top: -30px;
     padding-bottom: 90px;
+    z-index: -2;
+    .graylogo img {
+        width: 24px;
+    }
     .textAbout {
         font-weight: 500;
         font-size: 22px;
+        margin: 20px auto 0 auto;
+        font-weight: bold;
+        max-width: 680px;
     }
     .logos {
         text-align: center;
-        margin: 80px 0 120px 0;
+        margin-top: 80px;
         img {
             width: 100%;
             max-width: 600px;
@@ -140,17 +171,15 @@
         }
     }
     .textTitle, .textLight {
-        max-width: 360px;
+        max-width: 380px;
         margin: 0 auto;
         text-align: center;
     }
-    .middleOval {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        svg {
-            overflow: visible;
-        }
+    .graybox {
+        background: #f0f0f0;
+        padding: 80px 16px;
+        max-width: @pageWidth - 40;
+        margin: 0 auto 90px auto;
     }
 }
 
@@ -166,6 +195,7 @@
     color: white;
     white-space: nowrap;
     cursor: pointer;
+    text-align: left;
     .buttonInside {
         padding: 10px 20px;
         .alignItems(center);
@@ -190,78 +220,10 @@ button {
 .buttonGetInTouch {
     background: #FF517B;
     background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
-    border-radius: 8px;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     .textButtonLight {
         opacity: 0.6;
-    }
-}
-.buttonWhatWeDo, .buttonOurWork {
-    background: #fbf7ef;
-    color: @colorYellow;
-}
-.buttonOurTeam {
-    background: rgba(100,133,159,0.1);
-    color: @colorText;
-}
-
-.clientImages {
-    text-align: right;
-    height: 200px;
-    @media (max-width: @maxWidthAbout) {
-        margin-top: -1em;
-        margin-bottom: 3em;
-    }
-    @media (min-width: (@maxWidthAbout + 1)) and (max-width: @maxSizeClip) {
-        margin-top: -2em;
-        margin-bottom: 6em;
-    }
-    @media (min-width: (@maxSizeClip + 1)) and (max-width: 800px) {
-        margin-bottom: 10em;
-    }
-    @media (min-width: 801px) and (max-width: 1150px)  {
-        margin-top: 0em;
-        margin-bottom: 13em;
-    }
-    @media (min-width: 1151px) {
-        margin-top: -4em;
-        margin-bottom: 13em;
-    }
-    img {
-        width: 700px;
-        max-width: 90%;
-    }
-}
-
-.stat {
-    font-size: 14px;
-    font-weight: bold;
-    >div:first-child {
-        font-family: @fontGiant;
-    }
-    &.vert + .stat {
-        margin-top: 16px;
-    }
-    &:not(.vert) {
-        margin-top: 16px;
-        &:not(:last-child) {
-            margin-right: 16px;
-        }
-    }
-}
-
-.sectionTeamBG {
-    border-radius: 50% 50% 0 0;
-    background-image: -moz-linear-gradient( 90deg, rgb(15,23,40) 0%, rgb(35,53,97) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(15,23,40) 0%, rgb(35,53,97) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(15,23,40) 0%, rgb(35,53,97) 100%);
-    padding-top: 160px;
-    padding-bottom: 80px;
-    color: white;
-    .sneakyTitle {
-        color: rgba(255,255,255, 0.04) !important;
-    }
-    .sectionTitle {
-        color: white;
     }
 }
 
@@ -352,6 +314,7 @@ button {
             font-size: 22px;
             color: white;
             opacity: 0.6;
+            font-weight: bold;
         }
     }
     .teamClients {
@@ -373,10 +336,12 @@ button {
             color: white;
             font-size: 28px;
             margin-top: 12px;
+            font-weight: bold;
         }
         div:nth-child(2n) {
             font-size: 15px;
             line-height: 1.1;
+            font-weight: 500;
         }
     }
     .teamBattle {
@@ -428,16 +393,8 @@ button {
     }
 }
 
-.sectionWork {
-    padding-top: 160px;
-    @minWidth: 600px;
-    @media (max-width: @minWidth) {
-        padding-top: 80px;
-    }
-}
-
 .sectionClients {
-    max-width: @pageWidthClients;
+    // max-width: @pageWidthClients;
     margin-top: -40px;
     >.flexbox {
         .alignItems(center);
@@ -462,11 +419,12 @@ button {
         max-width: 60px;
     }
     .companyLogo {
+        margin-right: -100px;
         div {
             display: inline-block;
             vertical-align: bottom;
             &:last-child {
-                margin: 0 0 30px -8px;
+                margin: 0 0 20px -8px;
                 // height: 60px;
                 img {
                     height: 80px;
@@ -477,15 +435,16 @@ button {
             height: 60px;
         }
     }
-    .companyName {
-        margin-top: 32px;
-        font-size: 15px;
-    }
     .companyWriteup {
         max-width: 450px;
+        p {
+            margin: 2em 0;
+        }
     }
     .textBig {
+        margin-top: 20px;
         font-size: 28px;
+        font-weight: 900;
     }
     .textSmall {
         font-size: 15px;
@@ -493,18 +452,19 @@ button {
             padding: 0;
             margin: 0;
         }
+        @offset: 20px;
         li{
             position: relative;
             list-style: none;
-            margin-left: 30px;
+            margin-left: @offset;
             overflow: visible;
             line-height: 2;
         }
         li:before{
             content: '';
             position: absolute;
-            left: -30px;
-            top: 8px;
+            left: -@offset;
+            top: 6px;
             display: inline-block;
             width: 12px;
             height: 16px;
@@ -520,142 +480,6 @@ button {
         }
     }
 }
-
-// .sectionClients {
-//     >div {
-//         margin: 100px 0;
-//         .flex-wrap;
-//         >div {
-//             min-width: @maxWidthWide / 2 - 7;
-//         }
-//     }
-//     .clientText {
-//         >div {
-//             max-width: 460px;
-//             margin-left: auto;
-//             margin-right: auto;
-//         }
-//     }
-//     .companyLogo {
-//         display: inline-block;
-//         height: 48px;
-//         margin-right: 16px;
-//         vertical-align: top;
-//         margin-top: 9px;
-//         img {
-//             height: 100%;
-//         }
-//     }
-//     .companyName {
-//         color: #0c2153;
-//         font-size: 26px;
-//     }
-//     .text {
-//         margin-top: 32px;
-//     }
-//     .companyDetails {
-//         color: @colorYellow;
-//         font-size: 16px;
-//     }
-//     .companyLocation {
-//         font-weight: bold;
-//         color: @colorYellow;
-//     }
-
-//     .imgNeedsPad:first-child {
-//         padding-right: 100px;
-//     }
-//     .imgNeedsPad:last-child {
-//         padding-left: 100px;
-//     }
-//     @imgExtra: 20%;
-//     .clientLeft {
-//         margin-left: -@paddingPage;
-//         // .imgWrap {
-//         //     max-width: 50%;
-//         // }
-//         .imgWrap img {
-//             margin-left: -@imgExtra;
-//             width: 100% + @imgExtra * 2;
-//         }
-//     }
-//     .clientRight {
-//         margin-right: -@paddingPage;
-//         .imgWrap img {
-//             margin-right: -@imgExtra;
-//             width: 100% + @imgExtra * 2;
-//         }
-//         @media (min-width: (@maxWidthWide + 1)) {
-//             .flex-reverse;
-//         }
-//     }
-//     .imgGuavapass img, .imgWeInvest img {
-//         margin-top: -15%;
-//     }
-//     @minWidth: 960px;
-//     .companyStats {
-//         @media (min-width: (@minWidth + 1)) {
-//             white-space: nowrap;
-//         }
-//     }
-//     .stat {
-//         color: #61829c;
-//         @media (max-width: (@minWidth)) {
-//             >div:first-child {
-//                 font-size: 26px;
-//             }
-//             >div:last-child {
-//                 font-size: 12px;
-//             }
-//         }
-//         @media (min-width: (@minWidth + 1)) {
-//             >div:first-child {
-//                 font-size: 28px;
-//             }
-//         }
-//         @media (max-width: (@maxWidthWide)) {
-//             >div:first-child {
-//                 font-size: 22px;
-//             }
-//             >div:last-child {
-//                 font-size: 10px;
-//             }
-//         }
-//         @media (max-width: 406px) {
-//             &:not(:last-child) {
-//                 margin-right: 12px;
-//             }
-//         }
-//     }
-//     @media (max-width: (@maxWidthWide)) {
-//         >div {
-//             margin-left: 0 !important;
-//             margin-right: 0 !important;
-//         }
-//         .imgWrap {
-//             text-align: center;
-//         }
-//         .imgWrap img {
-//             max-width: 100%;
-//             margin: 0;
-//         }
-//         .imgMcDonalds img {
-//             width: 160% !important;
-//             max-width: 160% !important;
-//             margin-left: -30% !important;
-//         }
-//         .imgGuavapass img {
-//             width: 160% !important;
-//             max-width: 160% !important;
-//             margin-left: -5% !important;
-//         }
-//         .imgWeInvest img {
-//             width: 160% !important;
-//             max-width: 160% !important;
-//             margin-left: -20% !important;
-//         }
-//     }
-// }
 
 .smallTeamText {
     max-width: 560px;
@@ -785,254 +609,6 @@ button {
     }
 }
 
-.sectionFeaturedWrite {
-    margin-top: 620px;
-    .flex-wrap;
-    >div {
-        min-width: @maxWidthWide / 2 - 16;
-    }
-    .rowFeatured {
-        padding: 0 24px;
-        img {
-            margin-right: 32px;
-            margin-top: 24px;
-        }
-        #imgBusiness {
-            margin-top: 32px;
-        }
-    }
-    .writeTitle {
-        @height: 42px;
-        line-height: @height;
-        .logo {
-            height: @height;
-            vertical-align: middle;
-        }
-        .yellowSlash {
-            font-size: 48px;
-            margin: 0 16px;
-            color: #ffba00;
-            vertical-align: top;
-        }
-    }
-    .inputWrapper {
-        position: relative;
-        max-width: 360px;
-        margin: 24px 0 0 24px;
-    }
-
-    button {
-        position: absolute;
-        right: -16px;
-        bottom: -24px;
-        background-color: @colorGreen;
-        box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.15);
-        color: white;
-        border: 0;
-        line-height: 42px;
-        font-weight: bold;
-        padding: 0;
-        vertical-align: bottom;
-        font-family: inherit !important;
-        .buttonInside {
-            padding: 0 16px;
-        }
-    }
-
-    input {
-        line-height: 48px;
-    }
-    @media (max-width: (@maxWidthWide)) {
-        text-align: center;
-        .sectionFeatured {
-            margin-bottom: 48px;
-        }
-        .sectionSignup {
-            >div {
-                margin-left: 0 !important;
-            }
-            .inputWrapper {
-                margin-left: 24px !important;
-                margin-right: 24px !important;
-            }
-        }
-    }
-}
-
-input, textarea {
-    border: 0;
-    padding: 0 16px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #1b2658;
-    border-radius: 6px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-input::placeholder {
-    color: rgba(100,133,159,0.5);
-}
-
-.sectionFeatured, .sectionSignup {
-    >div {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-}
-
-.sectionFeatured {
-    z-index: 1;
-    .sneakyTitle {
-        text-align: left;
-        @media (min-width: (@maxWidthWide + 1)) {
-            left: -24px;
-        }
-    }
-}
-
-.sectionSignup {
-    position: relative;
-    padding-top: 60px;
-    >div {
-        position: relative;
-        margin-left: 60px;
-    }
-    .sneakyTitle {
-        text-align: left;
-        left: 160px;
-        top: -26px;
-    }
-    .shapeBlog {
-        @width: 780px;
-        position: absolute;
-        left: -20px;
-        top: -200px;
-        width: @width;
-        height: round(@width * 1089 / 1435);
-    }
-}
-
-.sectionReady {
-    padding-top: 80px;
-    padding-bottom: 120px;
-    .flex-wrap;
-    >div {
-        min-width: @maxWidthWide / 2 - 16;
-    }
-    .sectionText {
-        @media (max-width: (@maxWidthWide)) {
-            padding-top: 60px;
-        }
-        @media (min-width: (@maxWidthWide + 1)) {
-            padding-top: 120px;
-        }
-    }
-    .sneakyTitle {
-        text-align: left;
-        @media (min-width: (@maxWidthWide + 1)) {
-            left: -54px;
-        }
-    }
-}
-
-.emailAddress {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.sectionContact {
-    >* {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    fieldset {
-        border: 0;
-    }
-    .text {
-        font-weight: bold;
-        font-size: 16px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-    input, textarea, button {
-        -webkit-appearance: none;
-        box-shadow: 12px 20px 48px rgba(0, 0, 0, 0.06),
-                    0 0 10px rgba(0, 0, 0, 0.05);
-    }
-    input {
-        display: block;
-        line-height: 42px;
-    }
-    textarea {
-        height: 160px;
-        padding: 12px;
-        font-size: 14px;
-        font-weight: normal;
-        resize: none;
-    }
-    input[type="submit"] {
-        position: absolute;
-        bottom: -48px;
-        right: 16px;
-        font-weight: bold;
-        font-size: 16px;
-        cursor: pointer;
-    }
-}
-
-.footerRow1 {
-    @height: 24px;
-    .footerLine {
-        width: 100%;
-        border-top: 1px solid @colorLightBlue;
-        opacity: 0.3;
-        margin-top: @height / 2 - 1;
-    }
-    a {
-        color: @colorLightBlue;
-        margin-left: 28px;
-        font-size: 22px;
-    }
-}
-
-.footerRow2 {
-    @height: 34px;
-    @padding: 24px;
-    line-height: @height;
-    padding-top: @padding;
-    padding-bottom: @padding;
-    white-space: nowrap;
-    .flex-wrap;
-    @media (max-width: (@maxWidthWide)) {
-        text-align: center;
-        >div {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .footerRight, .f1 {
-            display: none;
-        }
-    }
-    .footerLogo {
-        height: @height;
-    }
-    .footerLogoName {
-        height: @height;
-        margin-right: 16px;
-    }
-    .iconHeart {
-        color: #ff3d00;
-    }
-    a {
-        color: @colorLightBlue !important;
-    }
-    >* {
-        vertical-align: middle;
-    }
-}
-
 .iconHeart {
     fill: red;
     position: relative;
@@ -1057,7 +633,6 @@ input::placeholder {
   50% { opacity: 0.1; }
   100% { opacity: 1; }
 }
-
 
 .fill {
     position: absolute;
@@ -1121,8 +696,7 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     color: @colorText;
-    // font-family: 'Assistant', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
-    font-family: Helvetica;
+    font-family: 'Aktiv', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
     text-rendering: optimizeLegibility;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -1132,11 +706,6 @@ body {
 
 .fontTitle {
     font-weight: 500;
-}
-
-.fontGiant {
-    font-family: @fontGiant;
-    font-weight: 700;
 }
 
 .text {
@@ -1151,6 +720,7 @@ body {
     padding-bottom: 16px;
     font-size: 32px;
     line-height: 1.4;
+    font-weight: 900;
     @media (max-width: 500px) {
         font-size: 26px;
     }
@@ -1159,19 +729,6 @@ body {
     }
 }
 
-// .sneakyTitle {
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: -54px;
-//     color: rgba(12,33,88, 0.08);
-//     font-size: 64px;
-//     text-align: center;
-//     font-weight: bold;
-//     white-space: nowrap;
-// }
-
-/* Header */
 .header {
     position: relative;
 }
@@ -1207,36 +764,61 @@ body {
     padding-top: @topBarHeight + @topBarPadding + 30;
     height: 800px;
     .flex-wrap;
+    @minWidth: 1080px;
     >div {
-        min-width: 300px;
+        min-width: (@minWidth - @paddingPage * 2) / 2;
     }
-    @minWidth: 631px;
-    @media (max-width: @minWidth) {
-        text-align: center;
-        // width: 100vw !important;
-        .fontGiant {
+    @media (max-width: (@minWidth - 1)) {
+        height: auto;
+        .headerOval {
             display: none;
         }
-
+        .textTitle {
+            color: white;
+        }
         .headerInsideLeft {
+            margin-top: 0;
+        }
+        .headerInsideLeftWrap2 {
+            max-width: 600px;
             margin: 0 auto;
         }
-        .headerInsideLeft > div {
-            padding-right: 0;
+        .topOval {
+            left: -100px;
+            top: -400px;
         }
     }
     // @media (min-width: (@minWidth + 1)) {
     //     .flex-reverse;
     // }
 }
-
+.headerInsideLeftWrap2 {
+    .flex(1 1 ((@pageWidth - (@paddingPage * 2)) / 2));
+    .spacer {
+        max-width: 50px;
+        .flex(0 20 50px);
+    }
+    .headerInsideLeftWrap {
+        .flex(1 1 520px);
+    }
+}
 .headerInsideLeft {
-    margin-left: 50px;
-    margin-top: -20px;
+    position: relative;
+    margin-top: -60px;
+    .headerOval {
+        position: absolute;
+        left: -60px;
+        top: -20px;
+        svg {
+            overflow: visible;
+        }
+    }
     .textTitle {
         font-size: 42px;
         margin-bottom: 24px;
         line-height: 1.3;
+        font-weight: 900;
+        margin-right: -100px;
         // color: white;
     }
     .textLight {
@@ -1247,6 +829,7 @@ body {
     position: absolute;
     left: 40px;
     bottom: 0;
+    z-index: -1;
     svg {
         overflow: visible;
     }
@@ -1257,7 +840,6 @@ body {
     margin-right: 12px;
     text-decoration: none;
 }
-
 
 
 /*******************************
