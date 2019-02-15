@@ -67,7 +67,7 @@
 .imgDevice {
   height: 100%;
   z-index: 1;
-  margin: 0 0 -150px -200px;
+  margin: 0 0 -40px -100px;
 }
 .imgDevice img:last-child {
   height: 100%;
@@ -75,8 +75,9 @@
 .imgDevice .bubbleTop {
   position: absolute;
   bottom: 200px;
-  left: 220px;
+  left: 250px;
   height: 32px;
+  z-index: 0;
 }
 @keyframes pulseDevice {
   0% {
@@ -105,6 +106,11 @@
   padding-bottom: 90px;
   z-index: -2;
 }
+@media (max-width: 1079px) {
+  .sectionAbout {
+    margin-top: -120px;
+  }
+}
 .sectionAbout .graylogo img {
   width: 24px;
 }
@@ -117,7 +123,7 @@
 }
 .sectionAbout .logos {
   text-align: center;
-  margin-top: 80px;
+  margin: 80px 10px 0 10px;
 }
 .sectionAbout .logos img {
   width: 100%;
@@ -129,6 +135,11 @@
   max-width: 380px;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 420px) {
+  .sectionAbout .textApps {
+    margin: 0 -10px;
+  }
 }
 .sectionAbout .graybox {
   background: #f0f0f0;
@@ -156,7 +167,7 @@
   -ms-align-items: center;
 }
 .button .rightArrow {
-  margin-left: 48px;
+  margin-left: 16px;
 }
 .button:hover .buttonInside {
   background-color: rgba(0, 0, 0, 0.1);
@@ -178,7 +189,6 @@ button {
 }
 .sectionWorld {
   margin-top: 120px;
-  padding: 0 0 60px 0;
 }
 .sectionWorld .worldOval {
   position: absolute;
@@ -189,41 +199,135 @@ button {
 .sectionWorld .worldOval svg {
   overflow: visible;
 }
-.sectionWorld .worldTextTop {
-  margin-left: 60px;
-}
 .sectionWorld .worldTextTop .textTitle {
   max-width: 450px;
 }
 .sectionWorld .worldTextTop .textLight {
-  margin-top: 60px;
   max-width: 340px;
-}
-.sectionWorld .teamImgs {
-  margin-top: -20px;
-}
-.sectionWorld .teamImgs div {
-  margin: 0 10px;
-}
-.sectionWorld .teamImgs div:last-child {
-  width: 16%;
-}
-.sectionWorld .teamImgs div:last-child img:last-child {
-  margin-top: 16px;
-}
-.sectionWorld .teamImgs div:not(:last-child) {
-  margin-top: 8%;
 }
 .sectionWorld .teamImgs img {
   width: 100%;
 }
+@media (max-width: 699px) {
+  .sectionWorld .teamImgs {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+  }
+  .sectionWorld .teamImgs > div {
+    margin-top: 16px;
+    vertical-align: bottom;
+  }
+  .sectionWorld .teamImgs > div:nth-child(1) {
+    margin-left: 0;
+    min-width: 45%;
+    max-width: 50%;
+  }
+  .sectionWorld .teamImgs > div:nth-child(2) {
+    min-width: 45%;
+    max-width: 50%;
+    margin-right: 0;
+  }
+  .sectionWorld .teamImgs > div:nth-child(3) {
+    min-width: 45%;
+    max-width: 45%;
+    margin-left: 0;
+  }
+  .sectionWorld .teamImgs > div:nth-child(4) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    margin-right: 0;
+    min-width: 50%;
+  }
+  .sectionWorld .teamImgs > div:nth-child(4) > div:last-child {
+    margin-left: 16px;
+  }
+  .sectionWorld .teamImgs > div:nth-child(4) img {
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 700px) {
+  .sectionWorld .teamImgs {
+    margin-top: -20px;
+  }
+  .sectionWorld .teamImgs > div:first-child {
+    -webkit-flex: 1.2;
+    -webkit-box-flex: 1.2;
+    -ms-flex: 1.2;
+    flex: 1.2;
+  }
+  .sectionWorld .teamImgs > div:last-child {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .sectionWorld .teamImgs > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+  }
+  .sectionWorld .teamImgs > div > div {
+    margin: 0 10px;
+  }
+  .sectionWorld .teamImgs .last > div:first-child {
+    -webkit-flex: 1.6;
+    -webkit-box-flex: 1.6;
+    -ms-flex: 1.6;
+    flex: 1.6;
+  }
+  .sectionWorld .teamImgs .last > div:last-child {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .sectionWorld .teamImgs > div:last-child {
+    width: 16%;
+  }
+  .sectionWorld .teamImgs > div:last-child img:last-child {
+    margin-top: 16px;
+  }
+}
 .sectionWorld .worldTextBottom {
   margin-left: auto;
   max-width: 340px;
-  margin-right: 160px;
+  margin-right: 170px;
 }
 .sectionWorld .worldTextBottom div {
   text-align: left;
+}
+@media (min-width: 700px) {
+  .sectionWorld {
+    padding: 0 0 60px 0;
+  }
+  .sectionWorld .worldTextTop {
+    margin-left: 60px;
+  }
+  .sectionWorld .worldTextTop .textLight {
+    margin-top: 20px;
+  }
+  .sectionWorld .worldTextBottom {
+    margin-top: 50px;
+  }
 }
 .sectionTeam {
   background-image: linear-gradient(-158deg, #2E1E76 0%, #3B6CC1 97%);
@@ -344,13 +448,13 @@ button {
 .sectionClients {
   margin-top: -40px;
 }
-.sectionClients > .flexbox {
+.sectionClients > div {
   align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
 }
 .sectionClients > div + div {
-  margin-top: 180px;
+  margin-top: 100px;
 }
 .sectionClients .clientRight {
   -webkit-flex-direction: row-reverse;
@@ -427,8 +531,39 @@ button {
   background-size: contain;
   background-image: url('/img/logoBullet.png');
 }
-.sectionClients .clientMyKicks .clientText {
-  margin-top: -80px;
+@media (min-width: 700px) {
+  .sectionClients > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  .sectionClients .clientMyKicks .clientText {
+    margin-top: -80px;
+  }
+}
+@media (max-width: 699px) {
+  .sectionClients .clientText {
+    margin-top: 20px;
+  }
+  .sectionClients > div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .sectionClients .clientText {
+    padding: 0 !important;
+  }
+  .sectionClients .companyLogo > div:last-child {
+    margin-bottom: 10px;
+  }
+  .sectionClients .companyLogo > div:last-child img {
+    height: 60px;
+  }
 }
 .smallTeamText {
   max-width: 560px;
@@ -702,18 +837,44 @@ body {
 .topBar .headerRight {
   padding-right: 20px;
 }
+@media (max-width: 600px) {
+  .topBar .headerRight {
+    display: none;
+  }
+}
+@media (max-width: 730px) {
+  .topBar .headerLogoDark {
+    display: none;
+  }
+}
+@media (min-width: 731px) {
+  .topBar .headerLogoWhite {
+    display: none;
+  }
+}
 .headerInside {
   padding-top: 90px;
-  height: 800px;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.headerInside > div {
-  min-width: 520px;
+  height: 740px;
 }
 @media (max-width: 1079px) {
   .headerInside {
     height: auto;
+  }
+  .headerInside .headerInside2 {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .headerInside .headerInsideDiv {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-flex: 0 1 500px;
+    -webkit-box-flex: 0 1 500px;
+    -ms-flex: 0 1 500px;
+    flex: 0 1 500px;
   }
   .headerInside .headerOval {
     display: none;
@@ -725,12 +886,32 @@ body {
     margin-top: 0;
   }
   .headerInside .headerInsideLeftWrap2 {
-    max-width: 600px;
     margin: 0 auto;
   }
-  .headerInside .topOval {
+  .headerInside .textLight {
+    color: #B0B5CD;
+  }
+  .headerInside .headerInsideRight .headerInsideRight2 {
+    margin: 0 -100px;
+  }
+  .headerInside .headerInsideRight .spacer {
+    -webkit-flex: 2;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+  .headerInside .headerInsideRight .imgDevice {
+    position: relative;
+    margin: -80px 0 0 200px;
+    height: 600px;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .headerInside .headerInsideRight .bubbleTop {
     left: -100px;
-    top: -400px;
+    bottom: 350px;
   }
 }
 .headerInsideLeftWrap2 {
@@ -739,7 +920,7 @@ body {
   -ms-flex: 1 1 570px;
   flex: 1 1 570px;
 }
-.headerInsideLeftWrap2 .spacer {
+.headerInsideLeftWrap2 .spacerInsideLeft {
   max-width: 50px;
   -webkit-flex: 0 20 50px;
   -webkit-box-flex: 0 20 50px;
@@ -771,17 +952,54 @@ body {
   font-weight: 900;
   margin-right: -100px;
 }
+@media (max-width: 500px) {
+  .headerInsideLeft .textTitle {
+    font-size: 32px;
+  }
+}
 .headerInsideLeft .textLight {
-  max-width: 420px;
+  max-width: 410px;
 }
 .topOval {
   position: absolute;
-  left: 40px;
-  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: -1;
 }
 .topOval svg {
   overflow: visible;
+}
+.topOval .ovalWrapper {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 1080px) {
+  .topOval .spacerLeft {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media (max-width: 1079px) {
+  .topOval .spacerLeft {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .topOval .ovalWrapper {
+    margin-left: -100px;
+  }
+  .topOval .spacerRight {
+    -webkit-flex: 1.2;
+    -webkit-box-flex: 1.2;
+    -ms-flex: 1.2;
+    flex: 1.2;
+  }
 }
 .headerFooter a:not(.headerLogo) {
   margin-left: 12px;
