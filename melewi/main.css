@@ -67,9 +67,16 @@
 .imgDevice {
   height: 100%;
   z-index: 1;
+  margin: 0 0 -150px -200px;
 }
-.imgDevice img {
+.imgDevice img:last-child {
   height: 100%;
+}
+.imgDevice .bubbleTop {
+  position: absolute;
+  bottom: 200px;
+  left: 220px;
+  height: 32px;
 }
 @keyframes pulseDevice {
   0% {
