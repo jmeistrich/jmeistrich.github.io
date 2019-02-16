@@ -28,7 +28,7 @@
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .ios10 .mw {
   -webkit-transform: translate3d(0, 0, 0);
@@ -110,16 +110,31 @@
   .sectionAbout {
     margin-top: -120px;
   }
+  .sectionAbout .textTitle {
+    max-width: 320px !important;
+  }
+  .sectionAbout .logosDe {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .sectionAbout .logosMo {
+    display: none;
+  }
 }
 .sectionAbout .graylogo img {
   width: 24px;
 }
 .sectionAbout .textAbout {
   font-weight: 500;
-  font-size: 22px;
   margin: 20px auto 0 auto;
   font-weight: bold;
   max-width: 680px;
+}
+@media (min-width: 1080px) {
+  .sectionAbout .textAbout {
+    font-size: 22px;
+  }
 }
 .sectionAbout .logos {
   text-align: center;
@@ -210,7 +225,7 @@ button {
 }
 @media (max-width: 699px) {
   .sectionWorld .teamImgs {
-    margin: 40px -20px 0 -20px;
+    margin: 40px -40px 0 -40px;
   }
   .sectionWorld .teamImgs > div {
     width: 100%;
@@ -311,6 +326,11 @@ button {
   max-width: 250px;
   margin: 40px 30px 0 auto;
 }
+@media (max-width: 1080px) {
+  .sectionWorld .worldTextBottom div {
+    margin-bottom: 60px;
+  }
+}
 @media (min-width: 700px) {
   .sectionWorld {
     padding: 0 0 60px 0;
@@ -338,7 +358,7 @@ button {
 }
 .sectionTeam .teamGrid {
   width: 100%;
-  padding: 10px;
+  padding: 0 20px;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -369,10 +389,18 @@ button {
   .sectionTeam .teamBattle {
     display: none;
   }
+  .sectionTeam .textTitle {
+    color: white;
+    padding-left: 40px;
+  }
+  .sectionTeam .teamText {
+    padding-left: 40px;
+  }
   .sectionTeam .teamStatsMo {
     min-width: 100% !important;
     max-width: 100% !important;
     margin-bottom: 40px;
+    padding-left: 40px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-box;
@@ -389,15 +417,30 @@ button {
     width: 30%;
   }
   .sectionTeam .teamTitle {
-    min-width: 100% !important;
-    max-width: 100% !important;
+    max-width: 300px !important;
+  }
+  .sectionTeam .teamTime {
+    font-size: 20px;
   }
   .sectionTeam .teamPerson {
     padding-bottom: 40px;
     margin: 0 10px;
   }
+  .sectionTeam .teamName {
+    font-size: 20px;
+  }
+  .sectionTeam .teamPos,
+  .sectionTeam .teamCountry {
+    font-size: 12px;
+  }
+  .sectionTeam .clientsDe {
+    display: none;
+  }
 }
 @media (min-width: 700px) {
+  .sectionTeam .teamTitle > div {
+    margin-right: -100px;
+  }
   .sectionTeam .teamStatsMo {
     display: none;
   }
@@ -407,6 +450,15 @@ button {
   }
   .sectionTeam .teamPerson {
     padding: 0 32px 40px 0;
+  }
+  .sectionTeam .teamTime {
+    font-size: 22px;
+  }
+  .sectionTeam .teamName {
+    font-size: 24px;
+  }
+  .sectionTeam .clientsMo {
+    display: none;
   }
 }
 .sectionTeam .teamText {
@@ -419,13 +471,11 @@ button {
 }
 .sectionTeam .teamPerson .teamName {
   color: #D4B166;
-  font-size: 24px;
   font-weight: 900;
 }
 .sectionTeam .teamPerson .teamTime {
   margin: -52px -8px 0 0;
   text-align: right;
-  font-size: 22px;
   color: white;
   opacity: 0.5;
   font-weight: bold;
@@ -524,6 +574,14 @@ button {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 1079px) {
+  .sectionBottom .bottomText {
+    font-size: 13px;
+  }
+  .sectionBottom .bottomText .textTitle {
+    max-width: 320px;
+  }
+}
 .sectionBottom .buttonInside {
   padding: 16px 24px;
 }
@@ -597,6 +655,11 @@ button {
   font-size: 28px;
   font-weight: 900;
   line-height: 1.3;
+}
+@media (max-width: 1080px) {
+  .sectionClients .textBig {
+    font-size: 22px;
+  }
 }
 .sectionClients .textSmall {
   font-size: 15px;
@@ -882,6 +945,11 @@ body {
   font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
+@media (max-width: 1080px) {
+  body {
+    font-size: 15px;
+  }
+}
 .fontTitle {
   font-weight: 500;
 }
@@ -896,13 +964,9 @@ body {
   font-size: 32px;
   line-height: 1.4;
   font-weight: 900;
+  padding-bottom: 16px;
 }
-@media (max-width: 500px) {
-  .textTitle {
-    font-size: 26px;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 1080px) {
   .textTitle {
     font-size: 24px;
   }
@@ -920,6 +984,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   height: 30px;
+  padding: 0 20px;
   margin-top: 30px;
   z-index: 1;
 }
@@ -994,18 +1059,26 @@ body {
   }
   .headerInside .textTitle {
     color: white;
+    margin-top: 40px;
+  }
+  .headerInside .textLight {
+    font-size: 14px;
+    color: #B0B5CD;
+    font-weight: 500;
   }
   .headerInside .headerInsideLeft {
-    margin-top: 0;
+    max-width: 340px;
+    margin: 0 auto;
   }
   .headerInside .headerInsideLeftWrap2 {
     margin: 0 auto;
   }
-  .headerInside .textLight {
-    color: #B0B5CD;
+  .headerInside .button {
+    font-size: 13px;
+    box-shadow: none;
   }
   .headerInside .headerInsideRight .imgDevice {
-    margin: -80px 0 0 200px;
+    margin: -40px 0 0 120px;
     height: 500px;
     -webkit-flex: 1;
     -webkit-box-flex: 1;
@@ -1018,10 +1091,10 @@ body {
   }
 }
 .headerInsideLeftWrap2 {
-  -webkit-flex: 1 1 570px;
-  -webkit-box-flex: 1 1 570px;
-  -ms-flex: 1 1 570px;
-  flex: 1 1 570px;
+  -webkit-flex: 1 1 550px;
+  -webkit-box-flex: 1 1 550px;
+  -ms-flex: 1 1 550px;
+  flex: 1 1 550px;
 }
 .headerInsideLeftWrap2 .spacerInsideLeft {
   max-width: 50px;
@@ -1053,6 +1126,7 @@ body {
   line-height: 1.2;
   font-weight: 900;
   margin-right: -100px;
+  padding: 0;
 }
 @media (max-width: 500px) {
   .headerInsideLeft .textTitle {
@@ -1098,7 +1172,7 @@ body {
     flex: 1;
   }
   .topOval .ovalWrapper {
-    margin-left: -100px;
+    margin: -100px 0 0 -100px;
   }
   .topOval .spacerRight {
     -webkit-flex: 1.2;
