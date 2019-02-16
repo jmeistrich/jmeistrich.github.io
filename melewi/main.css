@@ -65,17 +65,17 @@
   display: none;
 }
 .imgDevice {
+  position: relative;
   height: 100%;
   z-index: 1;
-  margin: 0 0 -40px -100px;
 }
 .imgDevice img:last-child {
   height: 100%;
 }
 .imgDevice .bubbleTop {
   position: absolute;
-  bottom: 200px;
-  left: 250px;
+  bottom: 180px;
+  left: 340px;
   height: 32px;
   z-index: 0;
 }
@@ -102,7 +102,7 @@
   }
 }
 .sectionAbout {
-  margin-top: -30px;
+  margin-top: -60px;
   padding-bottom: 90px;
   z-index: -2;
 }
@@ -142,7 +142,7 @@
   }
 }
 .sectionAbout .graybox {
-  background: #f0f0f0;
+  background: #f7f7f7;
   padding: 80px 16px;
   max-width: 1140px;
   margin: 0 auto 90px auto;
@@ -153,7 +153,6 @@
 .button {
   position: relative;
   display: inline-block;
-  margin-top: 32px;
   font-size: 15px;
   color: white;
   white-space: nowrap;
@@ -161,18 +160,20 @@
   text-align: left;
 }
 .button .buttonInside {
-  padding: 10px 20px;
+  padding: 10px 24px;
   align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
 }
 .button .rightArrow {
-  margin-left: 16px;
+  margin-left: 8px;
+  font-weight: bold !important;
 }
 .button:hover .buttonInside {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .button:hover .rightArrow {
+  display: inline-block;
   animation: pulseArrow 0.8s ease-in-out infinite;
 }
 button {
@@ -210,32 +211,11 @@ button {
 }
 @media (max-width: 699px) {
   .sectionWorld .teamImgs {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    -webkit-align-items: flex-end;
-    -ms-align-items: flex-end;
+    margin: 40px -20px 0 -20px;
   }
   .sectionWorld .teamImgs > div {
-    margin-top: 16px;
-    vertical-align: bottom;
-  }
-  .sectionWorld .teamImgs > div:nth-child(1) {
-    margin-left: 0;
-    min-width: 45%;
-    max-width: 50%;
-  }
-  .sectionWorld .teamImgs > div:nth-child(2) {
-    min-width: 45%;
-    max-width: 50%;
-    margin-right: 0;
-  }
-  .sectionWorld .teamImgs > div:nth-child(3) {
-    min-width: 45%;
-    max-width: 45%;
-    margin-left: 0;
-  }
-  .sectionWorld .teamImgs > div:nth-child(4) {
+    width: 100%;
+    margin-top: 12px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-box;
@@ -245,19 +225,39 @@ button {
     display: -ms-flexbox;
     display: -ms-flex;
     display: flex;
-    margin-right: 0;
-    min-width: 50%;
   }
-  .sectionWorld .teamImgs > div:nth-child(4) > div:last-child {
-    margin-left: 16px;
+  .sectionWorld .teamImgs > div div + div {
+    margin-left: 12px;
   }
-  .sectionWorld .teamImgs > div:nth-child(4) img {
-    margin-top: 0 !important;
+  .sectionWorld .teamImgs .first {
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+  }
+  .sectionWorld .teamImgs .last > div:last-child {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
   }
 }
 @media (min-width: 700px) {
   .sectionWorld .teamImgs {
     margin-top: -20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
   }
   .sectionWorld .teamImgs > div:first-child {
     -webkit-flex: 1.2;
@@ -307,13 +307,10 @@ button {
     margin-top: 16px;
   }
 }
-.sectionWorld .worldTextBottom {
-  margin-left: auto;
-  max-width: 340px;
-  margin-right: 170px;
-}
 .sectionWorld .worldTextBottom div {
   text-align: left;
+  max-width: 250px;
+  margin: 40px 30px 0 auto;
 }
 @media (min-width: 700px) {
   .sectionWorld {
@@ -327,10 +324,13 @@ button {
   }
   .sectionWorld .worldTextBottom {
     margin-top: 50px;
+    max-width: 340px;
+    margin-right: 170px;
+    margin-left: auto;
   }
 }
 .sectionTeam {
-  background-image: linear-gradient(-158deg, #2E1E76 0%, #3B6CC1 97%);
+  background-image: linear-gradient(158deg, #2E1E76 0%, #3B6CC1 97%);
   padding: 100px 0;
   color: #B0B5CD;
 }
@@ -339,39 +339,96 @@ button {
 }
 .sectionTeam .teamGrid {
   width: 100%;
+  padding: 10px;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .sectionTeam .teamGrid > div {
-  min-width: 25%;
-  max-width: 295px;
   -webkit-flex: 1;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
+@media (max-width: 699px) {
+  .sectionTeam .teamGrid > div {
+    min-width: 40%;
+    max-width: 590px;
+  }
+}
+@media (min-width: 700px) {
+  .sectionTeam .teamGrid > div {
+    min-width: 25%;
+    max-width: 295px;
+  }
+}
+.sectionTeam .teamPos {
+  font-weight: bold;
+}
+@media (max-width: 699px) {
+  .sectionTeam .teamStatsDe,
+  .sectionTeam .empty,
+  .sectionTeam .teamBattle {
+    display: none;
+  }
+  .sectionTeam .teamStatsMo {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .sectionTeam .teamStatsMo > div {
+    width: 30%;
+  }
+  .sectionTeam .teamTitle {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .sectionTeam .teamPerson {
+    padding-bottom: 40px;
+    margin: 0 10px;
+  }
+}
+@media (min-width: 700px) {
+  .sectionTeam .teamStatsMo {
+    display: none;
+  }
+  .sectionTeam .teamStatsDe {
+    margin-top: -80px;
+    padding-left: 40px;
+  }
+  .sectionTeam .teamPerson {
+    padding: 0 32px 40px 0;
+  }
+}
 .sectionTeam .teamText {
   width: 110%;
 }
-.sectionTeam .teamPerson {
-  padding: 0 32px 40px 0;
-}
 .sectionTeam .teamPerson > img {
   width: 100%;
-  height: 328px;
   border-radius: 3px;
   overflow: hidden;
 }
 .sectionTeam .teamPerson .teamName {
   color: #D4B166;
   font-size: 24px;
+  font-weight: 900;
 }
 .sectionTeam .teamPerson .teamTime {
-  margin: -64px -8px 0 0;
+  margin: -52px -8px 0 0;
   text-align: right;
   font-size: 22px;
   color: white;
-  opacity: 0.6;
+  opacity: 0.5;
   font-weight: bold;
 }
 .sectionTeam .teamClients {
@@ -386,17 +443,13 @@ button {
   margin-top: 40px;
   width: 100%;
 }
-.sectionTeam .teamStats {
-  margin-top: -80px;
-  padding-left: 40px;
-}
-.sectionTeam .teamStats div:nth-child(2n + 1) {
+.sectionTeam .teamStats > div div:first-child {
   color: white;
   font-size: 28px;
   margin-top: 12px;
   font-weight: bold;
 }
-.sectionTeam .teamStats div:nth-child(2n) {
+.sectionTeam .teamStats > div div:last-child {
   font-size: 15px;
   line-height: 1.1;
   font-weight: 500;
@@ -410,34 +463,73 @@ button {
 }
 .sectionBottom {
   position: relative;
-  padding-top: 200px;
-  text-align: center;
   overflow: hidden;
+  text-align: center;
+}
+.sectionBottom .mw {
+  padding-top: 100px;
 }
 .sectionBottom .bottomOval {
   position: absolute;
   left: 0;
   top: 0;
+  right: 0;
 }
 .sectionBottom .bottomOval svg {
   overflow: visible;
+}
+@media (min-width: 1080px) {
+  .sectionBottom .bottomOval .spacerLeft {
+    -webkit-flex: 1.4;
+    -webkit-box-flex: 1.4;
+    -ms-flex: 1.4;
+    flex: 1.4;
+  }
+  .sectionBottom .bottomOval .ovalWrapper {
+    margin-left: -400px;
+  }
+  .sectionBottom .bottomOval .spacerRight {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media (max-width: 1079px) {
+  .sectionBottom .bottomOval .spacerLeft {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .sectionBottom .bottomOval .ovalWrapper {
+    margin-left: -400px;
+  }
+  .sectionBottom .bottomOval .spacerRight {
+    -webkit-flex: 1.2;
+    -webkit-box-flex: 1.2;
+    -ms-flex: 1.2;
+    flex: 1.2;
+  }
 }
 .sectionBottom .textTitle {
   color: white;
   margin: 0 auto;
 }
 .sectionBottom .text {
-  margin: 0 auto;
-  color: white;
+  margin: 10px auto 16px auto;
+  color: #D1DAED;
   max-width: 500px;
-  opacity: 0.72;
 }
 .sectionBottom .bottomText {
   position: relative;
   z-index: 1;
 }
+.sectionBottom .buttonInside {
+  padding: 16px 24px;
+}
 .sectionBottom .bottomHeart {
-  margin-top: 200px;
+  margin-top: 160px;
   font-size: 14px;
   padding-bottom: 8px;
 }
@@ -499,12 +591,13 @@ button {
   max-width: 450px;
 }
 .sectionClients .companyWriteup p {
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 .sectionClients .textBig {
   margin-top: 20px;
   font-size: 28px;
   font-weight: 900;
+  line-height: 1.3;
 }
 .sectionClients .textSmall {
   font-size: 15px;
@@ -518,7 +611,7 @@ button {
   list-style: none;
   margin-left: 20px;
   overflow: visible;
-  line-height: 2;
+  line-height: 1.6;
 }
 .sectionClients .textSmall li:before {
   content: '';
@@ -529,7 +622,7 @@ button {
   width: 12px;
   height: 16px;
   background-size: contain;
-  background-image: url('/img/logoBullet.png');
+  background-image: url('img/logoBullet.png');
 }
 @media (min-width: 700px) {
   .sectionClients > div {
@@ -585,17 +678,25 @@ button {
 }
 @media (min-width: 601px) {
   .sectionTestimonials {
-    padding-bottom: 180px;
+    padding-bottom: 80px;
   }
 }
 .sectionTestimonials .testimonialsTitle {
   max-width: 400px;
-  margin-left: auto;
-  margin-right: 60px;
+}
+@media (max-width: 699px) {
+  .sectionTestimonials .testimonialsTitle {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 700px) {
+  .sectionTestimonials .testimonialsTitle {
+    margin-left: auto;
+  }
 }
 .sectionTestimonials .testimonialsOval {
   position: absolute;
-  right: 0;
+  right: -100px;
   top: 60px;
   z-index: -1;
 }
@@ -620,6 +721,8 @@ button {
   padding-bottom: 20px;
   box-sizing: content-box;
   /* So the width will be 100% + 17px */
+  max-width: 1960px;
+  margin: 0 auto;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: -o-grab;
@@ -642,7 +745,7 @@ button {
   vertical-align: top;
 }
 .testimonials .scroller > div + div {
-  margin-left: 32px;
+  margin-left: 20px;
 }
 @media (max-width: 1180px) {
   .testimonials .scroller {
@@ -655,8 +758,7 @@ button {
 }
 @media (min-width: 1181px) {
   .testimonials .scroller {
-    padding-left: calc((100vw - 1180px) / 2);
-    padding-right: calc((100vw - 1180px) / 2);
+    padding: 0 80px;
   }
 }
 .testimonials .testimonialLogo {
@@ -669,7 +771,6 @@ button {
 .testimonials .whiteBox {
   padding: 32px;
   background: white;
-  border-radius: 12px;
   box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
 }
 .testimonials .whiteBox .text {
@@ -681,17 +782,14 @@ button {
 }
 .testimonials .person {
   margin-top: 16px;
+  font-size: 15px;
   line-height: 1.3;
-  color: #acb1be;
+  color: #63687C;
 }
 .testimonials .person img {
   width: 44px;
   height: 44px;
-  margin-right: 16px;
-}
-.testimonials .person > .f1 > div:not(.fontGiant) {
-  font-size: 15px;
-  font-style: italic;
+  margin-right: 20px;
 }
 .iconHeart {
   fill: red;
@@ -796,7 +894,6 @@ body {
 }
 .textTitle {
   position: relative;
-  padding-bottom: 16px;
   font-size: 32px;
   line-height: 1.4;
   font-weight: 900;
@@ -820,6 +917,8 @@ body {
   left: 0;
   right: 0;
   text-align: right;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 30px;
   height: 30px;
   margin-top: 30px;
@@ -853,8 +952,20 @@ body {
   }
 }
 .headerInside {
+  position: relative;
   padding-top: 90px;
-  height: 740px;
+  height: 760px;
+}
+@media (min-width: 1080px) {
+  .headerInside .headerInsideRight {
+    flex: 1 1 570px;
+  }
+  .headerInside .imgDevice {
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 50px;
+    height: 600px;
+  }
 }
 @media (max-width: 1079px) {
   .headerInside {
@@ -891,19 +1002,9 @@ body {
   .headerInside .textLight {
     color: #B0B5CD;
   }
-  .headerInside .headerInsideRight .headerInsideRight2 {
-    margin: 0 -100px;
-  }
-  .headerInside .headerInsideRight .spacer {
-    -webkit-flex: 2;
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-  }
   .headerInside .headerInsideRight .imgDevice {
-    position: relative;
     margin: -80px 0 0 200px;
-    height: 600px;
+    height: 500px;
     -webkit-flex: 1;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -947,8 +1048,7 @@ body {
 }
 .headerInsideLeft .textTitle {
   font-size: 42px;
-  margin-bottom: 24px;
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 900;
   margin-right: -100px;
 }
@@ -959,6 +1059,7 @@ body {
 }
 .headerInsideLeft .textLight {
   max-width: 410px;
+  margin: 16px 0 24px 0;
 }
 .topOval {
   position: absolute;
@@ -982,6 +1083,9 @@ body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+  }
+  .topOval .ovalWrapper {
+    margin-right: -160px;
   }
 }
 @media (max-width: 1079px) {

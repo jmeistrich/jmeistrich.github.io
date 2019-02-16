@@ -116,9 +116,10 @@
 }
 
 .imgDevice {
+    position: relative;
     height: 100%;
     z-index: 1;
-    margin: 0 0 -40px -100px;
+    // margin: 0 0 0px -100px;
     img:last-child {
         // position: relative;
         height: 100%;
@@ -126,8 +127,8 @@
     }
     .bubbleTop {
         position: absolute;
-        bottom: 200px;
-        left: 250px;
+        bottom: 180px;
+        left: 340px;
         height: 32px;
         z-index: 0;
     }
@@ -159,7 +160,7 @@
 }
 
 .sectionAbout {
-    margin-top: -30px;
+    margin-top: -60px;
     @media (max-width: (@minWidthHeaderDesktop - 1)) {
         margin-top: -120px;
     }
@@ -195,7 +196,7 @@
         }
     }
     .graybox {
-        background: #f0f0f0;
+        background: #f7f7f7;
         padding: 80px 16px;
         max-width: @pageWidth - 40;
         margin: 0 auto 90px auto;
@@ -209,24 +210,25 @@
 .button {
     position: relative;
     display: inline-block;
-    margin-top: 32px;
     font-size: 15px;
     color: white;
     white-space: nowrap;
     cursor: pointer;
     text-align: left;
     .buttonInside {
-        padding: 10px 20px;
+        padding: 10px 24px;
         .alignItems(center);
     }
     .rightArrow {
-        margin-left: 16px;
+        margin-left: 8px;
+        font-weight: bold !important;
     }
     &:hover {
         .buttonInside {
             background-color: rgba(0,0,0,0.1);
         }
         .rightArrow {
+            display: inline-block;
             animation: pulseArrow 0.8s ease-in-out infinite;
         }
     }
@@ -266,47 +268,65 @@ button {
         }
     }
     .teamImgs {
+        @spacing: 12px;
         img {
             width: 100%;
         }
         @media (max-width: 699px) {
-            .flex-wrap;
-            .alignItems(flex-end);
+            margin: 40px -@paddingPage 0 -@paddingPage;
             >div {
-                margin-top: 16px;
-                vertical-align: bottom;
-            }
-            >div:nth-child(1) {
-                margin-left: 0;
-                min-width: 45%;
-                max-width: 50%;
-            }
-            >div:nth-child(2) {
-                min-width: 45%;
-                max-width: 50%;
-                margin-right: 0;
-            }
-            >div:nth-child(3) {
-                min-width: 45%;
-                max-width: 45%;
-                margin-left: 0;
-            }
-            >div:nth-child(4) {
+                width: 100%;
+                margin-top: @spacing;
                 .flexbox;
-                margin-right: 0;
-                min-width: 50%;
-                // max-width: 54%;
-                >div:last-child {
-                    margin-left: 16px;
+                div {
+                    +div {
+                        margin-left: @spacing;
+                    }
                 }
-                img {
-                    // width: 50%;
-                    margin-top: 0 !important;
-                }
+
             }
+            .first {
+                .alignItems(flex-end);
+            }
+            .last >div:last-child {
+                .flexbox;
+            }
+            // >div {
+            //     margin-top: 16px;
+            //     vertical-align: bottom;
+            // }
+            // >div:nth-child(1) {
+            //     margin-left: 0;
+            //     min-width: 45%;
+            //     max-width: 50%;
+            // }
+            // >div:nth-child(2) {
+            //     min-width: 45%;
+            //     max-width: 50%;
+            //     margin-right: 0;
+            // }
+            // >div:nth-child(3) {
+            //     min-width: 45%;
+            //     max-width: 45%;
+            //     margin-left: 0;
+            // }
+            // >div:nth-child(4) {
+            //     .flexbox;
+            //     margin-right: 0;
+            //     min-width: 50%;
+            //     // max-width: 54%;
+            //     >div:last-child {
+            //         margin-left: 16px;
+            //     }
+            //     img {
+            //         // width: 50%;
+            //         margin-top: 0 !important;
+            //     }
+            // }
         }
         @media (min-width: 700px) {
             margin-top: -20px;
+            .flexbox;
             >div:first-child {
                 .flex(1.2);
             }
@@ -335,11 +355,10 @@ button {
         }
     }
     .worldTextBottom {
-        margin-left: auto;
-        max-width: 340px;
-        margin-right: 170px;
         div {
             text-align: left;
+            max-width: 250px;
+            margin: 40px 30px 0 auto;
         }
     }
     @media (min-width: 700px) {
@@ -352,12 +371,15 @@ button {
         }
         .worldTextBottom {
             margin-top: 50px;
+            max-width: 340px;
+            margin-right: 170px;
+            margin-left: auto;
         }
     }
 }
 
 .sectionTeam {
-    background-image: linear-gradient(-158deg, #2E1E76 0%, #3B6CC1 97%);
+    background-image: linear-gradient(158deg, #2E1E76 0%, #3B6CC1 97%);
     padding: 100px 0;
     color: #B0B5CD;
     .textTitle {
@@ -365,34 +387,78 @@ button {
     }
     .teamGrid {
         width: 100%;
+        padding: 10px;
         .flex-wrap;
         >div {
-            min-width: 25%;
-            max-width: @pageWidth / 4;
             .flex(1);
+            @media (max-width: 699px) {
+                min-width: 40%;
+                max-width: @pageWidth / 2;
+            }
+            @media (min-width: 700px) {
+                min-width: 25%;
+                max-width: @pageWidth / 4;
+            }
+        }
+    }
+    .teamPos {
+        font-weight: bold;
+    }
+    @media (max-width: 699px) {
+        .teamStatsDe, .empty, .teamBattle {
+            display: none;
+        }
+        .teamStatsMo {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 40px;
+            .flexbox;
+            .flex-wrap;
+            >div {
+                width: 30%;
+            }
+        }
+        .teamTitle {
+            min-width: 100% !important;
+            max-width: 100% !important;
+        }
+        .teamPerson {
+            padding-bottom: 40px;
+            margin: 0 10px;
+        }
+    }
+    @media (min-width: 700px) {
+        .teamStatsMo {
+            display: none;
+        }
+        .teamStatsDe {
+            margin-top: -80px;
+            padding-left: 40px;
+        }
+        .teamPerson {
+            padding: 0 32px 40px 0;
         }
     }
     .teamText {
         width: 110%;
     }
     .teamPerson {
-        padding: 0 32px 40px 0;
         >img {
             width: 100%;
-            height: 328px;
             border-radius: 3px;
             overflow: hidden;
         }
         .teamName {
             color: #D4B166;
             font-size: 24px;
+            font-weight: 900;
         }
         .teamTime {
-            margin: -64px -8px 0 0;
+            margin: -52px -8px 0 0;
             text-align: right;
             font-size: 22px;
             color: white;
-            opacity: 0.6;
+            opacity: 0.5;
             font-weight: bold;
         }
     }
@@ -409,15 +475,13 @@ button {
         }
     }
     .teamStats {
-        margin-top: -80px;
-        padding-left: 40px;
-        div:nth-child(2n + 1) {
+        >div div:first-child {
             color: white;
             font-size: 28px;
             margin-top: 12px;
             font-weight: bold;
         }
-        div:nth-child(2n) {
+        >div div:last-child {
             font-size: 15px;
             line-height: 1.1;
             font-weight: 500;
@@ -434,35 +498,60 @@ button {
 
 .sectionBottom {
     position: relative;
-    padding-top: 200px;
-    text-align: center;
     overflow: hidden;
+    .mw {
+        padding-top: 100px;
+    }
+    text-align: center;
     .bottomOval {
         position: absolute;
         left: 0;
         top: 0;
+        right: 0;
         svg {
             overflow: visible;
         }
-    }
-    .bottomText {
+        @media (min-width: (@minWidthHeaderDesktop)) {
+            .spacerLeft {
+                .flex(1.4);
+            }
+            .ovalWrapper {
+                margin-left: -400px;
+            }
+            .spacerRight {
+                .flex(1);
+            }
+        }
+        @media (max-width: (@minWidthHeaderDesktop - 1)) {
+            .spacerLeft {
+                .flex(1);
+            }
+            .ovalWrapper {
+                margin-left: -400px;
+            }
+            .spacerRight {
+                .flex(1.2);
+            }
+        }
     }
     .textTitle {
         color: white;
         margin: 0 auto;
     }
     .text {
-        margin: 0 auto;
-        color: white;
+        margin: 10px auto 16px auto;
+        color: #D1DAED;
         max-width: 500px;
-        opacity: 0.72;
     }
     .bottomText {
         position: relative;
         z-index: 1;
     }
+    .buttonInside {
+        padding: 16px 24px;
+    }
     .bottomHeart {
-        margin-top: 200px;
+        margin-top: 160px;
         font-size: 14px;
         padding-bottom: 8px;
         span {
@@ -517,13 +606,14 @@ button {
     .companyWriteup {
         max-width: 450px;
         p {
-            margin: 2em 0;
+            margin: 1.5em 0;
         }
     }
     .textBig {
         margin-top: 20px;
         font-size: 28px;
         font-weight: 900;
+        line-height: 1.3;
     }
     .textSmall {
         font-size: 15px;
@@ -537,7 +627,7 @@ button {
             list-style: none;
             margin-left: @offset;
             overflow: visible;
-            line-height: 2;
+            line-height: 1.6;
         }
         li:before{
             content: '';
@@ -548,7 +638,7 @@ button {
             width: 12px;
             height: 16px;
             background-size: contain;
-            background-image: url('/img/logoBullet.png');
+            background-image: url('img/logoBullet.png');
             // background-position-y: 5px;
             // margin-top: 8px;
         }
@@ -588,7 +678,6 @@ button {
     margin: 0 auto 100px auto;
 }
 
-
 .sectionTestimonials {
     position: relative;
     padding-top: 80px;
@@ -601,16 +690,21 @@ button {
         }
     }
     @media (min-width: (@maxWidthWide + 1)) {
-        padding-bottom: 180px;
+        padding-bottom: 80px;
     }
     .testimonialsTitle {
         max-width: 400px;
-        margin-left: auto;
-        margin-right: 60px;
+        @media (max-width: 699px) {
+            margin-left: 40px;
+        }
+        @media (min-width: 700px) {
+            margin-left: auto;
+            // margin-right: 60px;
+        }
     }
     .testimonialsOval {
         position: absolute;
-        right: 0;
+        right: -100px;
         top: 60px;
         z-index: -1;
         svg {
@@ -636,6 +730,8 @@ button {
         height: 100%;
         padding-bottom: 20px;
         box-sizing: content-box; /* So the width will be 100% + 17px */
+        max-width: 1960px;
+        margin: 0 auto;
         cursor: -webkit-grab;
         cursor: -moz-grab;
         cursor: -o-grab;
@@ -656,7 +752,7 @@ button {
             padding-bottom: 48px;
             vertical-align: top;
             + div {
-                margin-left: 32px;
+                margin-left: 20px;
             }
         }
     }
@@ -671,8 +767,9 @@ button {
     }
     @media (min-width: (@clip + 1)) {
         .scroller {
-            padding-left: ~'calc((100vw - @{pageWidth}) / 2)';
-            padding-right: ~'calc((100vw - @{pageWidth}) / 2)';
+            padding: 0 80px;
+            // padding-left: ~'calc((100vw - @{pageWidth}) / 2)';
+            // padding-right: ~'calc((100vw - @{pageWidth}) / 2)';
         }
     }
     .testimonialLogo {
@@ -685,7 +782,7 @@ button {
     .whiteBox {
         padding: 32px;
         background: white;
-        border-radius: 12px;
+        // border-radius: 2px;
         box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
         .text {
             height: 250px;
@@ -697,16 +794,15 @@ button {
     }
     .person {
         margin-top: 16px;
+        font-size: 15px;
         line-height: 1.3;
-        color: #acb1be;
+        color: #63687C;
         img {
             width: 44px;
             height: 44px;
-            margin-right: 16px;
+            margin-right: 20px;
         }
-        >.f1>div:not(.fontGiant) {
-            font-size: 15px;
-            font-style: italic;
+        >.f1>div:not(.b) {
         }
     }
 }
@@ -819,7 +915,6 @@ body {
 
 .textTitle {
     position: relative;
-    padding-bottom: 16px;
     font-size: 32px;
     line-height: 1.4;
     font-weight: 900;
@@ -841,7 +936,8 @@ body {
     left: 0;
     right: 0;
     text-align: right;
-    // font-weight: bold;
+    font-weight: 500;
+    font-size: 16px;
     line-height: @topBarHeight;
     height: @topBarHeight;
     margin-top: @topBarPadding;
@@ -876,8 +972,20 @@ body {
     }
 }
 .headerInside {
+    position: relative;
     padding-top: @topBarHeight + @topBarPadding + 30;
-    height: 740px;
+    height: 760px;
+    @media (min-width: (@minWidthHeaderDesktop)) {
+        .headerInsideRight {
+            flex: 1 1 570px;
+        }
+        .imgDevice {
+            position: absolute;
+            margin-left: -100px;
+            margin-top: 50px;
+            height: 600px;
+        }
+    }
     @media (max-width: (@minWidthHeaderDesktop - 1)) {
         height: auto;
         // .spacer {
@@ -914,16 +1022,15 @@ body {
         .headerInsideRight {
             // margin: 0 -100px;
             // padding: 0 100px;
-            .headerInsideRight2 {
-                margin: 0 -100px;
-            }
-            .spacer {
-                .flex(2);
-            }
+            // .headerInsideRight2 {
+            //     margin: 0 -100px;
+            // }
+            // .spacer {
+            //     .flex(2);
+            // }
             .imgDevice {
-                position: relative;
                 margin: -80px 0 0 200px;
-                height: 600px;
+                height: 500px;
                 .flex(1);
             }
             .imgDeviceInside {
@@ -962,8 +1069,7 @@ body {
     }
     .textTitle {
         font-size: 42px;
-        margin-bottom: 24px;
-        line-height: 1.3;
+        line-height: 1.2;
         font-weight: 900;
         margin-right: -100px;
         // color: white;
@@ -973,6 +1079,7 @@ body {
     }
     .textLight {
         max-width: 410px;
+        margin: 16px 0 24px 0;
     }
 }
 .topOval {
@@ -990,6 +1097,9 @@ body {
     @media (min-width: (@minWidthHeaderDesktop)) {
         .spacerLeft {
             .flex(1);
+        }
+        .ovalWrapper {
+            margin-right: -160px;
         }
     }
     @media (max-width: (@minWidthHeaderDesktop - 1)) {

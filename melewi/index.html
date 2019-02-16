@@ -57,7 +57,7 @@
                     <a href="http://blog.melewi.net/">Blog</a>
                     </div>
             </div>
-            <div class="topOval flexbox">
+            <div class="topOval flexbox mw">
                 <div class="spacerLeft"></div>
                 <div class="ovalWrapper">
                     <svg width="566px" height="735px" viewBox="0 0 1133 1470" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@
                                     <div>
                                         <a class="button buttonGetInTouch" href="#contact">
                                             <div class="buttonInside">
-                                                <div class="b5">Get a free quote<span class="rightArrow">&rarr;</span></div>
+                                                <div class="b">Get a free quote<span class="rightArrow icon-arrow_forward"></span></div>
                                                 <div class="textButtonLight">Projects start at $5k</div>
                                             </div>
                                         </a>
@@ -126,12 +126,9 @@
                             </div>
                         </div>
                         <div class="headerInsideDiv headerInsideRight">
-                            <div class="headerInsideRight2 flexbox">
-                                <div class="spacer"></div>
-                                <div class="imgDevice">
-                                    <img class="bubbleTop" src="img/bubbletopdevice.png" />
-                                    <img class="imgDeviceInside" src="img/topdevice.png" />
-                                </div>
+                            <div class="imgDevice">
+                                <img class="bubbleTop" src="img/bubbletopdevice.png" data-aos-delay="300" data-aos="fade-right" />
+                                <img class="imgDeviceInside" src="img/topdevice.png" data-aos="fade-in" />
                             </div>
                         </div>
                     </div>
@@ -160,7 +157,7 @@
             </div>
         </div>
 
-        <div class="sectionClients mw">
+        <div class="sectionClients mw" data-aos="fade-in">
             <div class="clientLeft">
                 <div class="clientImg">
                     <img class="w100" src="img/Guavapass.png" />
@@ -262,7 +259,8 @@
                     </div>
                     <div class="textBig">MyKicks: Revolutionising football practice with augmented reality</div>
                     <div class="companyWriteup textLight">
-                        <p>Powered by augmented reality and artificial intelligence, we worked with myKicks to transform their innovative tech into an intuitive and seamless experience. We created, footballers all over the world could instantly get top-notch kick analysis on their mobile phones. With our help, myKicks rose to #1 in the App Store's sports category — above FIFA's official world cup app.</p>
+                        <p>Powered by augmented reality and artificial intelligence, we worked with myKicks to transform their innovative tech into an intuitive and seamless experience.</p>
+                        <p>With what we created, footballers all over the world could instantly get top-notch kick analysis on their mobile phones. With our help, myKicks rose to #1 in the App Store's sports category — above FIFA's official world cup app.</p>
                         <div class="textSmall">
                             <div class="b">Expertise</div>
                             <ul>
@@ -293,7 +291,7 @@
                 <div class="textTitle">World-class expertise paired with global experience</div>
                 <div class="textLight">Combining the best from 8 countries with experience designing for dozens more, Melewi is never limited by geography (only by wifi and availability of good coffee ☕️).</div>
             </div>
-            <div class="flexbox teamImgs">
+            <div class="teamImgs">
                 <div class="first">
                     <div>
                         <img src="img/Team1.jpg" />
@@ -333,7 +331,29 @@
                         <p>Our diverse and crazily experienced team of business strategists, product designers and growth-makers, will bring you all they’ve got.</p>
                     </div>
                 </div>
-                <div></div>
+                <div class="teamStatsMo teamStats">
+                    <div>
+                        <div>200</div>
+                        <div>Products<br>Launched</div>
+                    </div>
+                    <div>
+                        <div>7</div>
+                        <div>Years in<br>Business</div>
+                    </div>
+                    <div>
+                        <div>50+</div>
+                        <div>Countries<br>Reached</div>
+                    </div>
+                    <div>
+                        <div>100%</div>
+                        <div>Remote<br>Team</div>
+                    </div>
+                    <div>
+                        <div>200%</div>
+                        <div>Love, Effort &<br>Badass Results</div>
+                    </div>
+                </div>
+                <div class="empty"></div>
                 <div class="teamPerson">
                     <img src="img/PortraitMel.jpg" />
                     <div class="teamTime" data-offset="8"></div>
@@ -348,17 +368,27 @@
                     <div class="teamPos">COO & Product Manager</div>
                     <div class="teamCountry">🇵🇭Manila, Phillippines</div>
                 </div>
-                <div class="teamStats">
-                    <div>200</div>
-                    <div>Products<br>Launched</div>
-                    <div>7</div>
-                    <div>Years in<br>Business</div>
-                    <div>50+</div>
-                    <div>Countries<br>Reached</div>
-                    <div>100%</div>
-                    <div>Remote<br>Team</div>
-                    <div>200%</div>
-                    <div>Love, Effort &<br>Badass Results</div>
+                <div class="teamStatsDe teamStats">
+                    <div>
+                        <div>200</div>
+                        <div>Products<br>Launched</div>
+                    </div>
+                    <div>
+                        <div>7</div>
+                        <div>Years in<br>Business</div>
+                    </div>
+                    <div>
+                        <div>50+</div>
+                        <div>Countries<br>Reached</div>
+                    </div>
+                    <div>
+                        <div>100%</div>
+                        <div>Remote<br>Team</div>
+                    </div>
+                    <div>
+                        <div>200%</div>
+                        <div>Love, Effort &<br>Badass Results</div>
+                    </div>
                 </div>
                 <div class="teamPerson">
                     <img src="img/PortraitMary.jpg" />
@@ -413,27 +443,29 @@
         </div>
 
         <div class="sectionTestimonials">
-            <div class="testimonialsTitle">
-                <div class="textTitle">
-                    <div>Great Results</div>
-                    <div>= Happy Clients 😍</div>
+            <div class="mw">
+                <div class="testimonialsTitle">
+                    <div class="textTitle">
+                        <div>Great Results</div>
+                        <div>= Happy Clients 😍</div>
+                    </div>
                 </div>
-            </div>
-            <div class="testimonialsOval">
-                <svg width="954px" height="998px" viewBox="0 0 1591 1664" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="1-Homepage-Copy" transform="translate(-836.000000, -14925.000000)" fill="#F7F7F7" fill-rule="nonzero">
-                            <g id="Testimonials" transform="translate(217.000000, 14639.000000)">
-                                <path
-                                    d="M898.544516,2082.61458 C784.566478,1891.58255 719.080527,1668.25624 719.080527,1429.63233 C719.080527,729.65367 1282.57521,161.308052 1980.61654,153.614581 C2094.59456,344.646577 2160.08053,567.972907 2160.08053,806.596837 C2160.08053,1506.57549 1596.58584,2074.92111 898.544516,2082.61458 Z"
-                                    id="Combined-Shape-Copy-4"
-                                    transform="translate(1439.580527, 1118.114581) scale(-1, 1) rotate(15.000000) translate(-1439.580527, -1118.114581) ">
-                                </path>
+                <div class="testimonialsOval">
+                    <svg width="954px" height="998px" viewBox="0 0 1591 1664" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="1-Homepage-Copy" transform="translate(-836.000000, -14925.000000)" fill="#F7F7F7" fill-rule="nonzero">
+                                <g id="Testimonials" transform="translate(217.000000, 14639.000000)">
+                                    <path
+                                        d="M898.544516,2082.61458 C784.566478,1891.58255 719.080527,1668.25624 719.080527,1429.63233 C719.080527,729.65367 1282.57521,161.308052 1980.61654,153.614581 C2094.59456,344.646577 2160.08053,567.972907 2160.08053,806.596837 C2160.08053,1506.57549 1596.58584,2074.92111 898.544516,2082.61458 Z"
+                                        id="Combined-Shape-Copy-4"
+                                        transform="translate(1439.580527, 1118.114581) scale(-1, 1) rotate(15.000000) translate(-1439.580527, -1118.114581) ">
+                                    </path>
+                                </g>
                             </g>
                         </g>
-                    </g>
-                </svg>
+                    </svg>
+                </div>
             </div>
             <div id="testimonials" class="testimonials">
                 <div class="scroller">
@@ -442,12 +474,12 @@
                             <div class="text">
                                 "The Melewi team are an outstanding design partner - agile, fast, committed, and above all easy to work with plenty of initiative, that results in work that looks great. In fact, they set the standard for what working with a design agency should be."
                             </div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/DanielLee.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Daniel Lee</div>
-                                    <div>Senior Director</div>
-                                    <div>(Digital Experience Lead)</div>
+                                    <div class="b">Daniel Lee</div>
+                                    <div class="textLight">Senior Director</div>
+                                    <div class="textLight">(Digital Experience Lead)</div>
                                 </div>
                             </div>
                         </div>
@@ -458,10 +490,10 @@
                             <div class="text">
                                 "Quality. Versatility. Results. From concept decks to mockups to fully-interactive prototypes, Melewi delivered superb quality and creative thinking at each step of the way. The final output was beautiful, and Samsung was lucky to be able to attract such a strong design team."
                             </div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/BorisMasis.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Boris Masis</div>
+                                    <div class="b">Boris Masis</div>
                                     <div>Product Manager</div>
                                 </div>
                             </div>
@@ -473,10 +505,10 @@
                             <div class="text">
                                 "Melewi gave us a unique opportunity to experience their well organised and effective workflow that defies geography and timezones. It’s a great feeling to work with talented professionals that are genuinely interested in delivering the best solution to meet our business goals."
                             </div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/gideonsimons.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Gideon Simons</div>
+                                    <div class="b">Gideon Simons</div>
                                     <div>UX Lead</div>
                                 </div>
                             </div>
@@ -490,10 +522,10 @@
                                 out when they saw something on our site or app that they thought that we could do better. Their entire team is creative,
                                 passionate, and every easy to work with!"
                             </div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/JeffreyLiu.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Jeffrey Liu</div>
+                                    <div class="b">Jeffrey Liu</div>
                                     <div>Cofounder & CEO</div>
                                 </div>
                             </div>
@@ -503,10 +535,10 @@
                     <div>
                         <div class="whiteBox">
                             <div class="text">"Melewi is an awesome partner to have on board. They've owned our vision; and inspired, challenged and given life to WeInvest. With exquisite taste and a critical understanding of our users, the team is fun, sassy & professional!"</div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/BhaskarPrabhakara.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Bhaskar Prabhakara</div>
+                                    <div class="b">Bhaskar Prabhakara</div>
                                     <div>Founder & CEO</div>
                                 </div>
                             </div>
@@ -518,10 +550,10 @@
                             <div class="text">
                                 "Melewi delivered above and beyond expectations. Everyone involved was across multiple timezones, which, much to our pleasant surprise, was not a problem at all.  I would highly recommend Melewi to anyone looking for a skilled team that will go out of their way to help meet your project goals."
                             </div>
-                            <div class="person flexbox">
+                            <div class="person flexbox textLight">
                                 <img src="img/TheodoreWorcester.png" />
                                 <div class="f1">
-                                    <div class="fontGiant">Theodore Worcester</div>
+                                    <div class="b">Theodore Worcester</div>
                                     <div>Head of Product</div>
                                 </div>
                             </div>
@@ -532,56 +564,58 @@
             </div>
         </div>
         <div class="sectionBottom">
-            <div class="bottomOval">
-                <svg width="1130px" height="748px" viewBox="0 0 2056 1359" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <linearGradient x1="43.3646006%" y1="23.0130772%" x2="57.3103504%" y2="100%" id="linearGradient-1">
-                            <stop stop-color="#5E1986" offset="0%"></stop>
-                            <stop stop-color="#6F27B1" offset="48.3979096%"></stop>
-                            <stop stop-color="#36298D" offset="89.8041596%"></stop>
-                            <stop stop-color="#34238A" offset="100%"></stop>
-                        </linearGradient>
-                    </defs>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="1-Homepage-Copy" transform="translate(0.000000, -16312.000000)" fill="url(#linearGradient-1)"
-                            fill-rule="nonzero">
-                            <g id="CTA" transform="translate(-272.000000, 15865.000000)">
-                                <path
-                                    d="M580.62833,2638.64462 C438.57104,2400.57256 356.952186,2122.25402 356.952186,1824.87098 C356.952186,952.52848 1059.26756,244.232542 1929.27604,234.644619 C2071.33332,472.716634 2152.95219,751.035191 2152.95219,1048.41825 C2152.95219,1920.76076 1450.63681,2629.0567 580.62833,2638.64462 Z"
-                                    id="Combined-Shape-Copy-14"
-                                    transform="translate(1254.952186, 1436.644619) rotate(20.000000) translate(-1254.952186, -1436.644619) ">
-                                </path>
+            <div class="mw">
+                <div class="bottomOval flexbox">
+                    <div class="spacerLeft"></div>
+                    <div class="ovalWrapper">
+                        <svg width="1130px" height="748px" viewBox="0 0 2056 1359" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient x1="43.3646006%" y1="23.0130772%" x2="57.3103504%" y2="100%" id="linearGradient-1">
+                                    <stop stop-color="#5E1986" offset="0%"></stop>
+                                    <stop stop-color="#6F27B1" offset="48.3979096%"></stop>
+                                    <stop stop-color="#36298D" offset="89.8041596%"></stop>
+                                    <stop stop-color="#34238A" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="1-Homepage-Copy" transform="translate(0.000000, -16312.000000)" fill="url(#linearGradient-1)"
+                                    fill-rule="nonzero">
+                                    <g id="CTA" transform="translate(-272.000000, 15865.000000)">
+                                        <path
+                                            d="M580.62833,2638.64462 C438.57104,2400.57256 356.952186,2122.25402 356.952186,1824.87098 C356.952186,952.52848 1059.26756,244.232542 1929.27604,234.644619 C2071.33332,472.716634 2152.95219,751.035191 2152.95219,1048.41825 C2152.95219,1920.76076 1450.63681,2629.0567 580.62833,2638.64462 Z"
+                                            id="Combined-Shape-Copy-14"
+                                            transform="translate(1254.952186, 1436.644619) rotate(20.000000) translate(-1254.952186, -1436.644619) ">
+                                        </path>
+                                    </g>
+                                </g>
                             </g>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="bottomText center">
-                <div class="textTitle">Want a product your customers will love?</div>
-                <div class="text">
-                    <div>We’ve worked with McDonald’s, Visa, Samsung, and 200+ more businesses of all shapes and sizes in over 50 countries.</div>
-                    <div>They all trust us to bring them success.</div>
-                    <br>
-                    <div>Think we can help you too?</div>
-                </div>
-                <a class="button buttonGetInTouch" href="#contact">
-                    <div class="buttonInside flexbox">
-                        <div class="f1">
-                            <div class="b">Get a free quote</div>
-                            <div>Projects start at $5k</div>
-                        </div>
-                        <div class="rightArrow">&rarr;</div>
+                        </svg>
                     </div>
-                </a>
-            </div>
-            <div class="bottomHeart">
-                <span>Made with</span>
-                <svg class="iconHeart" viewBox="0 0 32 29.6">
-                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-                                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
-                </svg>
-                <span>from around the world</span>
+                    <div class="spacerRight"></div>
+                </div>
+                <div class="bottomText center mw">
+                    <div class="textTitle">Want a product your customers will love?</div>
+                    <div class="text b5">
+                        <div>We’ve worked with McDonald’s, Visa, Samsung, and 200+ more businesses of all shapes and sizes in over 50 countries.</div>
+                        <div>They all trust us to bring them success.</div>
+                        <br>
+                        <div>Think we can help you too?</div>
+                    </div>
+                    <a class="button buttonGetInTouch" href="#contact">
+                        <div class="buttonInside b">
+                            Projects start at $5k — get a free quote
+                        </div>
+                    </a>
+                </div>
+                <div class="bottomHeart">
+                    <span>Made with</span>
+                    <svg class="iconHeart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                    <span>from around the world</span>
+                </div>
             </div>
         </div>
         <script>
@@ -622,6 +656,7 @@
 
             updateTimes();
         </script>
+        <link href="aos.css" rel="stylesheet" type="text/css">
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
@@ -633,6 +668,13 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-29609882-1');
+        </script>
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                once: true
+            });
         </script>
     </body>
 </html>
