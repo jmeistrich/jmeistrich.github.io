@@ -160,9 +160,12 @@
 }
 
 .sectionAbout {
+    @step: 600px;
     margin-top: -60px;
-    @media (max-width: (@minWidthHeaderDesktop - 1)) {
+    @media (max-width: (@step)) {
         margin-top: -120px;
+        padding-left: 20px;
+        padding-right: 20px;
         .textTitle {
             max-width: 320px !important;
         }
@@ -170,7 +173,7 @@
             display: none;
         }
     }
-    @media (min-width: (@minWidthHeaderDesktop)) {
+    @media (min-width: (@step + 1)) {
         .logosMo {
             display: none;
         }
@@ -187,6 +190,9 @@
         max-width: 680px;
         @media (min-width: (@minWidthHeaderDesktop)) {
             font-size: 22px;
+        }
+        @media (max-width: (@minWidthHeaderDesktop - 1)) {
+            font-size: 16px;
         }
     }
     .logos {
@@ -391,6 +397,14 @@ button {
             margin-left: auto;
         }
     }
+    @media (max-width: 699px) {
+        .textTitle {
+            max-width: 320px !important;
+        }
+        .textLight {
+            max-width: 280px !important;
+        }
+    }
 }
 
 .sectionTeam {
@@ -418,74 +432,6 @@ button {
     }
     .teamPos {
         font-weight: bold;
-    }
-    @media (max-width: 699px) {
-        .teamStatsDe, .empty, .teamBattle {
-            display: none;
-        }
-        .textTitle {
-            color: white;
-            padding-left: 40px;
-        }
-        .teamText {
-            padding-left: 40px;
-        }
-        .teamStatsMo {
-            min-width: 100% !important;
-            max-width: 100% !important;
-            margin-bottom: 40px;
-            padding-left: 40px;
-            .flexbox;
-            .flex-wrap;
-            >div {
-                width: 30%;
-            }
-        }
-        .teamTitle {
-            max-width: 300px !important;
-            // min-width: 100% !important;
-            // max-width: 100% !important;
-        }
-        .teamTime {
-            font-size: 20px;
-        }
-        .teamPerson {
-            padding-bottom: 40px;
-            margin: 0 10px;
-        }
-        .teamName {
-            font-size: 20px;
-        }
-        .teamPos, .teamCountry {
-            font-size: 12px;
-        }
-        .clientsDe {
-            display: none;
-        }
-    }
-    @media (min-width: 700px) {
-        .teamTitle > div {
-            margin-right: -100px;
-        }
-        .teamStatsMo {
-            display: none;
-        }
-        .teamStatsDe {
-            margin-top: -80px;
-            padding-left: 40px;
-        }
-        .teamPerson {
-            padding: 0 32px 40px 0;
-        }
-        .teamTime {
-            font-size: 22px;
-        }
-        .teamName {
-            font-size: 24px;
-        }
-        .clientsMo {
-            display: none;
-        }
     }
     .teamText {
         width: 110%;
@@ -523,12 +469,10 @@ button {
     .teamStats {
         >div div:first-child {
             color: white;
-            font-size: 28px;
             margin-top: 12px;
             font-weight: bold;
         }
         >div div:last-child {
-            font-size: 15px;
             line-height: 1.1;
             font-weight: 500;
         }
@@ -540,15 +484,107 @@ button {
             margin-top: 40px;
         }
     }
+    @media (min-width: 700px) and (max-width: 900px) {
+        .teamText {
+            width: 140% !important;
+        }
+    }
+    @media (max-width: 699px) {
+        .teamStatsDe, .empty, .teamBattle {
+            display: none;
+        }
+        .textTitle {
+            color: white;
+            padding-left: 40px;
+        }
+        .teamText {
+            padding-left: 40px;
+            width: 130% !important;
+        }
+        .teamStatsMo {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 40px;
+            padding-left: 40px;
+            .flexbox;
+            .flex-wrap;
+            >div {
+                width: 30%;
+            }
+        }
+        .teamTitle {
+            max-width: 300px !important;
+            // min-width: 100% !important;
+            // max-width: 100% !important;
+        }
+        .teamTime {
+            font-size: 20px;
+        }
+        .teamPerson {
+            padding-bottom: 40px;
+            margin: 0 10px;
+        }
+        .teamName {
+            font-size: 20px;
+        }
+        .teamPos, .teamCountry {
+            font-size: 12px;
+        }
+        .clientsDe {
+            display: none;
+        }
+        .teamStats {
+            >div div:first-child {
+                font-size: 22px;
+            }
+            >div div:last-child {
+                font-size: 11px;
+                margin-top: -5px;
+            }
+        }
+    }
+    @media (min-width: 700px) {
+        .teamTitle > div {
+            margin-right: -100px;
+        }
+        .teamStatsMo {
+            display: none;
+        }
+        .teamStatsDe {
+            margin-top: -80px;
+            padding-left: 40px;
+        }
+        .teamPerson {
+            padding: 0 32px 40px 0;
+        }
+        .teamTime {
+            font-size: 22px;
+        }
+        .teamName {
+            font-size: 24px;
+        }
+        .clientsMo {
+            display: none;
+        }
+        .teamStats {
+            >div div:first-child {
+                font-size: 28px;
+            }
+            >div div:last-child {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 .sectionBottom {
+    @step1: 800px;
     position: relative;
     overflow: hidden;
-    .mw {
-        padding-top: 100px;
-    }
     text-align: center;
+    .mw {
+        padding-top: 250px;
+    }
     .bottomOval {
         position: absolute;
         left: 0;
@@ -557,32 +593,44 @@ button {
         svg {
             overflow: visible;
         }
-        @media (min-width: (@minWidthHeaderDesktop)) {
-            .spacerLeft {
-                .flex(1.4);
-            }
-            .ovalWrapper {
-                margin-left: -400px;
-            }
-            .spacerRight {
-                .flex(1);
+    }
+    @media (min-width: (@step1 + 1)) {
+        .spacerLeft {
+            .flex(1.3);
+        }
+        .ovalWrapper {
+            margin-left: -300px;
+        }
+        .spacerRight {
+            .flex(1);
+        }
+    }
+    @media (max-width: (@step1)) {
+        .ovalWrapper {
+            margin-left: -300px;
+        }
+    }
+    @media (max-width: 500px) {
+        .spacerLeft {
+            .flex(1);
+        }
+        .mw {
+            padding-top: 150px;
+        }
+        .ovalWrapper {
+            margin-left: -480px;
+            svg {
+                height: 580px;
             }
         }
-        @media (max-width: (@minWidthHeaderDesktop - 1)) {
-            .spacerLeft {
-                .flex(1);
-            }
-            .ovalWrapper {
-                margin-left: -400px;
-            }
-            .spacerRight {
-                .flex(1.2);
-            }
+        .spacerRight {
+            .flex(1.2);
         }
     }
     .textTitle {
         color: white;
         margin: 0 auto;
+        padding: 0;
     }
     .text {
         margin: 10px auto 16px auto;
@@ -592,8 +640,9 @@ button {
     .bottomText {
         position: relative;
         z-index: 1;
-        @media (max-width: (@minWidthHeaderDesktop - 1)) {
+        @media (max-width: (@step1)) {
             font-size: 13px;
+            margin: 0 (-@paddingPage / 2);
             .textTitle {
                 max-width: 320px;
             }
@@ -629,8 +678,15 @@ button {
         }
     }
     .clientImg {
+        position: relative;
         margin: 0 16px;
         .flex(1.1);
+        >img:not(:first-child) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
     }
     .clientText {
         .flex(1);
@@ -639,7 +695,7 @@ button {
         max-width: 60px;
     }
     .companyLogo {
-        margin-right: -100px;
+        margin-right: -300px;
         div {
             display: inline-block;
             vertical-align: bottom;
@@ -661,6 +717,12 @@ button {
             margin: 1.5em 0;
         }
     }
+    .clientMcDonalds .textBig {
+        margin-right: -100px;
+    }
+    .clientMyKicks .textBig {
+        margin-right: -50px;
+    }
     .textBig {
         margin-top: 20px;
         font-size: 28px;
@@ -672,6 +734,9 @@ button {
     }
     .textSmall {
         font-size: 15px;
+        @media (max-width: @minWidthHeaderDesktop) {
+            font-size: 12px
+        }
         ul {
             padding: 0;
             margin: 0;
@@ -710,7 +775,7 @@ button {
     }
     @media (max-width: 699px) {
         .clientText {
-            margin-top: 20px;
+            margin-top: -20px;
         }
         >div {
             max-width: 500px;
@@ -945,7 +1010,7 @@ html {
 body {
     font-size: 17px;
     @media (max-width: @minWidthHeaderDesktop) {
-        font-size: 15px;
+        font-size: 14px;
     }
     margin: 0;
     width: 100%;
@@ -1048,10 +1113,9 @@ body {
     }
     @media (max-width: (@minWidthHeaderDesktop - 1)) {
         height: auto;
-        // .spacer {
-            //     min-width: 200px;
-            //     .flex(1);
-            // }
+        .spacerInsideLeft {
+            display: none;
+        }
         .headerInside2 {
             width: 700px;
             max-width: 100%;
@@ -1059,10 +1123,8 @@ body {
             .flex-wrap;
         }
         .headerInsideDiv {
-            width: 600px;
-            max-width: 100%;
+            width: 400px;
             margin: 0 auto;
-            .flex(0 1 500px);
         }
         .headerOval {
             display: none;
@@ -1082,23 +1144,23 @@ body {
         }
         .headerInsideLeftWrap2 {
             margin: 0 auto;
+            min-width: 100%;
         }
         .button {
             font-size: 13px;
             box-shadow: none;
         }
         .headerInsideRight {
+            // margin: 0 -@paddingPage;
+            width: 200px;
             .imgDevice {
-                margin: -40px 0 0 120px;
+                margin: -40px auto 0 auto;
                 height: 500px;
-                .flex(1);
-            }
-            .imgDeviceInside {
-                // margin-left: 100px;
+                max-width: 100%;
             }
             .bubbleTop {
                 left: -100px;
-                bottom: 350px;
+                bottom: 300px;
             }
         }
     }
@@ -1131,7 +1193,7 @@ body {
         margin-right: -100px;
         padding: 0;
         // color: white;
-        @media (max-width: 500px) {
+        @media (max-width: 560px) {
             font-size: 32px;
         }
     }
