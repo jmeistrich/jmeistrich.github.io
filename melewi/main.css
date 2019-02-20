@@ -1250,6 +1250,134 @@ body {
   margin-right: 12px;
   text-decoration: none;
 }
+.pageContact .topBar a {
+  color: inherit;
+}
+.pageContact .sectionContact {
+  padding-top: 140px;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+}
+.pageContact .contactLeft > div {
+  max-width: 420px;
+}
+.pageContact .contactLeft {
+  padding-top: 40px;
+  -webkit-flex: 0 1 420px;
+  -webkit-box-flex: 0 1 420px;
+  -ms-flex: 0 1 420px;
+  flex: 0 1 420px;
+}
+.pageContact .contactRight {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+}
+.pageContact .contactRight img {
+  height: 400px;
+}
+.pageContact .icon-send {
+  margin-left: 16px;
+  font-size: 15px;
+}
+.pageContact .textTitle {
+  padding: 0;
+  line-height: 1;
+  font-weight: 900;
+}
+.pageContact .textLight {
+  font-size: 13px;
+  padding: 20px 0;
+}
+.pageContact .sectionContact #contact {
+  margin-top: 20px;
+}
+.pageContact .sectionContact #contact fieldset > div + div {
+  margin-top: 30px;
+}
+.pageContact .sectionContact input,
+.pageContact .sectionContact textarea {
+  padding: 0 8px;
+  font-size: 13px;
+  width: 100%;
+}
+.pageContact .sectionContact input + input {
+  margin-left: 16px;
+}
+.pageContact .sectionContact input::placeholder {
+  color: #999;
+}
+.pageContact .sectionContact fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.pageContact .sectionContact .text {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.pageContact .sectionContact input,
+.pageContact .sectionContact textarea,
+.pageContact .sectionContact button {
+  -webkit-appearance: none;
+}
+.pageContact .sectionContact input {
+  display: block;
+  line-height: 30px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.pageContact .sectionContact textarea {
+  height: 160px;
+  padding: 12px;
+  font-weight: normal;
+  resize: none;
+  border: 1px solid #ddd;
+}
+.pageContact .sectionContact input[type="submit"] {
+  position: absolute;
+  bottom: -48px;
+  right: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pageContact .sectionContact .spacerLeft {
+  max-width: 100px;
+  -webkit-flex: 0.1;
+  -webkit-box-flex: 0.1;
+  -ms-flex: 0.1;
+  flex: 0.1;
+}
+.pageContact .sectionContact .spacerMiddle {
+  max-width: 150px;
+  -webkit-flex: 0.5;
+  -webkit-box-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+}
+.pageContact .sectionContact .spacerRight {
+  max-width: 100px;
+  -webkit-flex: 0.25;
+  -webkit-box-flex: 0.25;
+  -ms-flex: 0.25;
+  flex: 0.25;
+}
+.pageContact .sectionContact .subtitle {
+  font-size: 12px;
+  padding: 0 0 40px 40px;
+  min-width: 150px;
+}
+.pageContact .sectionContact button {
+  box-shadow: none;
+  border: none;
+  display: block;
+  margin-left: auto;
+  line-height: 30px;
+}
 /*******************************
 ******* Error / Success ********
 *******************************/

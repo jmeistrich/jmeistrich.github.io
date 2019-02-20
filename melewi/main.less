@@ -1253,6 +1253,122 @@ body {
     text-decoration: none;
 }
 
+.pageContact {
+    .topBar a {
+        color: inherit;
+    }
+    .sectionContact {
+        padding-top: 140px;
+        .alignItems(center);
+    }
+    .contactLeft >div {
+        max-width: 420px;
+    }
+    .contactLeft {
+        padding-top: 40px;
+        .flex(0 1 420px);
+    }
+    .contactRight {
+        .alignItems(flex-end);
+        img {
+            height: 400px;
+        }
+    }
+    .icon-send {
+        margin-left: 16px;
+        font-size: 15px;
+    }
+    .textTitle {
+        padding: 0;
+        line-height: 1;
+        font-weight: 900;
+    }
+    .textLight {
+        font-size: 13px;
+        padding: 20px 0;
+    }
+    .sectionContact {
+        #contact {
+            margin-top: 20px;
+            fieldset >div + div {
+                margin-top: 30px;
+            }
+        }
+        input, textarea {
+            padding: 0 8px;
+            font-size: 13px;
+            // font-weight: bold;
+            // color: #1b2658;
+            width: 100%;
+        }
+        input + input {
+            margin-left: 16px;
+        }
+        input::placeholder {
+            color: #999;
+            // color: rgba(100,133,159,0.5);
+        }
+        fieldset {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .text {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        input, textarea, button {
+            -webkit-appearance: none;
+        }
+        input {
+            display: block;
+            line-height: 30px;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        textarea {
+            height: 160px;
+            padding: 12px;
+            font-weight: normal;
+            resize: none;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            position: absolute;
+            bottom: -48px;
+            right: 16px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .spacerLeft {
+            max-width: 100px;
+            .flex(0.1);
+        }
+        .spacerMiddle {
+            max-width: 150px;
+            .flex(0.5);
+        }
+        .spacerRight {
+            max-width: 100px;
+            .flex(0.25);
+        }
+        .subtitle {
+            font-size: 12px;
+            padding: 0 0 40px 40px;
+            min-width: 150px;
+        }
+        button {
+            box-shadow: none;
+            border: none;
+            display: block;
+            margin-left: auto;
+            line-height: 30px;
+        }
+    }
+}
 
 /*******************************
 ******* Error / Success ********

@@ -15,7 +15,7 @@ $(function() {
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
 
-    if (!isMobileDevice())
+    if (!isMobileDevice() && document.getElementById('testimonials'))
     {
         var testimonials = document.getElementById('testimonials').getElementsByClassName('scroller')[0],
             prevX,
