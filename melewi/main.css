@@ -1287,7 +1287,6 @@ body {
   font-weight: 900;
 }
 .pageContact .textLight {
-  font-size: 13px;
   padding: 20px 0;
 }
 .pageContact .sectionContact #contact {
@@ -1299,7 +1298,7 @@ body {
 .pageContact .sectionContact input,
 .pageContact .sectionContact textarea {
   padding: 0 8px;
-  font-size: 13px;
+  font-size: inherit;
   width: 100%;
 }
 .pageContact .sectionContact input + input {
@@ -1377,6 +1376,9 @@ body {
   display: block;
   margin-left: auto;
   line-height: 30px;
+}
+.pageContact .bottomHeart span {
+  color: inherit;
 }
 /*******************************
 ******* Error / Success ********
