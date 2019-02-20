@@ -409,9 +409,10 @@ button {
 .sectionTeam .teamPerson .teamName {
   color: #D4B166;
   font-weight: 900;
+  line-height: 1;
 }
 .sectionTeam .teamPerson .teamTime {
-  margin: -52px -8px 0 0;
+  margin: -48px -8px 0 0;
   text-align: right;
   color: white;
   opacity: 0.5;
@@ -458,31 +459,27 @@ button {
   }
   .sectionTeam .textTitle {
     color: white;
-    padding-left: 40px;
   }
   .sectionTeam .teamText {
-    padding-left: 40px;
-    width: 130% !important;
+    width: 100% !important;
+  }
+  .sectionTeam .teamTitle,
+  .sectionTeam .teamText {
+    margin: 0 auto;
   }
   .sectionTeam .teamStatsMo {
     min-width: 100% !important;
     max-width: 100% !important;
     margin-bottom: 40px;
-    padding-left: 40px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
+  }
+  .sectionTeam .teamStatsMo .teamStats {
+    max-width: 300px;
+    margin: 0 auto;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .sectionTeam .teamStatsMo > div {
-    width: 30%;
+  .sectionTeam .teamStatsMo .teamStats > div {
+    width: 33%;
   }
   .sectionTeam .teamTitle {
     max-width: 300px !important;
@@ -648,7 +645,7 @@ button {
   -ms-align-items: center;
 }
 .sectionClients > div + div {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .sectionClients .clientRight {
   -webkit-flex-direction: row-reverse;
@@ -702,8 +699,10 @@ button {
 .sectionClients .companyWriteup p {
   margin: 1.5em 0;
 }
-.sectionClients .clientMcDonalds .textBig {
-  margin-right: -100px;
+@media (min-width: 1080px) {
+  .sectionClients .clientMcDonalds .textBig {
+    margin-right: -100px;
+  }
 }
 .sectionClients .clientMyKicks .textBig {
   margin-right: -50px;
@@ -764,11 +763,11 @@ button {
   .sectionClients .clientMyKicks .clientText {
     margin-top: -80px;
   }
+  .sectionClients .clientWeInvest .clientText {
+    margin-top: -80px;
+  }
 }
 @media (max-width: 699px) {
-  .sectionClients .clientText {
-    margin-top: -20px;
-  }
   .sectionClients > div {
     max-width: 500px;
     margin: 0 auto;
@@ -1068,12 +1067,12 @@ body {
     display: none;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 800px) {
   .topBar .headerLogoDark {
     display: none;
   }
 }
-@media (min-width: 731px) {
+@media (min-width: 801px) {
   .topBar .headerLogoWhite {
     display: none;
   }
@@ -1128,7 +1127,6 @@ body {
     font-weight: 500;
   }
   .headerInside .headerInsideLeft {
-    max-width: 340px;
     margin: 0 auto;
   }
   .headerInside .headerInsideLeftWrap2 {
@@ -1148,8 +1146,8 @@ body {
     max-width: 100%;
   }
   .headerInside .headerInsideRight .bubbleTop {
-    left: -100px;
-    bottom: 300px;
+    left: -80px;
+    bottom: 350px;
   }
 }
 .headerInsideLeftWrap2 {
@@ -1187,8 +1185,12 @@ body {
   font-size: 42px;
   line-height: 1.2;
   font-weight: 900;
-  margin-right: -100px;
   padding: 0;
+}
+@media (min-width: 561px) {
+  .headerInsideLeft .textTitle {
+    margin-right: -100px;
+  }
 }
 @media (max-width: 560px) {
   .headerInsideLeft .textTitle {
