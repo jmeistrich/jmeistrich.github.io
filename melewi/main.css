@@ -123,6 +123,9 @@
   .sectionAbout .logosMo {
     display: none;
   }
+  .sectionAbout .logosDe img:last-child {
+    margin-top: 36px;
+  }
 }
 .sectionAbout .graylogo img {
   width: 24px;
@@ -1379,6 +1382,32 @@ body {
 }
 .pageContact .bottomHeart span {
   color: inherit;
+}
+[data-aos="spring-in"].aos-animate {
+  animation: springIn 1s ease-in-out;
+}
+[data-aos-delay="600"] {
+  animation-delay: 600ms !important;
+}
+[data-aos-delay="200"] {
+  animation-delay: 200ms !important;
+}
+@keyframes springIn {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /*******************************
 ******* Error / Success ********
