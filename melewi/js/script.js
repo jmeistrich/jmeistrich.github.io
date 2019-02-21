@@ -1,5 +1,4 @@
-
-$(function() {
+(function() {
     var ua = navigator.userAgent;
     if (ua.match(/^((?!chrome|android).)*safari/i))
     {
@@ -147,4 +146,4 @@ $(function() {
             });
         }
     });
-});
+})();

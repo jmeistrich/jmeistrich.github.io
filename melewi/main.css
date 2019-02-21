@@ -1292,54 +1292,55 @@ body {
 .pageContact .textLight {
   padding: 20px 0;
 }
-.pageContact .sectionContact #contact {
+.pageContact #contact {
   margin-top: 20px;
 }
-.pageContact .sectionContact #contact fieldset > div + div {
+.pageContact #contact fieldset > div + div {
   margin-top: 30px;
 }
-.pageContact .sectionContact input,
-.pageContact .sectionContact textarea {
+.pageContact input,
+.pageContact textarea {
   padding: 0 8px;
   font-size: inherit;
   width: 100%;
 }
-.pageContact .sectionContact input + input {
-  margin-left: 16px;
-}
-.pageContact .sectionContact input::placeholder {
+.pageContact input::placeholder,
+.pageContact textarea::placeholder {
   color: #999;
 }
-.pageContact .sectionContact fieldset {
+.pageContact input + input {
+  margin-left: 16px;
+}
+.pageContact fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-.pageContact .sectionContact .text {
+.pageContact .text {
   font-weight: bold;
   font-size: 16px;
   margin-top: 16px;
   margin-bottom: 8px;
 }
-.pageContact .sectionContact input,
-.pageContact .sectionContact textarea,
-.pageContact .sectionContact button {
+.pageContact input,
+.pageContact textarea,
+.pageContact button {
   -webkit-appearance: none;
 }
-.pageContact .sectionContact input {
+.pageContact input {
   display: block;
   line-height: 30px;
   border: 0;
   border-bottom: 1px solid #ddd;
 }
-.pageContact .sectionContact textarea {
+.pageContact textarea {
   height: 160px;
   padding: 12px;
   font-weight: normal;
   resize: none;
   border: 1px solid #ddd;
 }
-.pageContact .sectionContact input[type="submit"] {
+.pageContact input[type="submit"] {
   position: absolute;
   bottom: -48px;
   right: 16px;
@@ -1347,38 +1348,55 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-.pageContact .sectionContact .spacerLeft {
+.pageContact .spacerLeft {
   max-width: 100px;
   -webkit-flex: 0.1;
   -webkit-box-flex: 0.1;
   -ms-flex: 0.1;
   flex: 0.1;
 }
-.pageContact .sectionContact .spacerMiddle {
+.pageContact .spacerMiddle {
   max-width: 150px;
   -webkit-flex: 0.5;
   -webkit-box-flex: 0.5;
   -ms-flex: 0.5;
   flex: 0.5;
 }
-.pageContact .sectionContact .spacerRight {
+.pageContact .spacerRight {
   max-width: 100px;
   -webkit-flex: 0.25;
   -webkit-box-flex: 0.25;
   -ms-flex: 0.25;
   flex: 0.25;
 }
-.pageContact .sectionContact .subtitle {
+.pageContact .subtitle {
   font-size: 12px;
   padding: 0 0 40px 40px;
   min-width: 150px;
 }
-.pageContact .sectionContact button {
+.pageContact button {
   box-shadow: none;
   border: none;
   display: block;
   margin-left: auto;
   line-height: 30px;
+}
+@media (max-width: 1000px) {
+  .pageContact .subtitle {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .pageContact .contactRight {
+    display: none;
+  }
+  .pageContact .spacer {
+    max-width: none !important;
+    -webkit-flex: 1 !important;
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 !important;
+    flex: 1 !important;
+  }
 }
 .pageContact .bottomHeart span {
   color: inherit;
