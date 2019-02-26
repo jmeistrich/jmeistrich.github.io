@@ -68,6 +68,7 @@
   position: relative;
   height: 100%;
   z-index: 1;
+  pointer-events: none;
 }
 .imgDevice img:last-child {
   height: 100%;
