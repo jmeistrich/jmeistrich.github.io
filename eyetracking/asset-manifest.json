@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0927927.chunk.css",
-    "main.js": "/static/js/main.795ef124.chunk.js",
-    "main.js.map": "/static/js/main.795ef124.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.94155858.chunk.css": "/static/css/2.94155858.chunk.css",
-    "static/js/2.3ca52360.chunk.js": "/static/js/2.3ca52360.chunk.js",
-    "static/js/2.3ca52360.chunk.js.map": "/static/js/2.3ca52360.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e6f81c50073967dbbd5fa79779be2457.js": "/precache-manifest.e6f81c50073967dbbd5fa79779be2457.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.94155858.chunk.css.map": "/static/css/2.94155858.chunk.css.map",
-    "static/css/main.f0927927.chunk.css.map": "/static/css/main.f0927927.chunk.css.map",
-    "static/media/index.css": "/static/media/roboto-latin-900italic.bc833e72.woff"
+    "main.css": "/eyetracking/static/css/main.f0927927.chunk.css",
+    "main.js": "/eyetracking/static/js/main.795ef124.chunk.js",
+    "main.js.map": "/eyetracking/static/js/main.795ef124.chunk.js.map",
+    "runtime~main.js": "/eyetracking/static/js/runtime~main.5114f714.js",
+    "runtime~main.js.map": "/eyetracking/static/js/runtime~main.5114f714.js.map",
+    "static/css/2.453381ba.chunk.css": "/eyetracking/static/css/2.453381ba.chunk.css",
+    "static/js/2.3ca52360.chunk.js": "/eyetracking/static/js/2.3ca52360.chunk.js",
+    "static/js/2.3ca52360.chunk.js.map": "/eyetracking/static/js/2.3ca52360.chunk.js.map",
+    "index.html": "/eyetracking/index.html",
+    "precache-manifest.6ef0eea873140f4e31c1ea40c5b6ce5e.js": "/eyetracking/precache-manifest.6ef0eea873140f4e31c1ea40c5b6ce5e.js",
+    "service-worker.js": "/eyetracking/service-worker.js",
+    "static/css/2.453381ba.chunk.css.map": "/eyetracking/static/css/2.453381ba.chunk.css.map",
+    "static/css/main.f0927927.chunk.css.map": "/eyetracking/static/css/main.f0927927.chunk.css.map",
+    "static/media/index.css": "/eyetracking/static/media/roboto-latin-900italic.bc833e72.woff"
   }
 }
