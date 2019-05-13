@@ -33,7 +33,7 @@
 .sw {
   position: relative;
   width: 100%;
-  max-width: 1370px;
+  max-width: 3000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,10 +80,13 @@
 .imgTop img {
   width: 100%;
 }
+.svgLogos {
+  position: relative;
+  margin-top: -240px;
+  z-index: 1;
+}
 .sectionLogos {
-  margin-top: -180px;
-  padding-top: 160px;
-  padding-bottom: 50px;
+  margin-top: -40px;
   z-index: 2;
   color: white;
 }
@@ -93,8 +96,12 @@
 .sectionLogos .logos img {
   height: 16px;
 }
+.svgStatsBottom {
+  margin-top: -380px;
+}
 .sectionStats {
   z-index: 2;
+  overflow: visible;
 }
 .sectionStats .sectionStatsBG {
   background: #2D344F;
@@ -102,7 +109,7 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 220px;
+  bottom: 380px;
 }
 .sectionStats .statsCols {
   padding-bottom: 200px;
@@ -191,7 +198,10 @@
 }
 .statBottomImg {
   height: 400px;
-  margin-top: -222px;
+  margin-top: -382px;
+}
+.sectionMission {
+  margin-top: -200px;
 }
 .sectionGreenHeader {
   font-weight: bold;
@@ -215,8 +225,16 @@
   margin: 0 auto;
 }
 .sectionWhatWeDo {
-  background: #f0f0f5;
   padding-bottom: 48px;
+  z-index: 1;
+}
+.sectionWhatWeDo .sectionWhatWeDoBG {
+  background: #f0f0f5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 200px;
 }
 .sectionWhatWeDo .sectionHeader {
   margin: 30px auto 80px auto;
@@ -276,9 +294,21 @@
 .sectionWhatWeDo .weDoContent .doText {
   margin-top: 8px;
 }
+.shapeWhatWeDoBottom {
+  background-color: #F9F9FA;
+  margin-top: -200px;
+}
 .sectionCover {
   margin-top: -200px;
+  z-index: 1;
+}
+.sectionCover .sectionCoverBG {
   background: #F9F9FA;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 300px;
 }
 .sectionCover img {
   width: 100%;
@@ -322,6 +352,9 @@
 .sectionCover .row2 {
   margin-top: 80px;
 }
+.shapeCoverBottom {
+  margin-top: -300px;
+}
 .sectionUnlock {
   background: #2d344f;
   height: 280px;
@@ -334,7 +367,7 @@
   text-align: center;
 }
 .sectionUnlock > div .headerFaded {
-  margin-top: -160px;
+  margin-top: -260px;
   font-size: 120px;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.05);
@@ -1011,6 +1044,7 @@ button {
   margin: 0 auto 100px auto;
 }
 .sectionTestimonials {
+  z-index: 1;
   position: relative;
   padding-top: 20px;
   -webkit-user-select: none;
@@ -1227,18 +1261,6 @@ button {
 .abs {
   position: absolute;
 }
-.absfillshape {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-.absfillshape img {
-  display: block;
-  width: 1370px;
-  margin: 0 auto;
-}
 .shape {
   max-width: 1370px;
   margin: 0 auto;
@@ -1246,18 +1268,33 @@ button {
 .shape img {
   width: 100%;
 }
+.shapesvg {
+  position: relative;
+  max-width: 3000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shapesvg svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120vw;
+  max-width: 3000px;
+  margin-top: -3px;
+  height: 100%;
+  height: calc(100% + 6px);
+}
 .shapeCover {
   background: #F9F9FA;
 }
 .shapeUnlock {
-  margin-top: -150px;
+  margin-top: -350px;
 }
 .shapeFooter {
-  margin-top: -120px;
+  background-color: #2D344F;
+  margin-top: -160px;
   z-index: 2;
-}
-.shapeWhat {
-  margin-top: -120px;
 }
 a {
   text-decoration: none;

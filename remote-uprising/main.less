@@ -2,6 +2,7 @@
 @topBarPadding: 30px;
 @pageWidth: 1210px;
 @shapeWidth: @pageWidth + 160;
+@shapeWidthMax: 3000px;
 @paddingPage: 40px;
 @maxWidthWide: 600px;
 @colorGreen: #44d08c;
@@ -14,7 +15,9 @@
 @maxSizeClip: 631px;
 @maxWidthAbout: 528px;
 @minWidthHeaderDesktop: 1080px;
-@statsCrop: 220px;
+@statsCrop: 380px;
+@whatWeDoCrop: 200px;
+@coverCrop: 300px;
 
 @font-face {
     font-family: 'Aktiv';
@@ -72,7 +75,7 @@
 .sw {
     position: relative;
     width: 100%;
-    max-width: @shapeWidth;
+    max-width: @shapeWidthMax;
     margin-left: auto;
     margin-right: auto;
 }
@@ -135,10 +138,14 @@
     }
 }
 
+.svgLogos {
+    position: relative;
+    margin-top: -240px;
+    z-index: 1;
+}
+
 .sectionLogos {
-    margin-top: -180px;
-    padding-top: 160px;
-    padding-bottom: 50px;
+    margin-top: -40px;
     z-index: 2;
     color: white;
     .logos {
@@ -150,9 +157,12 @@
         }
     }
 }
-
+.svgStatsBottom {
+    margin-top: -@statsCrop;
+}
 .sectionStats {
     z-index: 2;
+    overflow: visible;
     .sectionStatsBG {
         background: #2D344F;
         position: absolute;
@@ -252,6 +262,10 @@
     margin-top: -@statsCrop - 2;
 }
 
+.sectionMission {
+    margin-top: -200px;
+}
+
 .sectionGreenHeader {
     font-weight: bold;
     font-size: 15px;
@@ -278,8 +292,16 @@
 }
 
 .sectionWhatWeDo {
-    background: #f0f0f5;
     padding-bottom: 48px;
+    z-index: 1;
+    .sectionWhatWeDoBG {
+        background: #f0f0f5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: @whatWeDoCrop;
+    }
     .sectionHeader {
         margin: 30px auto 80px auto;
     }
@@ -330,9 +352,22 @@
     }
 }
 
+.shapeWhatWeDoBottom {
+    background-color: #F9F9FA;
+    margin-top: -@whatWeDoCrop;
+}
+
 .sectionCover {
     margin-top: -200px;
-    background: #F9F9FA;
+    z-index: 1;
+    .sectionCoverBG {
+        background: #F9F9FA;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: @coverCrop;
+    }
     img {
         width: 100%;
     }
@@ -374,6 +409,10 @@
     }
 }
 
+.shapeCoverBottom {
+    margin-top: -@coverCrop;
+}
+
 .sectionUnlock {
     background: #2d344f;
     height: 280px;
@@ -384,7 +423,7 @@
         right: 0;
         text-align: center;
         .headerFaded {
-            margin-top: -160px;
+            margin-top: -260px;
             font-size: 120px;
             font-weight: 900;
             color: rgba(255, 255, 255, 0.05);
@@ -1044,6 +1083,7 @@ button {
 }
 
 .sectionTestimonials {
+    z-index: 1;
     position: relative;
     padding-top: 20px;
     -webkit-user-select: none;
@@ -1259,19 +1299,6 @@ button {
     position: absolute;
 }
 
-.absfillshape {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    img {
-        display: block;
-        width: @shapeWidth;
-        margin: 0 auto;
-    }
-}
-
 .shape {
     max-width: @shapeWidth;
     margin: 0 auto;
@@ -1280,19 +1307,40 @@ button {
     }
 }
 
+.shapesvg {
+    position: relative;
+    max-width: @shapeWidthMax;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120vw;
+        max-width: 3000px;
+        margin-top: -3px;
+        height: 100%;
+        height: ~'calc(100% + 6px)';
+        // margin-top: 1px;
+        // margin-bottom: -1px;
+    }
+}
+
 .shapeCover {
     background: #F9F9FA;
 }
 .shapeUnlock {
-    margin-top: -150px;
+    margin-top: -350px;
 }
 .shapeFooter {
-    margin-top: -120px;
+    background-color: #2D344F;
+    margin-top: -160px;
     z-index: 2;
 }
-.shapeWhat {
-    margin-top: -120px;
-}
+// .shapeWhat {
+//     margin-top: -120px;
+// }
 
 a {
     text-decoration: none;
