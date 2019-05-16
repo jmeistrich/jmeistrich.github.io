@@ -3,7 +3,7 @@
 @pageWidth: 1210px;
 @shapeWidth: @pageWidth + 160;
 @shapeWidthMax: 3000px;
-@paddingPage: 20px;
+@paddingPage: 40px;
 @maxWidthWide: 600px;
 @colorGreen: #44d08c;
 @colorYellow: #d4b166;
@@ -382,10 +382,30 @@
 }
 
 .goodCompany {
+    @padding: 16px;
     color: #B0B4C3;
     margin-top: 120px;
-    * + * {
-        margin-left: 48px;
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px + @padding * 2;
+    justify-content: space-between;
+    @media (max-width: 1140px) {
+        max-width: 520px;
+    }
+    @media (max-width: 500px) {
+        max-width: 380px;
+        .yourein {
+            width: 100%;
+        }
+    }
+    // @media (max-width: 620px) {
+    //     max-width: 410px;
+    // }
+    img {
+        height: 16px;
+        margin-top: @padding;
+        margin-bottom: @padding;
     }
 }
 
@@ -406,7 +426,7 @@
         bottom: @whatWeDoCrop;
     }
     .sectionHeader {
-        margin: 30px auto 80px auto;
+        margin: 30px auto 0 auto;
     }
     .button {
         border-radius: 4px;
@@ -414,8 +434,11 @@
     }
     .weDoContent {
         >div {
+            margin-left: auto;
+            margin-right: auto;
             padding: 0 20px;
             height: 520px;
+            margin-top: 80px;
             flex-direction: column;
             -ms-flex-direction: column;
             -webkit-flex-direction: column;
@@ -430,6 +453,11 @@
             .alignItems(center);
             .flexbox;
             .f1;
+            @media (max-width: 960px) {
+                @sizeSmall: 340px;
+                min-width: @sizeSmall;
+                max-width: @sizeSmall;
+            }
         }
         .imgBig {
             padding: 0 12px;
@@ -474,6 +502,7 @@
         right: 0;
         top: @margin;
         bottom: @coverCrop;
+        z-index: -1;
     }
     img {
         width: 100%;
@@ -517,6 +546,23 @@
     .button {
         margin-left: @iconWidth + @iconMargin;
     }
+    @media (max-width: 900px) {
+        .coverImages {
+            display: none;
+        }
+        .spacer {
+            display: none;
+        }
+        .row2 {
+            margin: 0;
+        }
+        .buttonWrapper {
+            text-align: center;
+        }
+        .button {
+            margin: 0;
+        }
+    }
 }
 
 .shapeCoverBottom {
@@ -524,16 +570,53 @@
 }
 
 .sectionUnlock {
-    background: #2d344f;
-    height: 280px;
-    margin-top: -2px;
-    >div {
+    @margin: 250px;
+    padding-bottom: 280px;
+    margin-top: -@margin;
+    // >div {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     text-align: center;
+    // }
+    .sectionUnlockBG {
+        background: #2d344f;
         position: absolute;
+        top: @margin;
+        bottom: 0;
         left: 0;
         right: 0;
+    }
+    .button {
+        margin-top: 20px;
+    }
+    @media (max-width: 800px) {
         text-align: center;
         .headerFaded {
-            margin-top: -260px;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            right: 0;
+            // margin-top: -260px;
+            font-size: 100px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.05);
+        }
+        .sectionHeader {
+            color: white;
+            font-weight: 900;
+            font-size: 32px;
+            max-width: 400px;
+            margin: -200px auto 0 auto;
+        }
+        span {
+            display: block;
+            line-height: 0.8;
+        }
+    }
+    @media (min-width: 801px) {
+        padding-bottom: 280px;
+        .headerFaded {
             font-size: 120px;
             font-weight: 900;
             color: rgba(255, 255, 255, 0.05);
@@ -612,6 +695,37 @@
         span {
             color: white;
             opacity: 0.4;
+        }
+    }
+    @media (max-width: 800px) {
+        .buttons2 {
+            margin: 0 40px 0 30px;
+        }
+    }
+    @media (max-width: 700px) {
+        text-align: center;
+        margin-top: -50px;
+        z-index: 2;
+        .footerContent, .footerRight {
+            align-items: center;
+            .flexvert;
+            >div {
+                min-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .buttons2 {
+            margin-right: 0;
+        }
+        .signupForm {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    @media (min-width: 701px) {
+        .footerRight {
+            .flex-reverse;
         }
     }
 }
@@ -1445,8 +1559,7 @@ button {
     margin-top: -350px;
 }
 .shapeFooter {
-    background-color: #2D344F;
-    margin-top: -160px;
+    margin-top: -140px;
     z-index: 2;
 }
 // .shapeWhat {
