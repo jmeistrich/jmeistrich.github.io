@@ -3,7 +3,7 @@
 @pageWidth: 1210px;
 @shapeWidth: @pageWidth + 160;
 @shapeWidthMax: 3000px;
-@paddingPage: 40px;
+@paddingPage: 20px;
 @maxWidthWide: 600px;
 @colorGreen: #44d08c;
 @colorYellow: #d4b166;
@@ -18,6 +18,7 @@
 @statsCrop: 380px;
 @whatWeDoCrop: 200px;
 @coverCrop: 300px;
+@headerFlexWidth: 720px;
 
 @font-face {
     font-family: 'Aktiv';
@@ -60,7 +61,7 @@
     -o-transform: rotate(@amt);
     transform: rotate(@amt);
 }
-.flex-reverse(@amt: 0) {
+.flex-reverse {
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
@@ -127,33 +128,59 @@
     }
 }
 
-.imgTop {
+.svgLogos {
     position: relative;
-    height: 100%;
     z-index: 1;
-    pointer-events: none;
-    // margin: 0 0 0px -100px;
-    img {
-        width: 100%;
+    @media (min-width: (@headerFlexWidth + 1)) {
+        margin-top: -240px;
     }
 }
 
-.svgLogos {
-    position: relative;
-    margin-top: -240px;
-    z-index: 1;
-}
-
 .sectionLogos {
-    margin-top: -40px;
+    @padding: 16px;
+    @margin: 40px;
+    margin-top: -@margin;
     z-index: 2;
-    color: white;
-    .logos {
-        * + * {
-            margin-left: 24px;
+    color: #6a708a;
+    font-weight: bold;
+    line-height: 16px + @padding * 2;
+    padding-bottom: 20px;
+    .sectionLogosBG {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: @margin;
+        bottom: 0;
+        background-color: #2A314B;
+    }
+    @media (max-width: (@headerFlexWidth + 1)) {
+        margin-top: -110px;
+        .seenon {
+            width: 100%;
+            text-align: right;
+            // position: absolute;
+            // top: -40px;
+            // right: 20px;
         }
+        // .ca {
+        //     display: none;
+        // }
+    }
+    .logos {
+        @media (max-width: 1080px) {
+            max-width: 600px;
+        }
+        @media (max-width: 620px) {
+            max-width: 410px;
+        }
+        justify-content: space-between;
+        // * + * {
+        //     margin-left: 24px;
+        // }
         img {
             height: 16px;
+            margin-top: @padding;
+            margin-bottom: @padding;
         }
     }
 }
@@ -230,7 +257,7 @@
     .statDetail {
         position: absolute;
         font-size: 14px;
-        color: white;
+        color: #979CB2;
     }
     .statHeader {
         font-size: 34px;
@@ -238,7 +265,7 @@
     }
     .statHeader1 {
         color: white;
-        margin-top: 100px;
+        margin-top: 140px;
         max-width: 320px;
         margin-bottom: -50px;
         .statHighlight {
@@ -274,12 +301,15 @@
 }
 
 .sectionHeader {
+    font-family: 'Playfair Display', 'Helvetica Neue', Helvetica, Arial, serif;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 1.3;
     margin-bottom: 16px;
 }
 
 .goodCompany {
+    color: #B0B4C3;
     margin-top: 120px;
     * + * {
         margin-left: 48px;
@@ -345,6 +375,7 @@
         .doText, .comingSoon {
             font-size: 14px;
             line-height: 1.8;
+            color: @colorTextLight;
         }
         .doText {
             margin-top: 8px;
@@ -358,21 +389,23 @@
 }
 
 .sectionCover {
-    margin-top: -200px;
+    @margin: 360px;
+    @iconWidth: 16px;
+    @iconMargin: 40px;
+    margin-top: -@margin;
     z-index: 1;
     .sectionCoverBG {
         background: #F9F9FA;
         position: absolute;
         left: 0;
         right: 0;
-        top: 0;
+        top: @margin;
         bottom: @coverCrop;
     }
     img {
         width: 100%;
     }
     .sectionHeader {
-        font-size: 28px;
         max-width: 400px;
         margin: 16px 0 80px 0;
     }
@@ -380,8 +413,8 @@
         .f1;
     }
     .icon {
-        width: 16px;
-        margin: 4px 40px 0 0;
+        width: @iconWidth;
+        margin: 4px @iconMargin 0 0;
     }
     .coverHeader {
         font-weight: 900;
@@ -391,6 +424,7 @@
         font-size: 14px;
         margin: 4px 0 60px 0;
         line-height: 1.8;
+        color: @colorTextLight;
     }
     .spacer {
         max-width: 60px;
@@ -406,6 +440,9 @@
     }
     .row2  {
         margin-top: 80px;
+    }
+    .button {
+        margin-left: @iconWidth + @iconMargin;
     }
 }
 
@@ -601,27 +638,27 @@ button {
 }
 
 .buttonGetInTouch {
-    background: #FF517B;
-    background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
+    background: #4B7DE3;
+    background-image: linear-gradient(-90deg, #8E6BEB 0%, #4B7DE3 100%);
     border-radius: 4px;
     padding: 14px 24px;
 }
 .buttonWhat1 {
-    background: #FF517B;
-    background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
+    background: #DBC5F7;
+    color: #A049FF;
 }
 .buttonWhat2 {
-    background: #FF517B;
-    background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
+    background: #D1CFF7;
+    color: #766FFF;
 }
 .buttonWhat3 {
     margin-top: 24px;
-    background: #FF517B;
-    background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
+    background: #C4D3F7;
+    color: #437EFF;
 }
 .buttonWhat4 {
-    background: #FF517B;
-    background-image: linear-gradient(90deg, #FF517B 0%, #FF7023 100%);
+    background: #41B9FF;
+    color: white;
 }
 
 .sectionWorld {
@@ -1123,7 +1160,7 @@ button {
     left: 0;
     right: 0;
     z-index: 1;
-    margin-top: 60px;
+    margin-top: 30px;
     height: 520px;
     overflow: hidden;
     text-align: center;
@@ -1188,7 +1225,7 @@ button {
     .whiteBox {
         padding: 32px;
         background: white;
-        // border-radius: 2px;
+        margin-top: 30px;
         box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
         .text {
             height: 180px;
@@ -1208,7 +1245,7 @@ button {
         font-size: 15px;
         font-weight: bold;
         line-height: 1.3;
-        color: #63687C;
+        color: @colorTextLight;
         .face {
             height: 44px;
         }
@@ -1318,6 +1355,7 @@ button {
         left: 50%;
         transform: translateX(-50%);
         width: 120vw;
+        min-width: 1000px;
         max-width: 3000px;
         margin-top: -3px;
         height: 100%;
@@ -1442,25 +1480,13 @@ body {
 }
 .headerOutside {
     position: relative;
+    width: 100%;
 }
 .headerInside {
     position: relative;
     // padding-top: @topBarHeight + @topBarPadding + 30;
-    height: 690px;
     .button {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    }
-    .spacerLeft {
-        flex: 0 1 80px;
-        // max-width: 60px;
-    }
-    .headerInsideLeft {
-        flex: 1;
-        flex: 1 1.2 440px;
-    }
-    .headerInsideRight {
-        flex: 1.25;
-        flex: 1.2 1 600px;
     }
     .headerInsideRight {
         // margin-right: -140px;
@@ -1469,6 +1495,36 @@ body {
             width: ~'calc(100% + 190px)';
         }
     }
+    @media (min-width: 900px) {
+        .spacerLeft {
+            flex: 0 1 80px;
+        }
+    }
+    @media (min-width: (@headerFlexWidth + 1)) {
+        height: 690px;
+        .headerInsideLeft {
+            flex: 1;
+            flex: 1 1 440px;
+            min-width: 310px;
+        }
+        .headerInsideRight {
+            flex: 1.25;
+            flex: 1 1 600px;
+        }
+    }
+    @media (max-width: @headerFlexWidth) {
+        // width: 100vw;
+        .flexvert;
+        .headerInsideLeft {
+            align-self: center;
+        }
+        .headerInsideRight {
+            width: 90%;
+            max-width: 500px;
+            align-self: flex-end;
+        }
+    }
+
 }
 .headerInsideLeft {
     position: relative;
