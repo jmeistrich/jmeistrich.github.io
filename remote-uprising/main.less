@@ -188,6 +188,7 @@
     margin-top: -@statsCrop;
 }
 .sectionStats {
+    @flexSwitch: 700px;
     z-index: 2;
     overflow: visible;
     .sectionStatsBG {
@@ -200,38 +201,20 @@
     }
     .statsCols {
         padding-bottom: 200px;
+        >.spacerSmall {
+            max-width: 40px;
+        }
+        >.spacerBig {
+            max-width: 80px;
+        }
+        >div:not(.spacer) {
+            min-width: 220px;
+            max-width: 310px;
+            .flex(16);
+        }
         >div {
             position: relative;
-            padding: 0 40px;
-            .f1;
-            &:first-child {
-                img {
-                    padding: 0 20px;
-                }
-                .statPercent {
-                    top: 60px;
-                    right: -60px;
-                }
-                .statDetail {
-                    top: 180px;
-                    right: -130px;
-                    width: 150px;
-                }
-            }
-            &:nth-child(2) {
-                margin-top: 300px;
-                .statPercent {
-                    top: 60px;
-                    left: -110px;
-                }
-                .statDetail {
-                    top: 180px;
-                    left: -150px;
-                    width: 180px;
-                }
-            }
-            &:nth-child(3) {
-                margin-top: 500px;
+            &:nth-child(6) {
                 .statPercent {
                     bottom: -70px;
                     right: -10px;
@@ -241,6 +224,84 @@
                     right: -10px;
                     width: 190px;
                     text-align: right;
+                }
+            }
+        }
+        @media (max-width: @flexSwitch) {
+            .flexvert;
+            .spacer {
+                display: none;
+            }
+            >div {
+                width: 50%;
+                &:nth-child(2) {
+                    img {
+                        padding: 0 10px;
+                    }
+                    .statPercent {
+                        top: 60px;
+                        right: -100px;
+                    }
+                    .statDetail {
+                        top: 180px;
+                        right: -150px;
+                        width: 150px;
+                    }
+                }
+                &:nth-child(4) {
+                    margin-top: 100px;
+                    align-self: flex-end;
+                    .statPercent {
+                        top: 40px;
+                        left: -150px;
+                    }
+                    .statDetail {
+                        top: 160px;
+                        left: -190px;
+                        width: 180px;
+                        text-align: right;
+                    }
+                }
+                &:nth-child(6) {
+                    margin-top: 100px;
+                    align-self: center;
+                }
+
+            }
+        }
+        @media (min-width: (@flexSwitch + 1)) {
+            .spacer {
+                .flex(1);
+            }
+            >div {
+                &:nth-child(2) {
+                    img {
+                        padding: 0 10px;
+                    }
+                    .statPercent {
+                        top: 60px;
+                        right: -100px;
+                    }
+                    .statDetail {
+                        top: 180px;
+                        right: -170px;
+                        width: 150px;
+                    }
+                }
+                &:nth-child(4) {
+                    margin-top: 340px;
+                    .statPercent {
+                        top: 60px;
+                        left: -150px;
+                    }
+                    .statDetail {
+                        top: 180px;
+                        left: -190px;
+                        width: 180px;
+                    }
+                }
+                &:nth-child(6) {
+                    margin-top: 500px;
                 }
             }
         }
@@ -265,9 +326,15 @@
     }
     .statHeader1 {
         color: white;
-        margin-top: 140px;
         max-width: 320px;
-        margin-bottom: -50px;
+        @media (max-width: @flexSwitch) {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        @media (min-width: (@flexSwitch + 1)) {
+            margin-top: 140px;
+            margin-bottom: -50px;
+        }
         .statHighlight {
             background: white;
             color: #2b364f;
@@ -275,6 +342,12 @@
         }
     }
     .statHeader2 {
+        @media (max-width: @flexSwitch) {
+            justify-content: center;
+        }
+        @media (min-width: (@flexSwitch + 1)) {
+            justify-content: flex-end;
+        }
         color: white;
         .statHighlight {
             background: @colorGreenHighlight;
