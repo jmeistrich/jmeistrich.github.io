@@ -1545,6 +1545,7 @@ button {
 }
 .shapeUnlock {
   margin-top: -350px;
+  z-index: -1;
 }
 .shapeFooter {
   margin-top: -140px;
@@ -1610,7 +1611,7 @@ body {
   margin-top: 30px;
   z-index: 2;
 }
-.topBarCommon a:not(.headerLogo) {
+.topBarCommon a:not(.headerLeft) {
   margin-left: 8px;
   margin-right: 8px;
   text-decoration: none;
@@ -1618,6 +1619,7 @@ body {
 .topBarCommon * {
   white-space: nowrap;
 }
+.topBarCommon .headerLeft,
 .topBarCommon .headerLogo {
   height: 44px;
 }
@@ -1952,8 +1954,9 @@ body {
 .aboutHeaderText {
   font-weight: 900;
   font-size: 44px;
+  line-height: 1.1;
   color: #b7b9c1;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 .aboutHeader {
   max-width: 1030px;
@@ -1965,8 +1968,17 @@ body {
   line-height: 1.3;
 }
 .aboutHeader .f1 + .f1 {
-  margin-left: 80px;
   margin-top: 20px;
+}
+@media (min-width: 701px) {
+  .aboutHeader .f1 + .f1 {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .aboutHeader .flexbox {
+    display: block;
+  }
 }
 .today {
   position: relative;
@@ -2002,13 +2014,15 @@ body {
 }
 .aboutTop {
   grid-template-columns: repeat(2, 1fr);
-  padding: 0 !important;
   font-size: 19px;
 }
 .aboutTop img {
   width: 100%;
 }
 @media (min-width: 961px) {
+  .aboutTop {
+    padding: 0 !important;
+  }
   .aboutTop .text1 {
     grid-column: 1;
     grid-row: 1 / 3;
@@ -2199,6 +2213,18 @@ body {
   grid-column: 15 / 26;
   grid-row: 16 / 26;
 }
+@media (max-width: 700px) {
+  .servicesGrid {
+    display: block;
+  }
+  .servicesGrid .imgFull {
+    margin: 40px -40px 40px 40px;
+  }
+  .servicesGrid .img1,
+  .servicesGrid .whiteBox {
+    display: none;
+  }
+}
 .sectionCoachingWrapper {
   margin-top: 60px;
   margin-left: auto;
@@ -2206,6 +2232,21 @@ body {
 }
 .sectionCoachingWrapper .sectionCoachingGrid {
   grid-template-columns: repeat(30, 1fr);
+}
+@media (max-width: 700px) {
+  .sectionCoachingWrapper .sectionCoachingGrid {
+    display: block;
+  }
+  .sectionCoachingWrapper .sectionCoachingGrid .img1 {
+    margin: 40px -40px 40px 40px;
+  }
+  .sectionCoachingWrapper .sectionCoachingGrid .img3 {
+    margin: 40px 40px 40px -40px;
+  }
+  .sectionCoachingWrapper .sectionCoachingGrid .img2,
+  .sectionCoachingWrapper .sectionCoachingGrid .img4 {
+    display: none;
+  }
 }
 .sectionCoachingWrapper .button {
   padding: 8px 24px;
@@ -2257,6 +2298,31 @@ body {
 .sectionServicesCover .coverBlocks {
   margin-top: 80px;
 }
+@media (max-width: 700px) {
+  .sectionServicesCover .coverBlocks {
+    display: block;
+  }
+}
+@media (min-width: 701px) {
+  .sectionServicesCover .coverBlocks > *:nth-child(1) {
+    order: 1;
+  }
+  .sectionServicesCover .coverBlocks > *:nth-child(4) {
+    order: 2;
+  }
+  .sectionServicesCover .coverBlocks > *:nth-child(2) {
+    order: 3;
+  }
+  .sectionServicesCover .coverBlocks > *:nth-child(5) {
+    order: 4;
+  }
+  .sectionServicesCover .coverBlocks > *:nth-child(3) {
+    order: 5;
+  }
+  .sectionServicesCover .coverBlocks > *:nth-child(6) {
+    order: 6;
+  }
+}
 .sectionServicesCover .icon {
   margin-right: 20px;
 }
@@ -2265,4 +2331,113 @@ body {
 }
 .sectionServicesTestimonials {
   margin-top: -40px;
+}
+#pageContact {
+  min-height: 100%;
+}
+#pageContact .contactHeader {
+  z-index: 1;
+}
+#pageContact .contactHeader .b {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+#pageContact .contactHeader .b + div:not(.b) {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #63687C;
+}
+#pageContact .contactHeader a {
+  color: #63687C;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#pageContact .contactBox {
+  box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
+  padding: 60px 0;
+  max-width: 400px;
+  margin-top: 80px;
+  background: white;
+}
+#pageContact #contact {
+  width: 300px;
+  margin: 0 auto;
+}
+#pageContact #contact input,
+#pageContact #contact textarea {
+  padding: 0 24px;
+  font-size: inherit;
+  background-color: #EAEBF0;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 32px;
+  font-size: 14px;
+}
+#pageContact #contact input::placeholder,
+#pageContact #contact textarea::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+#pageContact #contact fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+#pageContact #contact .text {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+#pageContact #contact input,
+#pageContact #contact textarea,
+#pageContact #contact button {
+  -webkit-appearance: none;
+}
+#pageContact #contact input {
+  display: block;
+  line-height: 44px;
+  border: 0;
+  border-radius: 16px;
+}
+#pageContact #contact textarea {
+  height: 160px;
+  padding: 24px;
+  font-weight: normal;
+  resize: none;
+  border: none;
+}
+#pageContact #contact input[type="submit"] {
+  position: absolute;
+  bottom: -48px;
+  right: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+#pageContact #contact .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#pageContact .shapeUnlock {
+  transform: scaleX(-1);
+  margin-top: -600px;
+}
+@media (max-width: 800px) {
+  #pageContact .contactTop {
+    display: block !important;
+  }
+  #pageContact .contactTop > div {
+    margin: 0 auto;
+  }
+  #pageContact .contactTop .contactBox {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 530px) {
+  #pageContact .b {
+    display: inline;
+  }
 }
