@@ -15,7 +15,7 @@
     };
 
     var hamburger = document.getElementById('hamburger'),
-        menu = document.getElementById('hambugerMenu');
+        menu = document.getElementById('hamburgerMenu');
 
     hamburger.addEventListener('mousedown', function () {
         hamburger.classList.toggle('is-active');

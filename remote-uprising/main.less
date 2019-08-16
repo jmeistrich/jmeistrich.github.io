@@ -21,6 +21,7 @@
 @headerFlexWidth: 720px;
 @coverIconWidth: 18px;
 @coverIconMargin: 40px;
+@hamburgerSwitch: 520px;
 
 @font-face {
     font-family: 'Aktiv';
@@ -1677,7 +1678,6 @@ body {
 }
 
 .topBarCommon {
-    @hamburgerSwitch: 520px;
     text-align: right;
     font-weight: 500;
     font-size: 15px;
@@ -1701,12 +1701,6 @@ body {
     }
     @media (max-width: @hamburgerSwitch) {
         .headerRight {
-        // padding-right: 40px;
-            display: none;
-        }
-    }
-    @media (min-width: (@hamburgerSwitch + 1)) {
-        .hamburger {
         // padding-right: 40px;
             display: none;
         }
@@ -2626,10 +2620,17 @@ body {
     }
 }
 
-#hambugerMenu {
-    &:not(.is-active) {
-        display: none;
+@media (min-width: (@hamburgerSwitch + 1)) {
+    #hamburgerMenu, .hamburger {
+        display: none !important;
     }
+}
+#hamburgerMenu {
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transform-origin: 0 0;
+
     position: absolute;
     top: 60px;
     right: 16px;
@@ -2648,6 +2649,18 @@ body {
         font-size: 17px;
         font-weight: 500;
         padding: 0 32px;
+        transition-property: transform, opacity;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transform-origin: 0 0;
+    }
+
+    &:not(.is-active) {
+        transform: scaleY(0.25);
+        opacity: 0;
+        a {
+            opacity: 0;
+        }
     }
 }
 
