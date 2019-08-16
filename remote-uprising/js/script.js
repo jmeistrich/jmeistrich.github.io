@@ -14,6 +14,14 @@
         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
 
+    var hamburger = document.getElementById('hamburger'),
+        menu = document.getElementById('hambugerMenu');
+
+    hamburger.addEventListener('mousedown', function () {
+        hamburger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+
     if (!isMobileDevice() && document.getElementById('testimonials'))
     {
         var testimonials = document.getElementById('testimonials').getElementsByClassName('scroller')[0],
@@ -147,6 +155,5 @@
                 });
             }
         });
-
     }
 })();
