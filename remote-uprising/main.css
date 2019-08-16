@@ -357,6 +357,7 @@
 }
 @media (max-width: 500px) {
   .goodCompany {
+    margin-top: 80px;
     max-width: 380px;
   }
   .goodCompany .yourein {
@@ -1386,8 +1387,8 @@ button {
   left: 0;
   right: 0;
   z-index: 1;
-  margin-top: 30px;
-  height: 520px;
+  margin-top: -50px;
+  height: 600px;
   overflow: hidden;
   text-align: center;
 }
@@ -1421,16 +1422,26 @@ button {
   white-space: normal;
   display: inline-block;
   width: 300px;
-  padding-bottom: 48px;
+  height: 420px;
+  margin-top: 120px;
   vertical-align: top;
 }
 .testimonials .scroller > div + div {
   margin-left: 36px;
 }
+.testimonials .scroller > div:nth-child(2) {
+  margin-top: 150px;
+}
+.testimonials .scroller > div:nth-child(3) {
+  margin-top: 90px;
+}
+.testimonials .scroller > div:nth-child(4) {
+  margin-top: 30px;
+}
 @media (max-width: 1210px) {
   .testimonials .scroller {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .testimonials .scroller > div + div {
     margin-left: 16px;
@@ -1448,11 +1459,31 @@ button {
 .testimonials .testimonialLogo img {
   height: 50px;
 }
+.testimonials .whiteBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-around;
+  -ms-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
 .whiteBox {
   position: relative;
   padding: 32px;
   background: white;
-  margin-top: 30px;
   box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
 }
 .whiteBox .text {
@@ -2027,7 +2058,16 @@ body {
 }
 .today {
   position: relative;
-  margin-top: 100px;
+}
+@media (max-width: 800px) {
+  .today {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 801px) {
+  .today {
+    margin-top: 100px;
+  }
 }
 .today .shapeWrapper {
   position: absolute;
@@ -2062,16 +2102,40 @@ body {
 }
 .aboutTopWrapper {
   background: #f0f0f5;
-  padding-top: 100px;
-  margin-bottom: -100px;
   z-index: 1;
+}
+@media (max-width: 800px) {
+  .aboutTopWrapper {
+    padding-top: 60px;
+    margin-bottom: -180px;
+  }
+}
+@media (min-width: 801px) {
+  .aboutTopWrapper {
+    padding-top: 100px;
+    margin-bottom: -100px;
+  }
 }
 .aboutTop {
   grid-template-columns: repeat(2, 1fr);
-  font-size: 19px;
+}
+@media (max-width: 800px) {
+  .aboutTop {
+    font-size: 16px;
+  }
+}
+@media (min-width: 801px) {
+  .aboutTop {
+    font-size: 18px;
+  }
 }
 .aboutTop img {
   width: 100%;
+}
+.aboutTop a {
+  color: #63687C;
+  font-weight: bold;
+  text-decoration: underline;
 }
 @media (min-width: 961px) {
   .aboutTop {
@@ -2079,12 +2143,12 @@ body {
   }
   .aboutTop .text1 {
     grid-column: 1;
-    grid-row: 1 / 3;
-    padding: 80px 120px 0 120px;
+    grid-row: 3 / 9;
+    padding: 0 70px;
   }
   .aboutTop .img1 {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / 8;
     padding: 40px 0 0 80px;
   }
   .aboutTop .img1 img {
@@ -2094,17 +2158,17 @@ body {
   }
   .aboutTop .img2 {
     grid-column: 1;
-    grid-row: 2;
-    padding: 160px 80px 0 0;
+    grid-row: 10 / 14;
+    padding-right: 80px;
   }
   .aboutTop .img3 {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 8 / 12;
     padding-top: 30px;
   }
   .aboutTop .text2 {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 13 / 15;
     padding: 0 160px 0 0;
   }
 }
@@ -2112,18 +2176,24 @@ body {
   .aboutTop .text1 {
     grid-column: 1 / 3;
     grid-row: 1;
+    padding-bottom: 30px;
   }
   .aboutTop .img1 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: -40px;
+    padding-left: 6px;
+  }
+  .aboutTop .img2 {
     grid-column: 1;
     grid-row: 2 / 4;
     margin-left: -40px;
     padding-right: 6px;
   }
-  .aboutTop .img2 {
-    grid-column: 2;
-    grid-row: 2;
-    margin-right: -40px;
-    padding-left: 6px;
+  .aboutTop .img2 img {
+    object-fit: cover;
+    height: 80%;
+    margin-top: 10%;
   }
   .aboutTop .img3 {
     grid-column: 2;
@@ -2135,16 +2205,21 @@ body {
   .aboutTop .text2 {
     grid-column: 1 / 3;
     grid-row: 4;
+    padding-top: 30px;
   }
 }
 .shapeMission {
   z-index: -1;
 }
-.sectionMissionAbout {
-  margin-top: -240px;
+@media (max-width: 800px) {
+  .sectionMissionAbout {
+    margin-top: -320px;
+  }
 }
-.proudSvg {
-  margin-top: 120px;
+@media (min-width: 801px) {
+  .sectionMissionAbout {
+    margin-top: -240px;
+  }
 }
 .proudSvg .melewilogo {
   position: absolute;
@@ -2153,14 +2228,30 @@ body {
   width: 60px;
   z-index: 1;
 }
+@media (max-width: 800px) {
+  .proudSvg .melewilogo {
+    top: 80px;
+  }
+}
+@media (min-width: 801px) {
+  .proudSvg {
+    margin-top: 120px;
+  }
+}
 .sectionProud {
   position: relative;
   background: #2A314B;
   padding-bottom: 40px;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .sectionProud .proudHeader {
     margin-left: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .sectionProud .sectionHeader {
+    font-size: 24px;
+    padding-right: 80px;
   }
 }
 .sectionProud .sectionGreenHeader {
@@ -2173,18 +2264,19 @@ body {
 .sectionProud .proudImg {
   background-size: 100%;
   width: 100%;
-  margin-top: 80px;
 }
 @media (max-width: 800px) {
   .sectionProud .proudImg {
     background-image: url('img/gridmobile.png');
     padding-top: 278.625%;
+    margin-top: 40px;
   }
 }
 @media (min-width: 801px) {
   .sectionProud .proudImg {
     background-image: url('img/griddesktop.png');
     padding-top: 82.58683729%;
+    margin-top: 80px;
   }
 }
 .imgFull img {
@@ -2198,8 +2290,8 @@ body {
     padding: 0;
   }
   .sectionVision .imgFull {
-    width: 200%;
-    margin-left: -50%;
+    width: 300%;
+    margin-left: -110%;
   }
 }
 .sectionVision .abs {
@@ -2222,31 +2314,45 @@ body {
   max-width: 540px;
   margin-bottom: 60px;
 }
+@media (max-width: 800px) {
+  .sectionAboutTeam .sectionHeader {
+    font-size: 24px;
+  }
+}
+.sectionAboutTeam .teamInfo {
+  position: absolute;
+  bottom: 10px;
+}
 .sectionAboutTeam .teamName {
   color: white;
   font-weight: 900;
+  line-height: 1.2;
 }
 .sectionAboutTeam .teamCountry {
   color: rgba(255, 255, 255, 0.6);
-}
-.sectionAboutTeam .teamName {
-  margin-top: -50px;
-}
-.sectionAboutTeam .f1 div {
-  padding-left: 20px;
+  font-size: 14px;
 }
 @media (min-width: 801px) {
+  .sectionAboutTeam .f1 > div > div {
+    padding: 0 20px;
+  }
+  .sectionAboutTeam .teamName {
+    font-size: 24px;
+  }
   .sectionAboutTeam .f1:nth-child(2) {
     padding-top: 40px;
   }
-  .sectionAboutTeam .f1:nth-child(2) {
+  .sectionAboutTeam .f1:nth-child(3) {
     padding-top: 60px;
   }
-  .sectionAboutTeam .f1:nth-child(3) {
+  .sectionAboutTeam .f1:nth-child(4) {
     padding-top: 20px;
   }
 }
 @media (max-width: 800px) {
+  .sectionAboutTeam .f1 > div > div {
+    padding: 0 10px;
+  }
   .sectionAboutTeam .teamImages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2256,6 +2362,7 @@ body {
   background-color: white;
   margin-top: -280px;
   z-index: -1;
+  margin-right: -100px;
 }
 .servicesHeader {
   max-width: 1100px;
@@ -2341,6 +2448,7 @@ body {
 .sectionCoachingWrapper .button {
   padding: 8px 24px;
   border-radius: 4px;
+  margin-top: 20px;
 }
 .sectionCoachingWrapper .text1 {
   grid-column: 1 / 14;
@@ -2388,6 +2496,9 @@ body {
 .sectionServicesCover .coverBlocks {
   margin-top: 80px;
 }
+.sectionServicesCover .coverBlocks > div {
+  padding: 0 40px;
+}
 @media (max-width: 700px) {
   .sectionServicesCover .coverBlocks {
     display: block;
@@ -2421,6 +2532,17 @@ body {
 }
 .sectionServicesTestimonials {
   margin-top: -40px;
+}
+@media (max-width: 720px) {
+  .sectionServicesTestimonials .sectionHeader {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 721px) {
+  .sectionServicesTestimonials .sectionHeader {
+    max-width: 500px;
+  }
 }
 #pageContact {
   min-height: 100%;
