@@ -17,11 +17,12 @@
 @minWidthHeaderDesktop: 1080px;
 @statsCrop: 380px;
 @whatWeDoCrop: 200px;
-@coverCrop: 300px;
+@coverCrop: 230px;
 @headerFlexWidth: 720px;
 @coverIconWidth: 18px;
 @coverIconMargin: 40px;
 @hamburgerSwitch: 520px;
+@flexSwitchStats: 700px;
 
 @font-face {
     font-family: 'Aktiv';
@@ -91,7 +92,7 @@
 }
 .ios10 .mw {
     -webkit-transform: translate3d(0,0,0);
-
+    transform: translate3d(0,0,0);
 }
 .nopad {
     padding: 0;
@@ -135,7 +136,7 @@
     position: relative;
     z-index: 1;
     @media (min-width: (@headerFlexWidth + 1)) {
-        margin-top: -240px;
+        margin-top: -200px;
     }
 }
 
@@ -194,7 +195,6 @@
     margin-top: -@statsCrop;
 }
 .sectionStats {
-    @flexSwitch: 700px;
     z-index: 2;
     overflow: visible;
     .sectionStatsBG {
@@ -205,13 +205,10 @@
         top: 0;
         bottom: @statsCrop;
     }
-    @media (max-width: @flexSwitch) {
-        .sectionStatsInside {
-            padding: 0;
-        }
+    .sectionStatsInside {
+        padding: 0;
     }
     .statsCols {
-        padding-bottom: 200px;
         >.spacerSmall {
             max-width: 40px;
         }
@@ -228,17 +225,17 @@
             &:nth-child(6) {
                 .statPercent {
                     bottom: -70px;
-                    right: -10px;
+                    right: 10px;
                 }
                 .statDetail {
                     bottom: -120px;
-                    right: -10px;
+                    right: 10px;
                     width: 190px;
                     text-align: right;
                 }
             }
         }
-        @media (max-width: @flexSwitch) {
+        @media (max-width: @flexSwitchStats) {
             @pad: 20px;
             .flexvert;
             .spacer {
@@ -281,7 +278,7 @@
 
             }
         }
-        @media (min-width: (@flexSwitch + 1)) {
+        @media (min-width: (@flexSwitchStats + 1)) {
             .spacer {
                 .flex(1);
             }
@@ -333,20 +330,28 @@
         color: #979CB2;
     }
     .statHeader {
-        font-size: 34px;
+        font-size: 33px;
         font-weight: 900;
+        height: 100px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .statHeaderText {
+        background: #2D344F;
+        max-width: 350px;
+        width: 350px;
+        padding-left: 40px;
     }
     .statHeader1 {
         color: white;
-        max-width: 320px;
-        @media (max-width: @flexSwitch) {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-        @media (min-width: (@flexSwitch + 1)) {
-            margin-top: 140px;
-            margin-bottom: -50px;
-        }
+        // @media (max-width: @flexSwitchStats) {
+        //     margin-top: 40px;
+        //     margin-bottom: 40px;
+        // }
+        // @media (min-width: (@flexSwitchStats + 1)) {
+        //     margin-top: 140px;
+        //     margin-bottom: -50px;
+        // }
         .statHighlight {
             background: white;
             color: #2b364f;
@@ -354,10 +359,10 @@
         }
     }
     .statHeader2 {
-        @media (max-width: @flexSwitch) {
+        @media (max-width: @flexSwitchStats) {
             justify-content: center;
         }
-        @media (min-width: (@flexSwitch + 1)) {
+        @media (min-width: (@flexSwitchStats + 1)) {
             justify-content: flex-end;
         }
         color: white;
@@ -365,6 +370,75 @@
             background: @colorGreenHighlight;
             color: #2b364f;
             padding: 4px 10px;
+        }
+    }
+    @height1: 100px;
+    @margin1: 140px;
+    @margin2: 520px;
+    @media (max-width: @flexSwitchStats) {
+        .sticky2Cover, .sticky2 {
+            display: none;
+        }
+        .statsCols {
+            padding-bottom: 200px;
+        }
+        .statHeader1 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    @media (min-width: (@flexSwitchStats + 1)) {
+        .statsCols {
+            padding-top: 200px;
+            padding-bottom: 320px;
+        }
+        .sectionStatsStickies {
+            width: 100%;
+            height: 100%;
+        }
+        .sticky1 {
+            margin-top: @margin1;
+            height: @height1;
+        }
+        .sticky2 {
+            margin-top: @margin2;
+        }
+        .sticky2Cover {
+            position: absolute;
+            // background: #2D344F;
+            left: 0;
+            right: 0;
+            height: @height1;
+        }
+        // .sticky1Cover {
+        //     top: @height1 + @margin1 + @margin2;
+        //     // background: red;
+        // }
+        .sticky2Cover {
+            top: @height1 + @margin1 + @margin2;
+            background: #2D344F;
+        }
+        .sticky {
+            position: sticky;
+            top: 300px;
+        }
+        .sectionStatsStickies {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        .statHeader2Mobile {
+            display: none;
+        }
+    }
+    @media (min-width: 1024px) {
+        .statHeaderText {
+            margin-right: 40px;
+        }
+    }
+    @media (min-width: @pageWidth) {
+        .statHeaderText {
+            margin-right: 70px;
         }
     }
 }
@@ -430,7 +504,7 @@
 
 .sectionWhatWeDo {
     @flexSwitch: 960px;
-    padding-bottom: 48px;
+    padding-bottom: 80px;
     z-index: 1;
     .sectionWhatWeDoBG {
         background: #f0f0f5;
@@ -452,6 +526,8 @@
         margin-top: 10px;
     }
     .weDoContent {
+        max-width: 900px;
+        margin: 0 auto;
         >div {
             margin-left: auto;
             margin-right: auto;
@@ -477,7 +553,7 @@
                 max-width: @sizeSmall;
             }
             @media (min-width: (@flexSwitch + 1)) {
-                height: 540px;
+                height: 510px;
             }
         }
         .imgBig {
@@ -520,9 +596,13 @@
 
 .sectionCover {
     @margin: 360px;
+    @padHeader: 58px;
     position: relative;
     margin-top: -@margin;
     z-index: 1;
+    >.flexbox {
+        padding: 0 !important;
+    }
     .sectionCoverBG {
         background: #F9F9FA;
         position: absolute;
@@ -532,24 +612,37 @@
         bottom: @coverCrop;
         z-index: -1;
     }
+    .sectionGreenHeader {
+        margin-left: @padHeader;
+    }
     .sectionHeader {
         max-width: 400px;
-        margin: 16px 0 80px 0;
+        margin: 16px 0 80px @padHeader;
         @media (max-width: @headerFlexWidth) {
             font-size: 24px;
         }
+    }
+    .coverText {
+        max-width: 500px;
     }
     >.flexbox>div {
         .f1;
     }
     .spacer {
-        max-width: 60px;
+        max-width: 100px;
     }
     .img1 {
         margin-top: 60px;
+        .flex(1);
     }
     .imgML {
         margin-left: 20px;
+    }
+    .row1 .imgML {
+        .flex(1.05);
+    }
+    .img2 {
+        margin-right: 30px;
     }
     .imgMT {
         margin-top: 20px;
@@ -610,15 +703,9 @@
 }
 
 .sectionUnlock {
-    @margin: 250px;
-    padding-bottom: 280px;
+    @margin: 300px;
+    padding-bottom: 220px;
     margin-top: -@margin;
-    // >div {
-    //     position: absolute;
-    //     left: 0;
-    //     right: 0;
-    //     text-align: center;
-    // }
     .sectionUnlockBG {
         background: #2d344f;
         position: absolute;
@@ -655,7 +742,6 @@
         }
     }
     @media (min-width: 801px) {
-        padding-bottom: 280px;
         .headerFaded {
             font-size: 120px;
             font-weight: 900;
@@ -674,6 +760,7 @@
     background: @bgFooter;
     margin-top: -2px;
     font-size: 14px;
+    z-index: 3;
     .logo {
         height: 60px;
     }
@@ -794,9 +881,6 @@
     }
     padding-bottom: 90px;
     z-index: -2;
-    .graylogo img {
-        width: 24px;
-    }
     .textAbout {
         font-weight: 500;
         margin: 20px auto 0 auto;
@@ -1389,7 +1473,7 @@ button {
     @clip: @pageWidth;
     @scrollPadTop: 120px;
     @scrollPadBottom: 60px;
-    @boxHeight: 420px;
+    @boxHeight: 460px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -1424,7 +1508,7 @@ button {
         >div {
             white-space: normal;
             display: inline-block;
-            width: 300px;
+            width: 260px;
             height: @boxHeight;
             margin-top: @scrollPadTop;
             vertical-align: top;
@@ -1476,7 +1560,10 @@ button {
     position: relative;
     padding: 32px;
     background: white;
-    box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
+    box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.05);
+    &:hover {
+        box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
+    }
     .text {
         height: 180px;
         font-size: 14px;
@@ -1613,11 +1700,12 @@ button {
     background: #F9F9FA;
 }
 .shapeUnlock {
-    margin-top: -350px;
+    margin-top: -400px;
     z-index: -1;
 }
 .shapeFooter {
     margin-top: -140px;
+    margin-bottom: -40px;
     z-index: 2;
     @media (max-width: @headerFlexWidth) {
         margin-top: -160px;
@@ -1634,6 +1722,7 @@ a {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -1641,7 +1730,6 @@ body {
     margin: 0;
     width: 100%;
     line-height: 1.5;
-    overflow-x: hidden;
     color: @colorText;
     font-family: 'Aktiv', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
     text-rendering: optimizeLegibility;
@@ -1649,6 +1737,9 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     scroll-behavior: smooth;
+    @media (max-width: @flexSwitchStats) {
+        overflow-x: hidden;
+    }
 }
 
 .fontTitle {
@@ -1745,7 +1836,7 @@ body {
     }
     @media (min-width: 900px) {
         .spacerLeft {
-            flex: 0 1 80px;
+            flex: 0 1 54px;
         }
     }
     @media (min-width: (@headerFlexWidth + 1)) {

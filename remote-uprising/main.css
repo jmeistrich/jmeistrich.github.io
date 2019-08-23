@@ -43,6 +43,7 @@
 }
 .ios10 .mw {
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .nopad {
   padding: 0;
@@ -81,7 +82,7 @@
 }
 @media (min-width: 721px) {
   .svgLogos {
-    margin-top: -240px;
+    margin-top: -200px;
   }
 }
 .sectionLogos {
@@ -145,13 +146,8 @@
   top: 0;
   bottom: 380px;
 }
-@media (max-width: 700px) {
-  .sectionStats .sectionStatsInside {
-    padding: 0;
-  }
-}
-.sectionStats .statsCols {
-  padding-bottom: 200px;
+.sectionStats .sectionStatsInside {
+  padding: 0;
 }
 .sectionStats .statsCols > .spacerSmall {
   max-width: 40px;
@@ -172,11 +168,11 @@
 }
 .sectionStats .statsCols > div:nth-child(6) .statPercent {
   bottom: -70px;
-  right: -10px;
+  right: 10px;
 }
 .sectionStats .statsCols > div:nth-child(6) .statDetail {
   bottom: -120px;
-  right: -10px;
+  right: 10px;
   width: 190px;
   text-align: right;
 }
@@ -279,24 +275,20 @@
   color: #979CB2;
 }
 .sectionStats .statHeader {
-  font-size: 34px;
+  font-size: 33px;
   font-weight: 900;
+  height: 100px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.sectionStats .statHeaderText {
+  background: #2D344F;
+  max-width: 350px;
+  width: 350px;
+  padding-left: 40px;
 }
 .sectionStats .statHeader1 {
   color: white;
-  max-width: 320px;
-}
-@media (max-width: 700px) {
-  .sectionStats .statHeader1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 701px) {
-  .sectionStats .statHeader1 {
-    margin-top: 140px;
-    margin-bottom: -50px;
-  }
 }
 .sectionStats .statHeader1 .statHighlight {
   background: white;
@@ -320,6 +312,68 @@
   background: #35d18f;
   color: #2b364f;
   padding: 4px 10px;
+}
+@media (max-width: 700px) {
+  .sectionStats .sticky2Cover,
+  .sectionStats .sticky2 {
+    display: none;
+  }
+  .sectionStats .statsCols {
+    padding-bottom: 200px;
+  }
+  .sectionStats .statHeader1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 701px) {
+  .sectionStats .statsCols {
+    padding-top: 200px;
+    padding-bottom: 320px;
+  }
+  .sectionStats .sectionStatsStickies {
+    width: 100%;
+    height: 100%;
+  }
+  .sectionStats .sticky1 {
+    margin-top: 140px;
+    height: 100px;
+  }
+  .sectionStats .sticky2 {
+    margin-top: 520px;
+  }
+  .sectionStats .sticky2Cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+  }
+  .sectionStats .sticky2Cover {
+    top: 760px;
+    background: #2D344F;
+  }
+  .sectionStats .sticky {
+    position: sticky;
+    top: 300px;
+  }
+  .sectionStats .sectionStatsStickies {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .sectionStats .statHeader2Mobile {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionStats .statHeaderText {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1210px) {
+  .sectionStats .statHeaderText {
+    margin-right: 70px;
+  }
 }
 .statBottomImg {
   height: 400px;
@@ -374,7 +428,7 @@
   margin: 0 auto;
 }
 .sectionWhatWeDo {
-  padding-bottom: 48px;
+  padding-bottom: 80px;
   z-index: 1;
 }
 .sectionWhatWeDo .sectionWhatWeDoBG {
@@ -397,6 +451,10 @@
   border-radius: 4px;
   padding: 8px 24px;
   margin-top: 10px;
+}
+.sectionWhatWeDo .weDoContent {
+  max-width: 900px;
+  margin: 0 auto;
 }
 .sectionWhatWeDo .weDoContent > div {
   margin-left: auto;
@@ -437,7 +495,7 @@
 }
 @media (min-width: 961px) {
   .sectionWhatWeDo .weDoContent > div {
-    height: 540px;
+    height: 510px;
   }
 }
 .sectionWhatWeDo .weDoContent .imgBig {
@@ -484,23 +542,32 @@
   margin-top: -360px;
   z-index: 1;
 }
+.sectionCover > .flexbox {
+  padding: 0 !important;
+}
 .sectionCover .sectionCoverBG {
   background: #F9F9FA;
   position: absolute;
   left: 0;
   right: 0;
   top: 360px;
-  bottom: 300px;
+  bottom: 230px;
   z-index: -1;
+}
+.sectionCover .sectionGreenHeader {
+  margin-left: 58px;
 }
 .sectionCover .sectionHeader {
   max-width: 400px;
-  margin: 16px 0 80px 0;
+  margin: 16px 0 80px 58px;
 }
 @media (max-width: 720px) {
   .sectionCover .sectionHeader {
     font-size: 24px;
   }
+}
+.sectionCover .coverText {
+  max-width: 500px;
 }
 .sectionCover > .flexbox > div {
   -webkit-flex: 1;
@@ -509,13 +576,26 @@
   flex: 1;
 }
 .sectionCover .spacer {
-  max-width: 60px;
+  max-width: 100px;
 }
 .sectionCover .img1 {
   margin-top: 60px;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 .sectionCover .imgML {
   margin-left: 20px;
+}
+.sectionCover .row1 .imgML {
+  -webkit-flex: 1.05;
+  -webkit-box-flex: 1.05;
+  -ms-flex: 1.05;
+  flex: 1.05;
+}
+.sectionCover .img2 {
+  margin-right: 30px;
 }
 .sectionCover .imgMT {
   margin-top: 20px;
@@ -571,16 +651,16 @@
   color: #63687C;
 }
 .shapeCoverBottom {
-  margin-top: -300px;
+  margin-top: -230px;
 }
 .sectionUnlock {
-  padding-bottom: 280px;
-  margin-top: -250px;
+  padding-bottom: 220px;
+  margin-top: -300px;
 }
 .sectionUnlock .sectionUnlockBG {
   background: #2d344f;
   position: absolute;
-  top: 250px;
+  top: 300px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -614,9 +694,6 @@
   }
 }
 @media (min-width: 801px) {
-  .sectionUnlock {
-    padding-bottom: 280px;
-  }
   .sectionUnlock .headerFaded {
     font-size: 120px;
     font-weight: 900;
@@ -633,6 +710,7 @@
   background: #2a314b;
   margin-top: -2px;
   font-size: 14px;
+  z-index: 3;
 }
 .sectionFooter .logo {
   height: 60px;
@@ -766,9 +844,6 @@
   .sectionAbout .logosDe img:last-child {
     margin-top: 36px;
   }
-}
-.sectionAbout .graylogo img {
-  width: 24px;
 }
 .sectionAbout .textAbout {
   font-weight: 500;
@@ -1388,7 +1463,7 @@ button {
   right: 0;
   z-index: 1;
   margin-top: -50px;
-  height: 600px;
+  height: 640px;
   overflow: hidden;
   text-align: center;
 }
@@ -1421,8 +1496,8 @@ button {
 .testimonials .scroller > div {
   white-space: normal;
   display: inline-block;
-  width: 300px;
-  height: 420px;
+  width: 260px;
+  height: 460px;
   margin-top: 120px;
   vertical-align: top;
 }
@@ -1484,6 +1559,9 @@ button {
   position: relative;
   padding: 32px;
   background: white;
+  box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.05);
+}
+.whiteBox:hover {
   box-shadow: 0px 6px 30px rgba(92, 95, 101, 0.15);
 }
 .whiteBox .text {
@@ -1620,11 +1698,12 @@ button {
   background: #F9F9FA;
 }
 .shapeUnlock {
-  margin-top: -350px;
+  margin-top: -400px;
   z-index: -1;
 }
 .shapeFooter {
   margin-top: -140px;
+  margin-bottom: -40px;
   z-index: 2;
 }
 @media (max-width: 720px) {
@@ -1638,13 +1717,13 @@ a {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 body {
   font-size: 17px;
   margin: 0;
   width: 100%;
   line-height: 1.5;
-  overflow-x: hidden;
   color: #2D344F;
   font-family: 'Aktiv', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
   text-rendering: optimizeLegibility;
@@ -1652,6 +1731,11 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   scroll-behavior: smooth;
+}
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 .fontTitle {
   font-weight: 500;
@@ -1739,7 +1823,7 @@ body {
 }
 @media (min-width: 900px) {
   .headerInside .spacerLeft {
-    flex: 0 1 80px;
+    flex: 0 1 54px;
   }
 }
 @media (min-width: 721px) {
